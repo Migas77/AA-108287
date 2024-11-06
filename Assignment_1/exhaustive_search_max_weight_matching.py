@@ -2,15 +2,15 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from itertools import combinations
 
+from random_graph_generator import generate_random_graph
+
 
 def exhaustive_search_max_weight_matching(G):
     """
     Find the maximum weighted matching using exhaustive search.
 
-    Parameters:
-    - G: A networkx.Graph instance with weighted edges.
-
-    Returns:
+    :param G: A networkx.Graph instance with weighted edges.
+    :return:
     - max_weight_matching: Set of edges in the maximum weighted matching.
     - max_weight: The total weight of the maximum weighted matching.
     """
@@ -39,23 +39,22 @@ def exhaustive_search_max_weight_matching(G):
 
 
 if __name__ == '__main__':
-    Graph = nx.Graph()
-    Graph.add_weighted_edges_from(
-        [(1, 2, 2), (1, 3, 1), (2, 3, 4), (2, 4, 3)]
+    n_nodes = 12
+    edge_density = 0.25
+    Graph = generate_random_graph(n_nodes, edge_density)
+    expected_result = nx.max_weight_matching(Graph)
+    print(
+        expected_result,
+        sum(Graph.get_edge_data(*e)["weight"] for e in expected_result)
     )
-    pos = nx.spring_layout(Graph, seed=7)
+    print(exhaustive_search_max_weight_matching(Graph))
+
+    pos = nx.get_node_attributes(Graph, 'pos')
     labels = nx.get_edge_attributes(Graph, 'weight')
-    nx.draw(
-        Graph, pos, with_labels=True
-    )
+    nx.draw(Graph, pos, with_labels=True)
     nx.draw_networkx_edge_labels(Graph, pos, edge_labels=labels)
     plt.plot()
     plt.show()
-    print(
-        nx.max_weight_matching(Graph),
-        sum(Graph.get_edge_data(*e)["weight"] for e in nx.max_weight_matching(Graph))
-    )
-    print(exhaustive_search_max_weight_matching(Graph))
 
 # Edmond Blossom Algorithm
 # networkX max_weight_matching

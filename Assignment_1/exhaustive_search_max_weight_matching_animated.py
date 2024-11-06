@@ -7,9 +7,8 @@ from itertools import combinations
 def exhaustive_search_max_weight_matching_animated(G):
     """
     Find the maximum weighted matching using exhaustive search.
-
-    Parameters:
-    - G: A networkx.Graph instance with weighted edges.
+    :param G: A networkx.Graph instance with weighted edges.
+    :return:
     """
     max_weight = 0
     max_weight_matching = set()
