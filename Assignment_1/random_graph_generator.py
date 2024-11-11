@@ -1,4 +1,6 @@
+import os
 import networkx as nx
+import pickle
 from itertools import combinations
 from random import seed, randint, shuffle
 from matplotlib import pyplot as plt
@@ -75,3 +77,13 @@ def generate_random_graph(n_nodes, edge_density, generator_seed=108287):
     print("not early", len(G.edges), n_edges, len(G.edges) == n_edges)
     return G
 
+
+if __name__ == "__main__":
+    if not os.path.exists("generated_graphs"):
+        os.makedirs("generated_graphs")
+    for n_nodes in range(4, 500):
+        for edge_density in [0.125, 0.25, 0.5, 0.75]:
+            Graph = generate_random_graph(n_nodes, edge_density)
+            edge_density_str = str(edge_density).replace('.', '')
+            with open(f"generated_graphs/graph_{n_nodes}_{edge_density_str}.gpickle", "wb") as f:
+                pickle.dump(Graph, f)
