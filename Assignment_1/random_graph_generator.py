@@ -11,7 +11,7 @@ weight_lower_bound = 1
 weight_upper_bound = 100
 
 
-def generate_random_graph(n_nodes, edge_density, generator_seed=108287):
+def generate_random_graph(n_nodes, edge_density):
     """
     Function that allows to generate a random graph according to the following conditions:
     - graph vertices are 2D points on the XOY plane, with integer valued coordinates between
@@ -28,7 +28,6 @@ def generate_random_graph(n_nodes, edge_density, generator_seed=108287):
     """
     # using your student number as seed.
     print()
-    seed(generator_seed)
 
     G = nx.Graph()
 
@@ -81,7 +80,8 @@ def generate_random_graph(n_nodes, edge_density, generator_seed=108287):
 if __name__ == "__main__":
     if not os.path.exists("generated_graphs"):
         os.makedirs("generated_graphs")
-    for n_nodes in range(4, 500):
+    seed(108287)
+    for n_nodes in range(4, 1000, 25):
         for edge_density in [0.125, 0.25, 0.5, 0.75]:
             Graph = generate_random_graph(n_nodes, edge_density)
             edge_density_str = str(edge_density).replace('.', '')
