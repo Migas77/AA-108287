@@ -85,7 +85,7 @@ if __name__ == '__main__':
         os.makedirs('charts')
     subsets_counter = 0
     is_matching_counter = 0
-    headers = ['#Nodes', 'Edge Density', '#Edges', '#Subsets Tested', '#is_matching() operations', 'Execution Time (s)', 'isExpectedResult']
+    headers = ['#Nodes', 'Edge Density', '#Edges', '#Subsets Tested', '#is_matching operations', 'Execution Time (s)', 'isExpectedResult']
     results = [] 
     node_colors = { 4: 'r', 5: 'g', 6: 'b', 7: 'c', 8: 'm', 9: 'y',}
     num_subset_by_num_edges = defaultdict(defaultdict)
@@ -97,7 +97,7 @@ if __name__ == '__main__':
         densidade_0.125: [resultado1, resultado2, ...]
     }
     """
-    for n_nodes in range(4, 9):
+    for n_nodes in range(4, 10):
         for edge_density in [0.125, 0.25, 0.5, 0.75]:
             is_matching_counter = 0
             subsets_counter = 0
@@ -185,8 +185,8 @@ if __name__ == '__main__':
     plt.ylabel('is_matching() operations count (log scale)')
     plt.title('Exhaustive Search: is_matching() operations count by Number of Edges')
     plt.gca().title.set_size(10)
-    plt.show()
-    # plt.savefig('charts/is_matching_counter_by_num_edges.png')
+    # plt.show()
+    plt.savefig('charts/is_matching_counter_by_num_edges.png')
 
     plt.clf()
     handle_by_label = {}
