@@ -32,8 +32,8 @@ def is_matching(matching):
         is_matching_counter += 1
         if v in nodes:
             return False
-            
-        nodes.update(edge)
+        
+        nodes.update((u, v))
     return True
 
     
@@ -81,22 +81,13 @@ def model3(x, a, b, c):
     return a + b * np.exp(c * x)
 
 if __name__ == '__main__':
-    if not os.path.exists('charts'):
-        os.makedirs('charts')
+    if not os.path.exists('charts/exhaustive'):
+        os.makedirs('charts/exhaustive')
     subsets_counter = 0
     is_matching_counter = 0
     headers = ['#Nodes', 'Edge Density', '#Edges', '#Subsets Tested', '#is_matching operations', 'Execution Time (s)', 'isExpectedResult']
     results = [] 
     node_colors = { 4: 'r', 5: 'g', 6: 'b', 7: 'c', 8: 'm', 9: 'y',}
-    num_subset_by_num_edges = defaultdict(defaultdict)
-    num_subset_by_edge_density_by_nodes = defaultdict(defaultdict)
-    num_ismatching_by_edge_density_by_nodes = defaultdict(defaultdict)
-    execution_time_by_edge_density_by_nodes = defaultdict(defaultdict)
-    """
-    num_vertices_4: {
-        densidade_0.125: [resultado1, resultado2, ...]
-    }
-    """
     for n_nodes in range(4, 10):
         for edge_density in [0.125, 0.25, 0.5, 0.75]:
             is_matching_counter = 0
@@ -120,37 +111,41 @@ if __name__ == '__main__':
                     execution_time,
                     max_weight == expected_max_weight_matching
                 ])
-                num_subset_by_num_edges[num_edges] = {
-                    "n_nodes": n_nodes,
-                    "subsets_counter": subsets_counter
-                }
-                num_subset_by_edge_density_by_nodes[edge_density][n_nodes]= subsets_counter
-                num_ismatching_by_edge_density_by_nodes[edge_density][n_nodes]= is_matching_counter
-                execution_time_by_edge_density_by_nodes[edge_density][n_nodes]= execution_time
+                # nx.draw(Graph, with_labels=True)
+                # pos = nx.get_node_attributes(Graph, 'pos')
+                # labels = nx.get_edge_attributes(Graph, 'weight')
+                # nx.draw(Graph, pos, with_labels=True)
+                # nx.draw_networkx_edge_labels(Graph, pos, edge_labels=labels)
+                # plt.plot()
+                # plt.show()
 
+    # ----------------
+    # Tabular Results |
+    # ----------------
     print(tabulate(results, headers=headers, tablefmt="grid"))
-    execution_time_by_num_edges = []
 
     # ---------
     # Plotting |
     # ---------
 
     # Number of Subsets
-    num_subset_by_num_edges = dict(sorted(num_subset_by_num_edges.items()))
-    plt.plot(
-        num_subset_by_num_edges.keys(),
-        [entry["subsets_counter"] for entry in num_subset_by_num_edges.values()],
-        color='k',
-    )
-
     handle_by_label = {}
-    for number_edges, entry in num_subset_by_num_edges.items():
-        number_nodes = entry["n_nodes"]
+    label = 'f(m) = 2^m - 1'
+    edges_x = sorted([result[2] for result in results ])
+    line, = plt.plot(
+        edges_x,
+        [ (2**num_edges) - 1 for num_edges in edges_x],
+        color='k',
+        label=label,
+    )
+    handle_by_label[label] = line
+
+    for result in results:
+        number_nodes = result[0]
+        number_edges = result[2]
+        number_matching_operations = result[3]
+        line, = plt.plot(number_edges, number_matching_operations, marker='o', label=f'n_nodes={number_nodes}', color=node_colors[number_nodes])
         label = f'n_nodes={number_nodes}'
-        line, = plt.plot(
-            number_edges, entry["subsets_counter"], marker='o', label=label,
-            color=node_colors[number_nodes]
-        )
         if label not in handle_by_label:
             handle_by_label[label] = line
 
@@ -161,9 +156,10 @@ if __name__ == '__main__':
     plt.xlabel('Number of Edges')
     plt.ylabel('Number of Subsets (log scale)')
     plt.title('Exhaustive Search: Number of Subsets tested by Number of Edges')
-    plt.gca().title.set_size(10)
+    plt.gca().title.set_size(9)
     plt.show()
-    # plt.savefig('charts/num_subsets_by_num_edges.png')
+    # plt.savefig('charts/exhaustive/num_subsets_by_num_edges.png')
+
 
     # is_matching operations count
     plt.clf()
@@ -184,10 +180,12 @@ if __name__ == '__main__':
     plt.xlabel('Number of Edges')
     plt.ylabel('is_matching() operations count (log scale)')
     plt.title('Exhaustive Search: is_matching() operations count by Number of Edges')
-    plt.gca().title.set_size(10)
-    # plt.show()
-    plt.savefig('charts/is_matching_counter_by_num_edges.png')
+    plt.gca().title.set_size(9)
+    plt.show()
+    # plt.savefig('charts/exhaustive/is_matching_counter_by_num_edges.png')
 
+
+    # Execution Time
     plt.clf()
     handle_by_label = {}
     for result in results:
@@ -206,11 +204,7 @@ if __name__ == '__main__':
     plt.xlabel('Number of Edges')
     plt.ylabel('Execution Time (s) (log scale)')
     plt.title('Exhaustive Search: Execution Time by Number of Edges')
+    plt.gca().title.set_size(9)
     plt.show()
+    # plt.savefig('charts/exhaustive/execution_time_by_num_edges.png')
 
-    # pos = nx.get_node_attributes(Graph, 'pos')
-    # labels = nx.get_edge_attributes(Graph, 'weight')
-    # nx.draw(Graph, pos, with_labels=True)
-    # nx.draw_networkx_edge_labels(Graph, pos, edge_labels=labels)
-    # plt.plot()
-    # plt.show()
