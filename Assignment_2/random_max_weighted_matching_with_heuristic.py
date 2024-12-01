@@ -31,7 +31,7 @@ def random_max_weighted_matching_with_heuristic(G, criteria, reverse=False, max_
   edges = list(G.edges(data="weight"))
   random.shuffle(edges)
   
-  # Create a matching greedily
+  # Create the matching greedily by parsing random edges
   current_matching = set()
   matched_vertices = set()
   current_weight = 0

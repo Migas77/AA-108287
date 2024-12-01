@@ -4,19 +4,18 @@ import random
 def random_max_weighted_matching(G, max_iter=10000, time_limit=None):
   start_time = time.perf_counter()
   best_matching = set()
+  edges = list(G.edges(data="weight"))
+  total_weight = sum(w for _, _, w in edges)
   max_weight = 0
-  graph_edges = G.edges(data="weight")
-  total_weight = sum(w for _, _, w in graph_edges)
 
   for i in range(max_iter):
     if time_limit and (time.perf_counter() - start_time) > time_limit:
       break
 
     # Generate a random order of edges
-    edges = list(graph_edges)
     random.shuffle(edges)
     
-    # Create a matching greedily
+    # Create the matching greedily by parsing random edges
     current_matching = set()
     matched_vertices = set()
     current_weight = 0
@@ -39,3 +38,5 @@ def random_max_weighted_matching(G, max_iter=10000, time_limit=None):
       best_matching = current_matching
 
   return best_matching, max_weight
+
+

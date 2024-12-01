@@ -47,13 +47,27 @@ def run_algorithm(algorithm):
           # num_entered
         ])
 
-
       # delete output terminal
       # print("\033c", end="")
       print(tabulate(results, headers=headers, tablefmt="grid"))
       # print the number of correct results
       print(f"Correct results: {sum(1 for _, _, _, _, _, _, (a, b, c), _ in results if c)} of {len(results)}")
       print(f"Mean Precision: {np.mean([result[-2][0]/result[-2][1] for result in results])}")
+
+  import matplotlib.pyplot as plt
+
+  # Plot precision
+  num_edges = [result[2] for result in results]
+  precision = [result[-1] for result in results]
+
+  plt.figure(figsize=(10, 6))
+  plt.scatter(num_edges, precision, color='b')
+  plt.xlabel('Number of Edges')
+  plt.ylabel('Precision')
+  plt.title('Precision vs Number of Edges')
+  plt.grid(True)
+  plt.show()
+
 
 
 if __name__ == "__main__":
