@@ -2,7 +2,7 @@ import time
 import random
 import numpy as np
 
-def probabilistic_greedy_search(G, max_iter=10, time_limit=None):
+def probabilistic_greedy_search(G, max_iter=1000, time_limit=2):
   """
   Probabilistic Greedy Search for Maximum Weighted Matching.
   """
@@ -10,11 +10,14 @@ def probabilistic_greedy_search(G, max_iter=10, time_limit=None):
   best_matching = set()
   best_weight = 0
   edges = list(G.edges(data="weight"))
-  # Compute probabilities for each edge based on weight
-  total_weight = sum(w for _, _, w in edges)
-  probabilities = [w / total_weight for _, _, w in edges]
-  
 
+  total_weight = sum(w for _, _, w in edges)
+  probabilities = [w / total_weight for u, v, w in edges]
+  # Adjust probabilities to give higher weight edges a higher probability
+  adjusted_weights = [w ** 10 for _, _, w in edges]
+  total_adjusted_weight = sum(adjusted_weights)
+  probabilities = [w / total_adjusted_weight for w in adjusted_weights]
+  
   for i in range(max_iter):
     if time_limit and (time.time() - start_time) > time_limit:
       break
