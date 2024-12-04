@@ -58,7 +58,7 @@ def run_algorithm(algorithm):
           max_weight / expected_max_weight if expected_max_weight != 0 else -1
         ])
 
-      #print(tabulate(results, headers=headers, tablefmt="grid"))
+      print(tabulate(results, headers=headers, tablefmt="grid"))
 
       if algorithm == 'random' and n_nodes == 154 and edge_density == 0.75:
         # 154, 0.75
@@ -142,20 +142,71 @@ def run_algorithm(algorithm):
         return
 
         
+  if algorithm == 'probabilistic_greedy':
+    # Print results
+    print(tabulate(results, headers=headers, tablefmt="grid"))
+    print(f"Correct results: {sum(1 for _, _, _, _, _, _, _, (a, b, c), _ in results if c)} of {len(results)}")
+    print(f"Mean Precision: {np.mean([result[-2][0]/result[-2][1] for result in results])}")
 
-  if algorithm == 'probabilistic_greedy'
+    # Generate random colors for the node range
+    node_colors = {4: 'red', 29: 'blue', 54: 'cyan', 79: 'green', 104: 'yellow', 129: 'purple', 154: 'orange', 179: 'pink', 204: 'brown', 229: 'lightblue', 254: 'lightgreen', 279: 'darkblue', 304: 'darkgreen', 329: 'darkred', 354: 'violet', 379: 'lightgray', 404: 'darkorange', 429: 'crimson', 454: 'indigo', 479: 'gold', 504: 'teal', 529: 'lime', 554: '#D2691E', 579: 'maroon', 604: 'fuchsia', 629: 'turquoise', 654: 'lightpink', 679: 'yellowgreen', 704: 'orchid', 729: 'lavender', 754: 'slateblue', 779: 'seagreen', 804: 'chartreuse', 829: 'tomato', 854: '#8A2BE2', 879: 'mediumvioletred', 904: 'mediumpurple', 929: 'darkslategray', 954: 'darkkhaki', 979: 'lightseagreen'}
 
-  # Plot precision
-  num_edges = [result[2] for result in results]
-  precision = [result[-1] for result in results]
+    # Plot number of solutions tested
+    number_edges = [result[2] for result in results]
+    number_filtered_solutions_tested = [result[4] for result in results]
+    plt.figure(figsize=(10, 6))
+    for i in range(0, len(number_edges), 4):
+      batch_edges = number_edges[i:i+4]
+      batch_solutions_tested = number_filtered_solutions_tested[i:i+4]
+      plt.scatter(batch_edges, batch_solutions_tested, color=node_colors[node_range[i//4]], label=f'n_nodes = {node_range[i//4]}')
+    plt.xlabel('Number of Edges')
+    plt.ylabel('Number of Solutions Tested')
+    plt.title('Number of Solutions Tested by Number of Edges')
+    plt.legend(loc='upper right', ncol=3)
+    plt.grid(True)
+    plt.show()
 
-  plt.figure(figsize=(10, 6))
-  plt.scatter(num_edges, precision, color='b')
-  plt.xlabel('Number of Edges')
-  plt.ylabel('Precision')
-  plt.title('Precision vs Number of Edges')
-  plt.grid(True)
-  plt.show()
+    # Plot number of basic operations by number of edges
+    number_basic_operations = [result[5] for result in results]
+    plt.figure(figsize=(10, 6))
+    for i in range(0, len(number_edges), 4):
+      batch_edges = number_edges[i:i+4]
+      batch_basic_operations = number_basic_operations[i:i+4]
+      plt.scatter(batch_edges, batch_basic_operations, color=node_colors[node_range[i//4]], label=f'n_nodes = {node_range[i//4]}')
+    plt.xlabel('Number of Edges')
+    plt.ylabel('Number of Basic Operations')
+    plt.title('Number of Basic Operations by Number of Edges')
+    plt.legend(loc='upper right', ncol=3)
+    plt.grid(True)
+    plt.show()
+
+    # Plot execution time by number of edges
+    execution_times = [result[6] for result in results]
+    plt.figure(figsize=(10, 6))
+    for i in range(0, len(number_edges), 4):
+      batch_edges = number_edges[i:i+4]
+      batch_execution_times = execution_times[i:i+4]
+      plt.scatter(batch_edges, batch_execution_times, color=node_colors[node_range[i//4]], label=f'n_nodes = {node_range[i//4]}')
+    plt.xlabel('Number of Edges')
+    plt.ylabel('Execution Time (s)')
+    plt.title('Execution Time by Number of Edges')
+    plt.legend(loc='lower right', ncol=3)
+    plt.grid(True)
+    plt.show()
+
+    # Plot precision by number of edges
+    precision = [result[-1] for result in results]
+    plt.figure(figsize=(10, 6))
+    for i in range(0, len(number_edges), 4):
+      batch_edges = number_edges[i:i+4]
+      batch_precision = precision[i:i+4]
+      plt.scatter(batch_edges, batch_precision, color=node_colors[node_range[i//4]], label=f'n_nodes = {node_range[i//4]}')
+    plt.xlabel('Number of Edges')
+    plt.ylabel('Precision')
+    plt.title('Precision by Number of Edges')
+    plt.legend(loc='upper right', ncol=3)
+    plt.grid(True)
+    plt.show()
 
 
 

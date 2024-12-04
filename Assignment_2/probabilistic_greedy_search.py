@@ -1,20 +1,24 @@
 import time
 import random
 import numpy as np
+import exp
 
-def probabilistic_greedy_search(G, max_iter=1000, time_limit=2):
+random.seed(108287)
+
+def probabilistic_greedy_search(G, exponent=100, max_iter=1000, time_limit=2):
   """
   Probabilistic Greedy Search for Maximum Weighted Matching.
   """
   start_time = time.time()
   best_matching = set()
-  best_weight = 0
   edges = list(G.edges(data="weight"))
-
+  num_edges = len(edges)
+  random_indices = set()
   total_weight = sum(w for _, _, w in edges)
-  probabilities = [w / total_weight for u, v, w in edges]
+  max_weight = 0
+  
   # Adjust probabilities to give higher weight edges a higher probability
-  adjusted_weights = [w ** 10 for _, _, w in edges]
+  adjusted_weights = [w ** exponent for _, _, w in edges]
   total_adjusted_weight = sum(adjusted_weights)
   probabilities = [w / total_adjusted_weight for w in adjusted_weights]
   
@@ -22,34 +26,41 @@ def probabilistic_greedy_search(G, max_iter=1000, time_limit=2):
     if time_limit and (time.time() - start_time) > time_limit:
       break
 
-    current_matching = set()
-    used_nodes = set()
-    current_weight = 0
-    remaining_weight = total_weight
+    exp.all_solutions_counter += 1
 
     # Probabilistic selection of edges
-    random_edge_incides = np.random.choice(len(edges), size=len(edges), p=probabilities, replace=False)
+    random_edge_incides = np.random.choice(num_edges, size=num_edges, p=probabilities, replace=False)
+    tuple_random_edge_indices = tuple(random_edge_incides)
+    if tuple_random_edge_indices in random_indices:
+      continue
+    random_indices.add(tuple_random_edge_indices)
+
+    exp.filtered_solutions_counter += 1
 
     # Greedy addition of edges from the probabilistically selected order
+    current_matching = set()
+    matched_vertices = set()
+    current_weight = 0
+    remaining_weight = total_weight
     for edge_indice in random_edge_incides:
-      max_iter -= 1
-      if max_iter==0 or (time_limit and (time.time() - start_time) > time_limit):
-        break
 
       edge = edges[edge_indice]
       u, v, w = edge
       remaining_weight -= w
-      if current_weight + remaining_weight <= best_weight:
+      if current_weight + remaining_weight < max_weight:
         break
-      if u not in used_nodes and v not in used_nodes:
-        current_matching.add(edge)
-        used_nodes.add(u)
-        used_nodes.add(v)
-        current_weight += w
+      exp.basic_operations_counter += 1
+      if u not in matched_vertices:
+        exp.basic_operations_counter += 1
+        if v not in matched_vertices:
+          current_matching.add(edge)
+          matched_vertices.add(u)
+          matched_vertices.add(v)
+          current_weight += w
 
     # Update best matching if current is better
-    if current_weight > best_weight:
-      best_weight = current_weight
+    if current_weight > max_weight:
+      max_weight = current_weight
       best_matching = current_matching
 
-  return best_matching, best_weight
+  return best_matching, max_weight
