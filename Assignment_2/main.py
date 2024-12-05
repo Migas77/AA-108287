@@ -58,7 +58,7 @@ def run_algorithm(algorithm):
           max_weight / expected_max_weight if expected_max_weight != 0 else -1
         ])
 
-      print(tabulate(results, headers=headers, tablefmt="grid"))
+      # print(tabulate(results, headers=headers, tablefmt="grid"))
 
       if algorithm == 'random' and n_nodes == 154 and edge_density == 0.75:
         # 154, 0.75
@@ -204,7 +204,7 @@ def run_algorithm(algorithm):
     plt.xlabel('Number of Edges')
     plt.ylabel('Precision')
     plt.title('Precision by Number of Edges')
-    plt.legend(loc='upper right', ncol=3)
+    plt.legend(loc='lower right', ncol=3)
     plt.grid(True)
     plt.show()
 
