@@ -1,6 +1,8 @@
 import time
 import random
 
+random.seed(108287)
+
 def random_max_weighted_matching_with_vertices_degree_heuristic(G, max_iter=10000, time_limit=None):
   # Sort edges by vertex degree (sum of both vertices degrees) - in ascending order
   return random_max_weighted_matching_with_heuristic(

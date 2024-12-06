@@ -81,7 +81,7 @@ if __name__ == "__main__":
     if not os.path.exists("generated_graphs"):
         os.makedirs("generated_graphs")
     seed(108287)
-    for n_nodes in range(20, 1000, 25):
+    for n_nodes in range(4, 1000, 25):
         for edge_density in [0.125, 0.25, 0.5, 0.75]:
             Graph = generate_random_graph(n_nodes, edge_density)
             edge_density_str = str(edge_density).replace('.', '')
