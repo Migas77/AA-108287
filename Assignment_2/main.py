@@ -141,10 +141,11 @@ def run_algorithm(algorithm):
 
         return
 
-        
+
+  print(tabulate(results, headers=headers, tablefmt="grid"))
+
   if algorithm == 'probabilistic_greedy':
     # Print results
-    print(tabulate(results, headers=headers, tablefmt="grid"))
     print(f"Correct results: {sum(1 for _, _, _, _, _, _, _, (a, b, c), _ in results if c)} of {len(results)}")
     print(f"Mean Precision: {np.mean([result[-2][0]/result[-2][1] for result in results])}")
 
