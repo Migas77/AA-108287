@@ -28,6 +28,7 @@ def random_max_weighted_matching_with_heuristic(G, criteria, reverse=False, max_
   max_weight = 0
   total_edges = G.number_of_edges()
   edges_per_portion = int(total_edges * 0.2)
+  assert edges_per_portion > 0
   
   # Generate a random order of edges
   edges = list(G.edges(data="weight"))
