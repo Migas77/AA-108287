@@ -1,17 +1,21 @@
+from collections import defaultdict
 from book_file_reader import read_text_to_word_list
 import random
 import numpy as np
 
 # NMEC: 108287 - Miguel Figueiredo
-# random.seed(108287)
+random.seed(108287)
 
 def fixed_probability_counter(words_list, prob):
     """Approximate counter with fixed probability prob."""
-    counter = 0
+    word_count_map = {}
     for word in words_list:
         if random.random() < prob:
-            counter += 1
-    return counter
+            if word not in word_count_map:
+                word_count_map[word] = 1
+            else:
+                word_count_map[word] += 1
+    return word_count_map
 
 
 if __name__ == '__main__':
@@ -34,7 +38,7 @@ if __name__ == '__main__':
     print(f"Variance: {expected_variance_1} {expected_variance_2}")
     print(f"Standard deviation: {expected_std_deviation}\n")
 
-    counters = [fixed_probability_counter(words_list, prob) for _ in range(trials)]
+    counters = [sum(fixed_probability_counter(words_list, prob).values()) for _ in range(trials)]
 
     mean_counter_value = sum(counters) / trials
 
@@ -72,5 +76,8 @@ if __name__ == '__main__':
 
     file_path, language = book_paths_with_language[0]
     words_list = read_text_to_word_list(file_path, language)
-    print(fixed_probability_counter(words_list, 0.5)*2, len(words_list))
+    word_count_map = fixed_probability_counter(words_list, 0.5)
+    print(sum(word_count_map.values()) * 2, len(words_list))
+    for word, count in word_count_map.items():
+        print(f"{word}: {count}")
 
