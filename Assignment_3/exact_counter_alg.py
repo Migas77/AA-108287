@@ -1,7 +1,7 @@
 from collections import defaultdict, Counter
 import time
 
-from filereader import read_text_to_word_list
+from text_file_reader import read_text_to_word_list
 
 
 def count_words(words_list):
