@@ -5,12 +5,12 @@ from nltk.corpus import stopwords
 # Ensure stopwords are downloaded
 nltk.download('stopwords')
 
-def read_text_to_word_list(file_path, language):
+def read_text_to_word_list(file_path, language, start_line_mark='*** START OF THE PROJECT GUTENBERG EBOOK ROMEO AND JULIET ***'):
     supported_languages = ['english', 'french', 'german']
     assert language in supported_languages, f"Language must be one of {supported_languages}"
 
     # Load stop words
-    stop_words = set(stopwords.words('english'))
+    stop_words = set(stopwords.words(language))
 
     # Read the file
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -20,7 +20,7 @@ def read_text_to_word_list(file_path, language):
     start_idx = None
     end_idx = None
     for i, line in enumerate(lines):
-        if '*** START OF THE PROJECT GUTENBERG EBOOK' in line:
+        if start_line_mark in line:
             start_idx = i + 1
         elif '*** END OF THE PROJECT GUTENBERG EBOOK' in line:
             end_idx = i
@@ -41,16 +41,19 @@ def read_text_to_word_list(file_path, language):
     return word_list
 
 if __name__ == '__main__':
-    book_paths_with_language = [
+    # start_line_mark is needed because traducers often leave a description/message (not needed for the english original book)
+    # the whitespace is on purpose
+    book_paths_with_language_and_start_line_mark = [
         ('romeo_and_juliet_book/romeo_and_juliet_english.txt', 'english'),
-        ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french'),
-        ('romeo_and_juliet_book/romeo_and_juliet_german.txt', 'german')
+        ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french', '====================================================='),
+        ('romeo_and_juliet_book/romeo_and_juliet_german.txt', 'german', 'http://gutenberg2000.de erreichbar.')
     ]
 
-    file_path, language = book_paths_with_language[0]
-    words_list = read_text_to_word_list(file_path, language)
+    words_list = read_text_to_word_list(*book_paths_with_language_and_start_line_mark[2])
 
     output_path = 'processed_words.txt'
     with open(output_path, 'w', encoding='utf-8') as output_file:
         output_file.write('\n'.join(words_list))
     print(f"Processed words saved to {output_path}")
+    print(f'Number of words: {len(words_list)}')
+    print(f'First 30 words: {words_list[:30]}')
