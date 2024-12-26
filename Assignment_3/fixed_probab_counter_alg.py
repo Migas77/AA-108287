@@ -1,16 +1,19 @@
-from collections import defaultdict
+from collections import Counter, defaultdict
 from book_file_reader import read_text_to_word_list
 import random
 import numpy as np
+import statistics
 
 # NMEC: 108287 - Miguel Figueiredo
 random.seed(108287)
 
-def fixed_probability_counter(words_list, prob):
-    """Approximate counter with fixed probability prob."""
+def fixed_probability_counter(words_list, k):
+    """Approximate counter with fixed probability."""
+    assert k >= 1, "k must be greater than or equal to 1"
     word_count_map = {}
+    probability = 1 / 2**k
     for word in words_list:
-        if random.random() < prob:
+        if random.random() < probability:
             if word not in word_count_map:
                 word_count_map[word] = 1
             else:
@@ -22,10 +25,15 @@ if __name__ == '__main__':
     # ---------------------------------------------------
     # Matching slide 30 of Probabilistic Counters slides |
     # ---------------------------------------------------
+
+    kp = 1
+    prob = 1 / 2**kp                                                            # Probability of counting a word: 0.5
+
     trials = 10000
     k = 100
     words_list = list(range(k))
-    prob = 0.5
+
+    counters = [sum(fixed_probability_counter(words_list, kp).values()) for _ in range(trials)]
 
     expected_value = k * prob
     expected_variance_1 = k * prob * (1 - prob)
@@ -37,8 +45,6 @@ if __name__ == '__main__':
     print(f"Expected value: {expected_value}")
     print(f"Variance: {expected_variance_1} {expected_variance_2}")
     print(f"Standard deviation: {expected_std_deviation}\n")
-
-    counters = [sum(fixed_probability_counter(words_list, prob).values()) for _ in range(trials)]
 
     mean_counter_value = sum(counters) / trials
 
@@ -58,11 +64,11 @@ if __name__ == '__main__':
     std_deviation = (sum((counter - mean_counter_value) ** 2 for counter in counters) / trials) ** 0.5 
     maximum_deviation = max(abs(counter - mean_counter_value) for counter in counters)
     variance = sum((counter - mean_counter_value) ** 2 for counter in counters) / trials
-    print(f"Mean Counter Value: {mean_counter_value} {np.mean(counters)}")
-    print(f"Mean Absolute Deviation: {mean_abs_deviation} {np.mean(np.abs(np.array(counters) - mean_counter_value))}")
-    print(f"Standard Deviation: {std_deviation} {np.std(counters)}")
+    print(f"Mean Counter Value: {mean_counter_value} {np.mean(counters)} {statistics.mean(counters)}")
+    print(f"Mean Absolute Deviation: {mean_abs_deviation} {np.mean(np.abs(np.array(counters) - mean_counter_value))} {statistics.mean(abs(_count - mean_counter_value) for _count in counters)}")
+    print(f"Standard Deviation: {std_deviation} {np.std(counters)} {statistics.pstdev(counters)}")
     print(f"Maximum Deviation: {maximum_deviation} {np.max(np.abs(np.array(counters) - mean_counter_value))}")
-    print(f"Variance: {variance} {np.var(counters)}\n\n")
+    print(f"Variance: {variance} {np.var(counters)} {statistics.pvariance(counters)}\n\n")
 
     
     # ---------------------------------------------------
@@ -76,8 +82,20 @@ if __name__ == '__main__':
 
     file_path, language = book_paths_with_language[0]
     words_list = read_text_to_word_list(file_path, language)
-    word_count_map = fixed_probability_counter(words_list, 0.5)
+    word_count_map = fixed_probability_counter(words_list, kp)
     print(sum(word_count_map.values()) * 2, len(words_list))
     for word, count in word_count_map.items():
-        print(f"{word}: {count}")
+        # print(f"{word}: {count}")
+        pass
+
+    counter_distribution = Counter(counters)
+    total_count = sum(counter_distribution.values())
+    print(total_count)
+
+    # Print the table
+    print(f"Counting {k} events — {trials} trials")
+    print("-" * 50)
+    for value, count in sorted(counter_distribution.items()):
+        print(f"Counter value: {value:2d} - {count:4d} times - {100*count/total_count:6.3f}%")
+
 
