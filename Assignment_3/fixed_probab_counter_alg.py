@@ -7,11 +7,9 @@ import statistics
 # NMEC: 108287 - Miguel Figueiredo
 random.seed(108287)
 
-def fixed_probability_counter(words_list, k):
+def fixed_probability_counter(words_list, probability):
     """Approximate counter with fixed probability."""
-    assert k >= 1, "k must be greater than or equal to 1"
     word_count_map = {}
-    probability = 1 / 2**k
     for word in words_list:
         if random.random() < probability:
             if word not in word_count_map:
@@ -26,14 +24,12 @@ if __name__ == '__main__':
     # Matching slide 30 of Probabilistic Counters slides |
     # ---------------------------------------------------
 
-    kp = 1
-    prob = 1 / 2**kp                                                            # Probability of counting a word: 0.5
-
+    prob = 1 / 2
     trials = 10000
     k = 100
     words_list = list(range(k))
 
-    counters = [sum(fixed_probability_counter(words_list, kp).values()) for _ in range(trials)]
+    counters = [sum(fixed_probability_counter(words_list, prob).values()) for _ in range(trials)]
 
     expected_value = k * prob
     expected_variance_1 = k * prob * (1 - prob)
