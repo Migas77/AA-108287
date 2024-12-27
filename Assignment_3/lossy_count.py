@@ -16,33 +16,26 @@ class LossyCounting:
         self.delta = 0          # Current bucket boundary
         self.buckets = {}       # Buckets to store items and their counts
         self.n = 0              # Total number of processed items
+            
+    def process_item(self, item):
+        self.n += 1
 
-    def process_stream(self, items):
-        """
-        Process the stream of items.
+        if item in self.buckets:
+            self.buckets[item] += 1
+        else:
+            self.buckets[item] = 1 + self.delta
 
-        Args:
-            items (list): A list of items to be processed.
-        """
-        for item in items:
-            self.n += 1
+        candidate_delta = self.n // k       # same as math.floor(n / k)
+        assert candidate_delta == math.floor(self.n / self.k)
+        assert (candidate_delta != self.delta) == (self.n % self.k == 0)
+        if candidate_delta != self.delta:
+            print("LossyCounting", candidate_delta, self.delta)
+            self.delta = candidate_delta
 
-            if item in self.buckets:
-                self.buckets[item] += 1
-            else:
-                self.buckets[item] = 1 + self.delta
-
-            candidate_delta = self.n // k       # same as math.floor(n / k)
-            assert candidate_delta == math.floor(self.n / self.k)
-            assert (candidate_delta != self.delta) == (self.n % self.k == 0)
-            if candidate_delta != self.delta:
-                print("LossyCounting", candidate_delta, self.delta)
-                self.delta = candidate_delta
-
-                # Cleanup: Remove items that have a low estimated frequency.
-                for item in list(self.buckets):
-                    if self.buckets[item] < self.delta:
-                        del self.buckets[item]
+            # Cleanup: Remove items that have a low estimated frequency.
+            for item in list(self.buckets):
+                if self.buckets[item] < self.delta:
+                    del self.buckets[item]
 
 
     def get_frequent_items(self, threshold):
@@ -72,17 +65,19 @@ if __name__ == "__main__":
     # k - Maximum number of buckets
     # threshold - Minimum frequency to be considered frequent
     k = 12
-    threshold = 1
+    threshold = 15
     lc = LossyCounting(k)
-    lc.process_stream(words_list)
-    print("\n\nBuckets:", lc.buckets)
-    print("k delta n:", lc.k, lc.delta, lc.n)
-
     olc = MugegenLossyCounting(1/k)
     for word in words_list:
+        lc.process_item(word)
         olc.addCount(word)
+
+    print("\n\nBuckets:", lc.buckets)
+    print("k delta n:", lc.k, lc.delta, lc.n)
+    print("frequent items:", lc.get_frequent_items(threshold))
     print("\n\nAnother one Buckets:", olc.count)
     print("epsilon b_current N:", olc.epsilon, olc.b_current, olc.N)
+    print("frequent items:", [s for s in olc.iterateOverThresholdCount(threshold)])
 
     assert lc.buckets == olc.count
     print(lc.buckets == olc.count)
