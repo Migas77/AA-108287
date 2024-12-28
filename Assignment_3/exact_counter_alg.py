@@ -1,3 +1,4 @@
+from pympler import asizeof
 from book_file_reader import read_text_to_word_list
 from collections import defaultdict, Counter
 import timeit
@@ -12,6 +13,19 @@ def exact_counter_basic(words_list):
             word_count_map[word] += 1
 
     return word_count_map
+
+def exact_counter_basic_with_memory(words_list):
+    word_count_map = {}
+    memory_usage = [("", "", asizeof.asizeof(word_count_map), "")]
+    
+    for word in words_list:
+        if word not in word_count_map:
+            word_count_map[word] = 1
+        else:
+            word_count_map[word] += 1
+        memory_usage.append((word, word_count_map[word], asizeof.asizeof(word_count_map), len(word_count_map)))
+
+    return word_count_map, memory_usage
 
 
 def exact_counter_default_dict(words_list):
@@ -55,6 +69,8 @@ if __name__ == '__main__':
         exact_counter_get(words_list) == exact_counter_set_default(words_list)
     )
 
+    assert counter_result == exact_counter_basic(words_list) == exact_counter_default_dict(words_list) == exact_counter_get(words_list) == exact_counter_set_default(words_list)
+
     # Timing Counter
     counter_time = timeit.timeit(lambda: Counter(words_list), number=n_iter)
     print(f"Counter took {counter_time} seconds")
@@ -74,7 +90,3 @@ if __name__ == '__main__':
     # Timing exact_counter_set_default
     exact_counter_set_default_time = timeit.timeit(lambda: exact_counter_set_default(words_list), number=n_iter)
     print(f"exact_counter_set_default took {exact_counter_set_default_time/n_iter} seconds")
-
-    # Output
-    for word, count in counter_result.items():
-        print(f"{word}: {count}")
