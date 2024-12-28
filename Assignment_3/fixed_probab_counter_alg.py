@@ -1,4 +1,6 @@
-from collections import Counter, defaultdict
+from pympler import asizeof
+from collections import Counter
+from tabulate import tabulate
 from book_file_reader import read_text_to_word_list
 import random
 import numpy as np
@@ -17,6 +19,20 @@ def fixed_probability_counter(words_list, probability):
             else:
                 word_count_map[word] += 1
     return word_count_map
+
+def fixed_probability_counter_with_memory(words_list, probability):
+    """Approximate counter with fixed probability tracking memory usage."""
+    word_count_map = {}
+    memory_usage = [("", "", asizeof.asizeof(word_count_map), "")]
+    for word in words_list:
+        if random.random() < probability:
+            if word not in word_count_map:
+                word_count_map[word] = 1
+            else:
+                word_count_map[word] += 1
+            memory_usage.append((word, word_count_map[word], asizeof.asizeof(word_count_map), len(word_count_map)))
+
+    return word_count_map, memory_usage
 
 
 if __name__ == '__main__':
@@ -78,7 +94,7 @@ if __name__ == '__main__':
 
     file_path, language = book_paths_with_language[0]
     words_list = read_text_to_word_list(file_path, language)
-    word_count_map = fixed_probability_counter(words_list, kp)
+    word_count_map = fixed_probability_counter(words_list, prob)
     print(sum(word_count_map.values()) * 2, len(words_list))
     for word, count in word_count_map.items():
         # print(f"{word}: {count}")
@@ -94,4 +110,4 @@ if __name__ == '__main__':
     for value, count in sorted(counter_distribution.items()):
         print(f"Counter value: {value:2d} - {count:4d} times - {100*count/total_count:6.3f}%")
 
-
+    print(tabulate(counter_distribution.items(), headers=['Counter Value', 'Count'], tablefmt="latex"))
