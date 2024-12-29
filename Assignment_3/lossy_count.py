@@ -25,11 +25,10 @@ class LossyCounting:
         else:
             self.buckets[item] = 1 + self.delta
 
-        candidate_delta = self.n // k       # same as math.floor(n / k)
-        assert candidate_delta == math.floor(self.n / self.k)
-        assert (candidate_delta != self.delta) == (self.n % self.k == 0)
+        candidate_delta = self.n // self.k       # same as math.floor(n / k)
+        # assert candidate_delta == math.floor(self.n / self.k)
+        # assert (candidate_delta != self.delta) == (self.n % self.k == 0)
         if candidate_delta != self.delta:
-            print("LossyCounting", candidate_delta, self.delta)
             self.delta = candidate_delta
 
             # Cleanup: Remove items that have a low estimated frequency.
@@ -49,6 +48,19 @@ class LossyCounting:
             dict: A dictionary of items and their estimated frequencies.
         """
         return {item: count for item, count in self.buckets.items() if count >= threshold}
+    
+
+    def get_n_most_frequent_items(self, n):
+        """
+        Get the n most frequent items.
+
+        Args:
+            n (int): Number of most frequent items to return.
+
+        Returns:
+            dict: A dictionary of the n most frequent items and their estimated frequencies.
+        """
+        return dict(sorted(self.buckets.items(), key=lambda x: x[1], reverse=True)[:n])
     
 
 # Example usage

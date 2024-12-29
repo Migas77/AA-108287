@@ -7,6 +7,9 @@ from tabulate import tabulate
 import time
 import click
 import matplotlib.pyplot as plt
+from pympler import asizeof
+from lossy_count import LossyCounting
+from lossy_count_to_verify import MugegenLossyCounting
 
 
 @click.command()
@@ -30,30 +33,48 @@ def main_command(language, algorithm):
         headers, results, exec_time, addit_data = evaluate_fixed_prob_counter(words_list, n_iters)
         algorithm_name = f'Fixed Probability Counter Algorithm: 1/2 (n_iters={n_iters})'
     elif algorithm == 'lossy_count':
-        headers, results, exec_time, addit_data = evaluate_lossy_count(words_list)
+        n_range = range(5, 31, 5)
+        headers, results, exec_time, addit_data = evaluate_lossy_count(words_list, n_range)
         algorithm_name = 'Lossy Counting Algorithm'
 
-    for table_type in ['grid', 'latex']:
-        for is_sorted in [True, False]:
-            filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_{"sorted" if is_sorted else "raw"}_results.txt'
+    if algorithm != 'lossy_count':
+        for table_type in ['grid', 'latex']:
+            for is_sorted in [True, False]:
+                filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_{"sorted" if is_sorted else "raw"}_results.txt'
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    if is_sorted:
+                        output_results = sorted(results, key=lambda x: x[1], reverse=True)
+                    else:
+                        output_results = results
+                    f.write(f'Results {algorithm_name}\n')
+                    f.write(tabulate(output_results, headers=headers, tablefmt=table_type))
+                    f.write(f'\nExecution time: {exec_time} seconds')
+                    f.write(f'\n{addit_data}')
+                    print(f'The {"sorted" if is_sorted else "raw"} {algorithm} results can be found in {filepath}')
+    else:
+        for table_type in ['grid', 'latex']:
+            filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_raw_results.txt'
             with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(f'Results {algorithm_name}\n')
-                if is_sorted:
-                    output_results = sorted(results, key=lambda x: x[1], reverse=True)
-                else:
-                    output_results = results
-                f.write(tabulate(output_results, headers=headers, tablefmt=table_type))
+                f.write(f'{algorithm_name}\n')
                 f.write(f'\nExecution time: {exec_time} seconds')
-                f.write(f'\n{addit_data}')
-                print(f'The {"sorted" if is_sorted else "raw"} {algorithm} results can be found in {filepath}')
+                for n in n_range:
+                    # results is a dict for this algorithm
+                    f.write(f'\n\nTop {n} frequent words:\n')
+                    f.write(tabulate(results[n], headers=headers, tablefmt=table_type))
+                
+                print(f'The {algorithm} results can be found in {filepath}')
+
 
     # To evaluate algorithms memmory usage
     if algorithm == 'exact_counter':
         headers, results = evaluate_exact_counter_memory_usage(words_list)
+        memory_usage = [result[2] for result in results]
     elif algorithm == 'fixed_prob_counter':
         headers, results = evaluate_fixed_prob_counter_memory_usage(words_list)
+        memory_usage = [result[2] for result in results]
     elif algorithm == 'lossy_count':
-        headers, results = evaluate_lossy_count(words_list)
+        headers, results = evaluate_lossy_count_memory_usage(words_list)
+        memory_usage = [result[4] for result in results]
 
     filepath = f'results/{algorithm}/{language}_{algorithm}_memory_results.txt'
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -61,7 +82,6 @@ def main_command(language, algorithm):
         f.write(tabulate(results, headers=headers, tablefmt='grid'))
         print(f'The memory usage results can be found in {filepath}')
 
-    memory_usage = [result[2] for result in results]
     words = list(range(len(memory_usage)))
     plt.scatter(words, memory_usage)
     plt.xlabel('Number of Processed Words')
@@ -87,6 +107,7 @@ def evaluate_exact_counter(words_list):
     results = exact_counter_results.items()
 
     return headers, results, exec_time, ''
+
 
 def evaluate_exact_counter_memory_usage(words_list):
     counter_results = Counter(words_list)
@@ -174,6 +195,7 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
 
     return headers, results, exec_time, addit_data
 
+
 def evaluate_fixed_prob_counter_memory_usage(words_list):
     exact_counter_results, memory_usage = fixed_probability_counter_with_memory(words_list, 0.5)
 
@@ -184,8 +206,53 @@ def evaluate_fixed_prob_counter_memory_usage(words_list):
 
     
 
-def evaluate_lossy_count(words_list):
-    pass
+def evaluate_lossy_count(words_list, n_range):
+    exact_counter_results_sorted = sorted(exact_counter_basic(words_list).items(), key=lambda x: x[1], reverse=True)
+    k = 100
+
+    # My Lossy Count    
+    start_time = time.perf_counter()
+    lc = LossyCounting(k)
+    for word in words_list:
+        lc.process_item(word)
+    exec_time = time.perf_counter() - start_time
+
+    # Lossy Count to Verify
+    lc_to_verify = MugegenLossyCounting(1/k)
+    for word in words_list:
+        lc_to_verify.addCount(word)
+
+    # Verification
+    assert lc.buckets == lc_to_verify.count
+
+    headers = ['Frequent Word', 'Bucket Value', 'Expected Word', 'Exact Count']
+    results = {}
+    # Try different values of n
+    for n in n_range:
+        frequent_words = lc.get_n_most_frequent_items(n)
+        expected_frequent_words = dict(sorted(lc_to_verify.count.items(), key=lambda x: x[1], reverse=True)[:n])
+        assert frequent_words == expected_frequent_words
+        results[n] = [(word, count, *exact_counter_results_sorted[idx]) for idx, (word, count) in enumerate(frequent_words.items())]
+
+    return headers, results, exec_time, ''
+
+def evaluate_lossy_count_memory_usage(words_list):
+    k = 100
+
+    lc = LossyCounting(k)
+    lc_to_verify = MugegenLossyCounting(1/k) # Lossy Count to Verify
+    headers = ['Word', 'isNewWord', 'Word Count', 'Delta', 'Memory Usage', 'Current Buckets']
+    results = []
+    for word in words_list:
+        is_new_word = word not in lc.buckets
+        lc.process_item(word)
+        lc_to_verify.addCount(word)
+        assert lc.buckets == lc_to_verify.count
+        results.append((word, is_new_word, lc.buckets[word], lc.delta, asizeof.asizeof(lc.buckets), lc.buckets.copy()))
+
+    return headers, results
+
+
 
 
 if __name__ == "__main__":
