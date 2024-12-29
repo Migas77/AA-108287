@@ -48,7 +48,7 @@ def main_command(language, algorithm):
                         output_results = results
                     f.write(f'Results {algorithm_name}\n')
                     f.write(tabulate(output_results, headers=headers, tablefmt=table_type))
-                    f.write(f'\nExecution time: {exec_time} seconds')
+                    f.write(f'\n\nExecution time: {exec_time} seconds')
                     f.write(f'\n{addit_data}')
                     print(f'The {"sorted" if is_sorted else "raw"} {algorithm} results can be found in {filepath}')
     else:
@@ -61,7 +61,7 @@ def main_command(language, algorithm):
                     # results is a dict for this algorithm
                     f.write(f'\n\nTop {n} frequent words:\n')
                     f.write(tabulate(results[n], headers=headers, tablefmt=table_type))
-                
+                f.write(f'\n\n{addit_data}')
                 print(f'The {algorithm} results can be found in {filepath}')
 
 
@@ -151,15 +151,15 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
     exec_time = sum(t for t in exec_times) / n_iters
 
     headers = [
-        'Word', '# Occurrences', f'Mean Count', f'Mean Estimated Count (MEC)', 'Expected Count',
-        f'MEC Abs. Err.',
-        f'MEC Rel. Err.',
-        f'Mean Abs. Err.',
-        f'Max Abs. Err.',
-        f'Min Abs. Err.',
-        f'Mean Rel. Err.',
-        f'Max Rel. Err.',
-        f'Min Rel. Err.',
+        'Word', '# Occurrences', 'Mean Count', 'Mean Estimated Count (MEC)', 'Expected Count',
+        'MEC Abs. Err.',
+        'MEC Rel. Err.',
+        'Mean Abs. Err.',
+        'Max Abs. Err.',
+        'Min Abs. Err.',
+        'Mean Rel. Err.',
+        'Max Rel. Err.',
+        'Min Rel. Err.',
     ]
 
     for word, count in total_counts.items():
@@ -225,16 +225,40 @@ def evaluate_lossy_count(words_list, n_range):
     # Verification
     assert lc.buckets == lc_to_verify.count
 
-    headers = ['Frequent Word', 'Bucket Value', 'Expected Word', 'Exact Count']
+    headers = ['Frequent Word', 'Bucket Value', 'Expected Word', 'Exact Count',
+                'Abs. Err.',
+                'Rel. Err.',
+    ]
     results = {}
     # Try different values of n
     for n in n_range:
         frequent_words = lc.get_n_most_frequent_items(n)
         expected_frequent_words = dict(sorted(lc_to_verify.count.items(), key=lambda x: x[1], reverse=True)[:n])
         assert frequent_words == expected_frequent_words
-        results[n] = [(word, count, *exact_counter_results_sorted[idx]) for idx, (word, count) in enumerate(frequent_words.items())]
+        results[n] = [(word, count, exact_counter_results_sorted[idx][0], exact_counter_results_sorted[idx][1],
+                       np.abs(count - exact_counter_results_sorted[idx][1]),
+                       np.abs(count - exact_counter_results_sorted[idx][1]) / exact_counter_results_sorted[idx][1])
+        for idx, (word, count) in enumerate(frequent_words.items())]
 
-    return headers, results, exec_time, ''
+    absolute_error_top_words = [result[4] for result in results[n]]
+    relative_error_top_words = [result[5] for result in results[n]]
+    mean_absolute_error_top_words = np.mean(absolute_error_top_words)
+    max_absolute_error_top_words = np.max(absolute_error_top_words)
+    min_absolute_error_top_words = np.min(absolute_error_top_words)
+    mean_relative_error_top_words = np.mean(relative_error_top_words)
+    max_relative_error_top_words = np.max(relative_error_top_words)
+    min_relative_error_top_words = np.min(relative_error_top_words)
+
+    addit_data = (
+        f"Mean Absolute Error Top {n} Words: {mean_absolute_error_top_words}\n"
+        f"Max Absolute Error Top {n} Words: {max_absolute_error_top_words}\n"
+        f"Min Absolute Error Top {n} Words: {min_absolute_error_top_words}\n"
+        f"Mean Relative Error Top {n} Words: {mean_relative_error_top_words}\n"
+        f"Max Relative Error Top {n} Words: {max_relative_error_top_words}\n"
+        f"Min Relative Error Top {n} Words: {min_relative_error_top_words}"
+    )
+
+    return headers, results, exec_time, addit_data
 
 def evaluate_lossy_count_memory_usage(words_list):
     k = 100
