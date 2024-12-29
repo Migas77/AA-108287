@@ -20,26 +20,31 @@ def main_command(language, algorithm):
     }
 
     words_list = read_text_to_word_list(*book_args_by_language[language])
+    n_iters = 10
 
     # To evaluate algorithms results and execution time
     if algorithm == 'exact_counter':
-        headers, results, exec_time = evaluate_exact_counter(words_list)
+        headers, results, exec_time, addit_data = evaluate_exact_counter(words_list)
+        algorithm_name = 'Exact Counter Algorithm'
     elif algorithm == 'fixed_prob_counter':
-        headers, results, exec_time = evaluate_fixed_prob_counter(words_list)
+        headers, results, exec_time, addit_data = evaluate_fixed_prob_counter(words_list, n_iters)
+        algorithm_name = f'Fixed Probability Counter Algorithm: 1/2 (n_iters={n_iters})'
     elif algorithm == 'lossy_count':
-        headers, results, exec_time = evaluate_lossy_count(words_list)
+        headers, results, exec_time, addit_data = evaluate_lossy_count(words_list)
+        algorithm_name = 'Lossy Counting Algorithm'
 
     for table_type in ['grid', 'latex']:
         for is_sorted in [True, False]:
             filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_{"sorted" if is_sorted else "raw"}_results.txt'
             with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(f'{algorithm} results\n')
+                f.write(f'Results {algorithm_name}\n')
                 if is_sorted:
                     output_results = sorted(results, key=lambda x: x[1], reverse=True)
                 else:
                     output_results = results
                 f.write(tabulate(output_results, headers=headers, tablefmt=table_type))
                 f.write(f'\nExecution time: {exec_time} seconds')
+                f.write(f'\n{addit_data}')
                 print(f'The {"sorted" if is_sorted else "raw"} {algorithm} results can be found in {filepath}')
 
     # To evaluate algorithms memmory usage
@@ -55,13 +60,6 @@ def main_command(language, algorithm):
         f.write(f'{algorithm} memory usage\n')
         f.write(tabulate(results, headers=headers, tablefmt='grid'))
         print(f'The memory usage results can be found in {filepath}')
-
-    if algorithm == 'exact_counter':
-        algorithm_name = 'Exact Counter Algorithm'
-    elif algorithm == 'fixed_prob_counter':
-        algorithm_name = 'Fixed Probability Counter Algorithm: 1/2'
-    elif algorithm == 'lossy_count':
-        algorithm_name = 'Lossy Counting Algorithm'
 
     memory_usage = [result[2] for result in results]
     words = list(range(len(memory_usage)))
@@ -88,7 +86,7 @@ def evaluate_exact_counter(words_list):
     headers = ['Word', 'ExactCount']
     results = exact_counter_results.items()
 
-    return headers, results, exec_time
+    return headers, results, exec_time, ''
 
 def evaluate_exact_counter_memory_usage(words_list):
     counter_results = Counter(words_list)
@@ -102,9 +100,8 @@ def evaluate_exact_counter_memory_usage(words_list):
     return headers, results
 
 
-def evaluate_fixed_prob_counter(words_list, n_iters=10):
+def evaluate_fixed_prob_counter(words_list, n_iters):
     assert n_iters > 0
-    is_mean_string = 'Mean' if n_iters > 1 else ''
     exact_counter_results = exact_counter_basic(words_list)
     prob = 1/2
     inverse_prob = 1 / prob
@@ -133,12 +130,13 @@ def evaluate_fixed_prob_counter(words_list, n_iters=10):
     exec_time = sum(t for t in exec_times) / n_iters
 
     headers = [
-        'Word', '# Occurrences', f'{is_mean_string} Count', f'{is_mean_string} Estimated Count', 'Expected Count',
-        f'{is_mean_string} Abs. Err.',
-        f'{is_mean_string} Abs. Err.',
+        'Word', '# Occurrences', f'Mean Count', f'Mean Estimated Count (MEC)', 'Expected Count',
+        f'MEC Abs. Err.',
+        f'MEC Rel. Err.',
+        f'Mean Abs. Err.',
         f'Max Abs. Err.',
         f'Min Abs. Err.',
-        f'{is_mean_string} Rel. Err.',
+        f'Mean Rel. Err.',
         f'Max Rel. Err.',
         f'Min Rel. Err.',
     ]
@@ -154,6 +152,7 @@ def evaluate_fixed_prob_counter(words_list, n_iters=10):
     results = [
         (word, word_occurences[word], average_count, average_count * inverse_prob, exact_counter_results[word], 
          abs(average_count * inverse_prob - exact_counter_results[word]),
+         abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word],
          np.mean([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          max([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          min([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
@@ -162,7 +161,18 @@ def evaluate_fixed_prob_counter(words_list, n_iters=10):
          min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]))
     for word, average_count in total_counts.items()]
 
-    return headers, results, exec_time
+    mean_abs_error_all_words = np.mean([abs(count * inverse_prob - exact_counter_results[word]) for word, counts in word_counts.items() for count in counts])
+    mean_rel_error_all_words = np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for word, counts in word_counts.items() for count in counts])
+    
+    mean_of_mean_abs_error = np.mean([result[7] for result in results])
+    mean_of_mean_rel_error = np.mean([result[10] for result in results])
+
+    assert round(mean_abs_error_all_words, 4) == round(mean_of_mean_abs_error, 4)
+    assert round(mean_rel_error_all_words, 4) == round(mean_of_mean_rel_error, 4)
+
+    addit_data = f'Mean Absolute Error All Words: {mean_abs_error_all_words}\nMean Relative Error All Words: {mean_rel_error_all_words}'
+
+    return headers, results, exec_time, addit_data
 
 def evaluate_fixed_prob_counter_memory_usage(words_list):
     exact_counter_results, memory_usage = fixed_probability_counter_with_memory(words_list, 0.5)
