@@ -18,7 +18,7 @@ from lossy_count_to_verify import MugegenLossyCounting
 def main_command(language, algorithm):
     book_args_by_language = {
         'english': ('romeo_and_juliet_book/romeo_and_juliet_english.txt', 'english'),
-        'french': ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french', '====================================================='),
+        'french': ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french', 'quelque restriction.'),
         'german': ('romeo_and_juliet_book/romeo_and_juliet_german.txt', 'german', 'http://gutenberg2000.de erreichbar.')
     }
 
@@ -105,8 +105,13 @@ def evaluate_exact_counter(words_list):
 
     headers = ['Word', 'ExactCount']
     results = exact_counter_results.items()
+    number_of_words_counted = sum(exact_counter_results.values())
 
-    return headers, results, exec_time, ''
+    addit_data = (
+        f'Number of Words Counted: {number_of_words_counted}'
+    )
+
+    return headers, results, exec_time, addit_data
 
 
 def evaluate_exact_counter_memory_usage(words_list):

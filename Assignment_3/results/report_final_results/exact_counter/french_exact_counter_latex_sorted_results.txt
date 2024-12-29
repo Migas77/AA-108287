@@ -3,497 +3,420 @@ Results Exact Counter Algorithm
 \hline
  Word                      &   ExactCount \\
 \hline
- a                         &          204 \\
- plus                      &          177 \\
- roméo                     &          175 \\
- si                        &          170 \\
- cette                     &          137 \\
- bien                      &          134 \\
- mort                      &          119 \\
- comme                     &          112 \\
- cest                      &          112 \\
- juliette                  &          107 \\
- frère                     &          103 \\
- tout                      &           94 \\
- où                        &           80 \\
- note                      &           78 \\
- nuit                      &           77 \\
- dun                       &           77 \\
- quil                      &           74 \\
- encore                    &           68 \\
- faire                     &           67 \\
+ a                         &          177 \\
+ si                        &          159 \\
+ plus                      &          154 \\
+ roméo                     &          140 \\
+ bien                      &          129 \\
+ cette                     &          123 \\
+ mort                      &          106 \\
+ cest                      &          103 \\
+ frère                     &           97 \\
+ comme                     &           96 \\
+ tout                      &           89 \\
+ nuit                      &           76 \\
+ note                      &           75 \\
+ juliette                  &           73 \\
+ où                        &           73 \\
+ dun                       &           72 \\
  signora                   &           67 \\
- capulet                   &           66 \\
- aussi                     &           66 \\
- donc                      &           65 \\
- deux                      &           63 \\
- dune                      &           63 \\
- ici                       &           63 \\
+ encore                    &           66 \\
+ capulet                   &           65 \\
+ faire                     &           64 \\
+ donc                      &           64 \\
  tybalt                    &           61 \\
- fait                      &           59 \\
- sans                      &           59 \\
+ ici                       &           61 \\
+ aussi                     &           59 \\
+ deux                      &           58 \\
  jour                      &           58 \\
- the                       &           57 \\
- homme                     &           56 \\
- nest                      &           55 \\
- car                       &           55 \\
- entre                     &           54 \\
- quelle                    &           53 \\
- nourrice                  &           53 \\
- ainsi                     &           52 \\
- tous                      &           52 \\
- point                     &           52 \\
- là                        &           51 \\
- lamour                    &           51 \\
+ dune                      &           57 \\
+ quil                      &           57 \\
+ homme                     &           55 \\
+ the                       &           54 \\
+ fait                      &           54 \\
+ car                       &           53 \\
+ quelle                    &           52 \\
+ nourrice                  &           51 \\
+ nest                      &           51 \\
  jai                       &           50 \\
- cela                      &           47 \\
+ tous                      &           49 \\
+ là                        &           49 \\
+ point                     &           48 \\
+ sans                      &           48 \\
+ entre                     &           47 \\
+ ainsi                     &           47 \\
  voilà                     &           46 \\
- dit                       &           45 \\
- seigneur                  &           45 \\
- trop                      &           45 \\
- yeux                      &           43 \\
- être                      &           42 \\
- jeune                     &           42 \\
- amour                     &           42 \\
- quelque                   &           41 \\
- coeur                     &           41 \\
- montaigu                  &           40 \\
- celui                     &           40 \\
- mercutio                  &           39 \\
- dire                      &           39 \\
- shakspeare                &           39 \\
- quand                     &           39 \\
- avant                     &           38 \\
- non                       &           38 \\
- jamais                    &           37 \\
- vie                       &           37 \\
- temps                     &           36 \\
- dont                      &           36 \\
+ cela                      &           45 \\
+ seigneur                  &           44 \\
+ lamour                    &           42 \\
+ yeux                      &           41 \\
+ amour                     &           40 \\
+ jeune                     &           39 \\
+ montaigu                  &           39 \\
+ trop                      &           39 \\
+ être                      &           38 \\
+ coeur                     &           38 \\
+ non                       &           37 \\
+ celui                     &           37 \\
+ quelque                   &           37 \\
+ dit                       &           37 \\
+ quand                     &           36 \\
+ jamais                    &           36 \\
+ avant                     &           36 \\
  bonne                     &           36 \\
- veux                      &           35 \\
  fille                     &           35 \\
+ dire                      &           35 \\
  mot                       &           35 \\
  oh                        &           35 \\
  nom                       &           35 \\
- terre                     &           34 \\
- scène                     &           33 \\
+ veux                      &           34 \\
+ vie                       &           34 \\
+ terre                     &           33 \\
  ciel                      &           33 \\
- sous                      &           32 \\
- père                      &           32 \\
- main                      &           32 \\
- cher                      &           32 \\
  pâris                     &           32 \\
- fois                      &           31 \\
- toute                     &           31 \\
+ dont                      &           32 \\
  entrent                   &           31 \\
  va                        &           31 \\
  vais                      &           31 \\
+ cher                      &           31 \\
  faut                      &           30 \\
  sortent                   &           30 \\
+ père                      &           30 \\
  sort                      &           30 \\
- alors                     &           29 \\
- cet                       &           29 \\
- peut                      &           29 \\
- dieu                      &           29 \\
- vers                      &           29 \\
- trouver                   &           28 \\
- tombeau                   &           28 \\
- nen                       &           28 \\
- o                         &           28 \\
- femme                     &           28 \\
+ scène                     &           29 \\
+ temps                     &           29 \\
+ main                      &           29 \\
+ mercutio                  &           28 \\
+ peut                      &           28 \\
  madame                    &           28 \\
- bon                       &           27 \\
- i                         &           27 \\
- belle                     &           27 \\
- laurence                  &           27 \\
+ dieu                      &           28 \\
+ femme                     &           27 \\
+ toute                     &           27 \\
+ sous                      &           27 \\
  premier                   &           27 \\
  moment                    &           27 \\
+ nen                       &           27 \\
+ vers                      &           27 \\
  lit                       &           27 \\
  dis                       &           27 \\
+ trouver                   &           27 \\
+ o                         &           27 \\
  tué                       &           27 \\
- voir                      &           26 \\
- autre                     &           26 \\
- quoi                      &           25 \\
- maison                    &           25 \\
- toutes                    &           25 \\
- of                        &           25 \\
+ i                         &           26 \\
+ bon                       &           26 \\
  prince                    &           25 \\
+ laurence                  &           25 \\
+ fois                      &           25 \\
+ cet                       &           25 \\
  quon                      &           25 \\
- toujours                  &           24 \\
- maintenant                &           24 \\
- and                       &           24 \\
- beauté                    &           24 \\
+ alors                     &           25 \\
+ belle                     &           24 \\
  chercher                  &           24 \\
  foi                       &           24 \\
  allez                     &           24 \\
- lieu                      &           23 \\
- vu                        &           23 \\
- cependant                 &           23 \\
- quelques                  &           23 \\
- peu                       &           23 \\
- celle                     &           23 \\
- na                        &           23 \\
- fils                      &           23 \\
  allons                    &           23 \\
- vérone                    &           22 \\
- après                     &           22 \\
- leurs                     &           22 \\
- quun                      &           22 \\
- déjà                      &           22 \\
- ni                        &           22 \\
- quel                      &           22 \\
- jusquà                    &           22 \\
+ toutes                    &           23 \\
+ voir                      &           23 \\
+ maintenant                &           23 \\
+ fils                      &           22 \\
+ maison                    &           22 \\
  contre                    &           22 \\
  tête                      &           22 \\
+ of                        &           22 \\
  seulement                 &           22 \\
- second                    &           21 \\
- avoir                     &           21 \\
- morte                     &           21 \\
- rien                      &           21 \\
+ autre                     &           22 \\
+ beauté                    &           22 \\
+ tombeau                   &           22 \\
  hommes                    &           21 \\
  sang                      &           21 \\
+ quoi                      &           21 \\
+ quun                      &           21 \\
+ jusquà                    &           21 \\
  maîtresse                 &           21 \\
- moins                     &           20 \\
- quils                     &           20 \\
- seul                      &           20 \\
- mal                       &           20 \\
- sens                      &           20 \\
+ na                        &           21 \\
+ and                       &           21 \\
  pourquoi                  &           20 \\
+ vu                        &           20 \\
  jen                       &           20 \\
- fête                      &           19 \\
- monde                     &           19 \\
- mots                      &           19 \\
- mère                      &           19 \\
- cousin                    &           19 \\
- corps                     &           19 \\
- my                        &           19 \\
+ quel                      &           20 \\
+ second                    &           20 \\
+ leurs                     &           19 \\
+ rien                      &           19 \\
  maître                    &           19 \\
  comment                   &           19 \\
+ mal                       &           19 \\
+ déjà                      &           19 \\
+ lieu                      &           19 \\
  comte                     &           19 \\
  voudrais                  &           19 \\
  viens                     &           19 \\
- soir                      &           18 \\
- puis                      &           18 \\
- banni                     &           18 \\
- autres                    &           18 \\
- tant                      &           18 \\
- sest                      &           18 \\
- garde                     &           18 \\
- lèvres                    &           18 \\
  ami                       &           18 \\
  benvolio                  &           18 \\
+ corps                     &           18 \\
+ toujours                  &           18 \\
  oui                       &           18 \\
  matin                     &           18 \\
+ seul                      &           18 \\
+ cousin                    &           18 \\
+ celle                     &           18 \\
  ceci                      &           18 \\
  enfant                    &           18 \\
+ monde                     &           18 \\
+ mère                      &           18 \\
  men                       &           18 \\
- dame                      &           17 \\
- aller                     &           17 \\
- rendre                    &           17 \\
- domestique                &           17 \\
- poison                    &           17 \\
- mourir                    &           17 \\
- vérité                    &           17 \\
- ny                        &           17 \\
- soleil                    &           17 \\
- bonheur                   &           17 \\
- veut                      &           17 \\
- paix                      &           17 \\
+ ni                        &           18 \\
  seule                     &           17 \\
+ sens                      &           17 \\
+ mots                      &           17 \\
+ sest                      &           17 \\
+ puis                      &           17 \\
  chose                     &           17 \\
  vois                      &           17 \\
+ soir                      &           17 \\
+ fête                      &           17 \\
+ my                        &           17 \\
+ cependant                 &           17 \\
+ lèvres                    &           17 \\
  cellule                   &           17 \\
  nouvelles                 &           17 \\
- longtemps                 &           16 \\
- sil                       &           16 \\
- petite                    &           16 \\
- grand                     &           16 \\
- larmes                    &           16 \\
- vieux                     &           16 \\
- porte                     &           16 \\
- in                        &           16 \\
- lumière                   &           16 \\
- to                        &           16 \\
+ banni                     &           17 \\
+ domestique                &           16 \\
  vient                     &           16 \\
+ quelques                  &           16 \\
  elles                     &           16 \\
+ tant                      &           16 \\
+ paix                      &           16 \\
+ aller                     &           16 \\
  heure                     &           16 \\
+ soleil                    &           16 \\
  doux                      &           16 \\
  sais                      &           16 \\
+ garde                     &           16 \\
  chagrin                   &           16 \\
+ veut                      &           16 \\
+ bonheur                   &           16 \\
  adieu                     &           16 \\
+ dame                      &           16 \\
  ah                        &           16 \\
- depuis                    &           15 \\
- lun                       &           15 \\
- presque                   &           15 \\
- près                      &           15 \\
- mantoue                   &           15 \\
- sein                      &           15 \\
- beau                      &           15 \\
- that                      &           15 \\
  heures                    &           15 \\
  you                       &           15 \\
+ rendre                    &           15 \\
+ porte                     &           15 \\
+ moins                     &           15 \\
+ to                        &           15 \\
+ quils                     &           15 \\
  plaisir                   &           15 \\
+ lumière                   &           15 \\
+ larmes                    &           15 \\
  pauvre                    &           15 \\
+ mourir                    &           15 \\
  quune                     &           15 \\
+ poison                    &           15 \\
  prie                      &           15 \\
+ petite                    &           15 \\
  visage                    &           15 \\
- mains                     &           14 \\
- lautre                    &           14 \\
- côté                      &           14 \\
- venir                     &           14 \\
- lettre                    &           14 \\
- pu                        &           14 \\
- part                      &           14 \\
- mieux                     &           14 \\
- for                       &           14 \\
- assez                     &           14 \\
- parle                     &           14 \\
+ morte                     &           15 \\
+ vérone                    &           14 \\
+ mantoue                   &           14 \\
+ peu                       &           14 \\
  querelle                  &           14 \\
  épée                      &           14 \\
  hors                      &           14 \\
+ vieux                     &           14 \\
  ô                         &           14 \\
+ sein                      &           14 \\
+ beau                      &           14 \\
+ autres                    &           14 \\
  voix                      &           14 \\
  doit                      &           14 \\
+ vérité                    &           14 \\
+ sil                       &           14 \\
  demain                    &           14 \\
  saint                     &           14 \\
  époux                     &           14 \\
- souvent                   &           13 \\
- peutêtre                  &           13 \\
- bientôt                   &           13 \\
- coup                      &           13 \\
- voyez                     &           13 \\
- mur                       &           13 \\
- mettre                    &           13 \\
- nouvelle                  &           13 \\
- tuer                      &           13 \\
- parce                     &           13 \\
- sommeil                   &           13 \\
- âme                       &           13 \\
- is                        &           13 \\
- acte                      &           13 \\
- loin                      &           13 \\
+ mains                     &           13 \\
+ for                       &           13 \\
+ that                      &           13 \\
  monsieur                  &           13 \\
  réponds                   &           13 \\
  estce                     &           13 \\
+ depuis                    &           13 \\
  joie                      &           13 \\
+ grand                     &           13 \\
  ten                       &           13 \\
+ venir                     &           13 \\
+ ny                        &           13 \\
  amant                     &           13 \\
+ après                     &           13 \\
+ parle                     &           13 \\
  roméoje                   &           13 \\
+ mieux                     &           13 \\
+ lettre                    &           13 \\
  jeudi                     &           13 \\
- jeunes                    &           12 \\
- ans                       &           12 \\
- milieu                    &           12 \\
- chez                      &           12 \\
- douleur                   &           12 \\
- luimême                   &           12 \\
- tombe                     &           12 \\
- personne                  &           12 \\
  haine                     &           12 \\
+ mettre                    &           12 \\
+ côté                      &           12 \\
+ mur                       &           12 \\
  loi                       &           12 \\
+ part                      &           12 \\
+ loin                      &           12 \\
+ coup                      &           12 \\
  traître                   &           12 \\
+ lautre                    &           12 \\
+ âme                       &           12 \\
+ assez                     &           12 \\
  parler                    &           12 \\
+ longtemps                 &           12 \\
+ voyez                     &           12 \\
+ près                      &           12 \\
  mariage                   &           12 \\
  damour                    &           12 \\
  julietteje                &           12 \\
  fort                      &           12 \\
  fidèle                    &           12 \\
- ville                     &           11 \\
- autant                    &           11 \\
- ceux                      &           11 \\
- léglise                   &           11 \\
- fin                       &           11 \\
- poignard                  &           11 \\
- suite                     &           11 \\
- forme                     &           11 \\
- plein                     &           11 \\
- font                      &           11 \\
- quen                      &           11 \\
- air                       &           11 \\
+ bientôt                   &           12 \\
+ acte                      &           11 \\
+ in                        &           11 \\
+ shakspeare                &           11 \\
  pied                      &           11 \\
  chambre                   &           11 \\
+ lun                       &           11 \\
+ pu                        &           11 \\
+ sommeil                   &           11 \\
  peux                      &           11 \\
  demande                   &           11 \\
+ parce                     &           11 \\
+ personne                  &           11 \\
  jours                     &           11 \\
  besoin                    &           11 \\
  jure                      &           11 \\
+ avoir                     &           11 \\
  mariée                    &           11 \\
  fleur                     &           11 \\
  force                     &           11 \\
+ is                        &           11 \\
  donnemoi                  &           11 \\
  fais                      &           11 \\
  chère                     &           11 \\
  péché                     &           11 \\
  sons                      &           11 \\
+ tuer                      &           11 \\
+ tombe                     &           11 \\
  malheur                   &           11 \\
- della                     &           10 \\
- girolamo                  &           10 \\
- vingt                     &           10 \\
- masque                    &           10 \\
- venu                      &           10 \\
- parole                    &           10 \\
- audessus                  &           10 \\
- cavalier                  &           10 \\
- selon                     &           10 \\
- paraît                    &           10 \\
- vue                       &           10 \\
- paroles                   &           10 \\
- mesure                    &           10 \\
- fleurs                    &           10 \\
- court                     &           10 \\
- douce                     &           10 \\
- pâle                      &           10 \\
  neveu                     &           10 \\
  femmes                    &           10 \\
  funeste                   &           10 \\
  donner                    &           10 \\
+ suite                     &           10 \\
  peine                     &           10 \\
  it                        &           10 \\
  jeu                       &           10 \\
  ennemi                    &           10 \\
+ chez                      &           10 \\
  cause                     &           10 \\
+ quen                      &           10 \\
+ font                      &           10 \\
  donne                     &           10 \\
+ plein                     &           10 \\
  venez                     &           10 \\
+ ceux                      &           10 \\
  estu                      &           10 \\
  rosaline                  &           10 \\
+ ans                       &           10 \\
  cétait                    &           10 \\
  gentilhomme               &           10 \\
+ air                       &           10 \\
  hélas                     &           10 \\
  vaten                     &           10 \\
  malheureux                &           10 \\
+ poignard                  &           10 \\
  monument                  &           10 \\
- telle                     &            9 \\
- partie                    &            9 \\
- gens                      &            9 \\
- danse                     &            9 \\
- heureux                   &            9 \\
- moyen                     &            9 \\
- pouvoir                   &            9 \\
- véritable                 &            9 \\
- dernière                  &            9 \\
- raison                    &            9 \\
- sentiments                &            9 \\
- fond                      &            9 \\
- vraiment                  &            9 \\
- amants                    &            9 \\
- joues                     &            9 \\
- filles                    &            9 \\
- peur                      &            9 \\
- lorsque                   &            9 \\
  parent                    &            9 \\
  pierre                    &            9 \\
+ parole                    &            9 \\
  quelles                   &            9 \\
+ vue                       &            9 \\
  ferme                     &            9 \\
  devant                    &            9 \\
  signifie                  &            9 \\
  appelle                   &            9 \\
  arrivé                    &            9 \\
+ audessus                  &            9 \\
  heureuse                  &            9 \\
  regard                    &            9 \\
  noble                     &            9 \\
+ fleurs                    &            9 \\
  os                        &            9 \\
+ mesure                    &            9 \\
  servir                    &            9 \\
+ masque                    &            9 \\
+ cavalier                  &            9 \\
  misérable                 &            9 \\
  will                      &            9 \\
+ douce                     &            9 \\
  sainte                    &            9 \\
  roméocest                 &            9 \\
  dêtre                     &            9 \\
+ court                     &            9 \\
  musique                   &            9 \\
  bannissement              &            9 \\
  cimetière                 &            9 \\
- donné                     &            8 \\
- grande                    &            8 \\
- laquelle                  &            8 \\
- prendre                   &            8 \\
- esprit                    &            8 \\
- plusieurs                 &            8 \\
- première                  &            8 \\
- surlechamp                &            8 \\
- choses                    &            8 \\
- reçu                      &            8 \\
- religieux                 &            8 \\
- trouve                    &            8 \\
- livre                     &            8 \\
- voit                      &            8 \\
- poëme                     &            8 \\
- passion                   &            8 \\
- pièce                     &            8 \\
- tel                       &            8 \\
- prête                     &            8 \\
- misère                    &            8 \\
- reste                     &            8 \\
- grâce                     &            8 \\
- thou                      &            8 \\
- nai                       &            8 \\
  samson                    &            8 \\
  trois                     &            8 \\
  page                      &            8 \\
+ presque                   &            8 \\
  pourrait                  &            8 \\
  fera                      &            8 \\
  out                       &            8 \\
  puisse                    &            8 \\
+ filles                    &            8 \\
  courage                   &            8 \\
+ vraiment                  &            8 \\
  bruit                     &            8 \\
  lair                      &            8 \\
  parti                     &            8 \\
  trouvé                    &            8 \\
  sortir                    &            8 \\
+ ville                     &            8 \\
  nuages                    &            8 \\
  moyens                    &            8 \\
  moimême                   &            8 \\
  dautres                   &            8 \\
+ luimême                   &            8 \\
+ heureux                   &            8 \\
+ jeunes                    &            8 \\
  volonté                   &            8 \\
  plutôt                    &            8 \\
+ amants                    &            8 \\
+ moyen                     &            8 \\
  front                     &            8 \\
  épouse                    &            8 \\
+ milieu                    &            8 \\
  pourra                    &            8 \\
+ douleur                   &            8 \\
  pareil                    &            8 \\
  voici                     &            8 \\
  dici                      &            8 \\
+ venu                      &            8 \\
  frappe                    &            8 \\
  souris                    &            8 \\
+ raison                    &            8 \\
  good                      &            8 \\
  tard                      &            8 \\
+ peur                      &            8 \\
  laisser                   &            8 \\
  atil                      &            8 \\
  honte                     &            8 \\
  baiser                    &            8 \\
+ fin                       &            8 \\
+ lorsque                   &            8 \\
+ pâle                      &            8 \\
+ joues                     &            8 \\
+ vingt                     &            8 \\
  rester                    &            8 \\
  goose                     &            8 \\
  nourriceo                 &            8 \\
- corte                     &            7 \\
- également                 &            7 \\
- rue                       &            7 \\
- fenêtre                   &            7 \\
- amours                    &            7 \\
- den                       &            7 \\
- passer                    &            7 \\
- linstant                  &            7 \\
- etc                       &            7 \\
- lon                       &            7 \\
- or                        &            7 \\
- apparence                 &            7 \\
- lhistoire                 &            7 \\
- da                        &            7 \\
- poëte                     &            7 \\
- unique                    &            7 \\
- impossible                &            7 \\
- nature                    &            7 \\
- lhomme                    &            7 \\
- lâme                      &            7 \\
- simple                    &            7 \\
- grands                    &            7 \\
- étoiles                   &            7 \\
- songe                     &            7 \\
- quelquefois               &            7 \\
- pétrarque                 &            7 \\
- laisse                    &            7 \\
- liberté                   &            7 \\
- delle                     &            7 \\
- thy                       &            7 \\
- not                       &            7 \\
- was                       &            7 \\
- be                        &            7 \\
- troisième                 &            7 \\
+ léglise                   &            8 \\
  maisons                   &            7 \\
  balthasar                 &            7 \\
  musiciens                 &            7 \\
@@ -504,18 +427,26 @@ Results Exact Counter Algorithm
  vont                      &            7 \\
  fallu                     &            7 \\
  fer                       &            7 \\
+ souvent                   &            7 \\
+ partie                    &            7 \\
  langue                    &            7 \\
  prompt                    &            7 \\
+ telle                     &            7 \\
+ thou                      &            7 \\
  am                        &            7 \\
  pouce                     &            7 \\
  usage                     &            7 \\
+ voit                      &            7 \\
  entrer                    &            7 \\
  lépée                     &            7 \\
  faites                    &            7 \\
  holà                      &            7 \\
  mauvaise                  &            7 \\
  nouveau                   &            7 \\
+ dernière                  &            7 \\
+ choses                    &            7 \\
  savoir                    &            7 \\
+ paraît                    &            7 \\
  estil                     &            7 \\
  lusage                    &            7 \\
  amoureux                  &            7 \\
@@ -528,17 +459,22 @@ Results Exact Counter Algorithm
  personnes                 &            7 \\
  écrit                     &            7 \\
  roméooui                  &            7 \\
+ misère                    &            7 \\
  connais                   &            7 \\
  dirai                     &            7 \\
  oeil                      &            7 \\
+ pouvoir                   &            7 \\
  vienne                    &            7 \\
  by                        &            7 \\
  mari                      &            7 \\
+ grâce                     &            7 \\
  marier                    &            7 \\
+ nai                       &            7 \\
  semble                    &            7 \\
  sombre                    &            7 \\
  from                      &            7 \\
  loeil                     &            7 \\
+ véritable                 &            7 \\
  pardonne                  &            7 \\
  lai                       &            7 \\
  quelquun                  &            7 \\
@@ -549,6 +485,7 @@ Results Exact Counter Algorithm
  voûte                     &            7 \\
  julietteo                 &            7 \\
  bras                      &            7 \\
+ donné                     &            7 \\
  fortune                   &            7 \\
  revient                   &            7 \\
  argentins                 &            7 \\
@@ -559,71 +496,48 @@ Results Exact Counter Algorithm
  roméotu                   &            7 \\
  dépêchezvous              &            7 \\
  levezvous                 &            7 \\
- rues                      &            6 \\
- sorte                     &            6 \\
- amis                      &            6 \\
- bout                      &            6 \\
- doù                       &            6 \\
- beaucoup                  &            6 \\
- ennemis                   &            6 \\
- aussitôt                  &            6 \\
- ensemble                  &            6 \\
- lavait                    &            6 \\
- davoir                    &            6 \\
- passé                     &            6 \\
- forte                     &            6 \\
- oncle                     &            6 \\
- dabord                    &            6 \\
- sujet                     &            6 \\
- luigi                     &            6 \\
- porto                     &            6 \\
- brooke                    &            6 \\
- tandis                    &            6 \\
- meurt                     &            6 \\
- lesprit                   &            6 \\
- désespoir                 &            6 \\
- cours                     &            6 \\
- nulle                     &            6 \\
- pourtant                  &            6 \\
- jeunesse                  &            6 \\
- change                    &            6 \\
- voulu                     &            6 \\
- terme                     &            6 \\
- dès                       &            6 \\
- contraire                 &            6 \\
- semblable                 &            6 \\
- flambeau                  &            6 \\
- no                        &            6 \\
- nes                       &            6 \\
- aimable                   &            6 \\
- cour                      &            6 \\
+ religieux                 &            6 \\
+ gens                      &            6 \\
+ étoiles                   &            6 \\
  malheurs                  &            6 \\
  oreille                   &            6 \\
  well                      &            6 \\
+ be                        &            6 \\
  an                        &            6 \\
+ lon                       &            6 \\
  chaque                    &            6 \\
  instant                   &            6 \\
  demander                  &            6 \\
  brave                     &            6 \\
  chien                     &            6 \\
+ or                        &            6 \\
  their                     &            6 \\
+ impossible                &            6 \\
  intention                 &            6 \\
  battent                   &            6 \\
  face                      &            6 \\
  voulezvous                &            6 \\
  querelles                 &            6 \\
  quitter                   &            6 \\
+ selon                     &            6 \\
+ nouvelle                  &            6 \\
  ancienne                  &            6 \\
  aujourdhui                &            6 \\
  bois                      &            6 \\
  humeur                    &            6 \\
+ forme                     &            6 \\
  vite                      &            6 \\
+ etc                       &            6 \\
+ trouve                    &            6 \\
  feu                       &            6 \\
  pleurer                   &            6 \\
  roméoeh                   &            6 \\
  questce                   &            6 \\
+ tel                       &            6 \\
  but                       &            6 \\
  riche                     &            6 \\
+ livre                     &            6 \\
+ rue                       &            6 \\
  pense                     &            6 \\
  quatorze                  &            6 \\
  tôt                       &            6 \\
@@ -631,31 +545,46 @@ Results Exact Counter Algorithm
  benvolioallons            &            6 \\
  fou                       &            6 \\
  répondre                  &            6 \\
+ reste                     &            6 \\
  saintpierre               &            6 \\
  présent                   &            6 \\
  mille                     &            6 \\
+ grande                    &            6 \\
+ surlechamp                &            6 \\
  cinq                      &            6 \\
  espèce                    &            6 \\
  torche                    &            6 \\
  souliers                  &            6 \\
+ prendre                   &            6 \\
  mouse                     &            6 \\
  gris                      &            6 \\
+ songe                     &            6 \\
  rêvent                    &            6 \\
  couché                    &            6 \\
  mercutiooh                &            6 \\
  pointe                    &            6 \\
  devient                   &            6 \\
+ delle                     &            6 \\
  faute                     &            6 \\
  voulez                    &            6 \\
  remercie                  &            6 \\
+ unique                    &            6 \\
  douceur                   &            6 \\
  aveugle                   &            6 \\
  conjure                   &            6 \\
+ esprit                    &            6 \\
+ reçu                      &            6 \\
+ amours                    &            6 \\
  joue                      &            6 \\
  toimême                   &            6 \\
  prends                    &            6 \\
  odieux                    &            6 \\
+ nature                    &            6 \\
+ peutêtre                  &            6 \\
  cruelle                   &            6 \\
+ troisième                 &            6 \\
+ fond                      &            6 \\
+ den                       &            6 \\
  êtesvous                  &            6 \\
  lièvre                    &            6 \\
  dehors                    &            6 \\
@@ -665,62 +594,18 @@ Results Exact Counter Algorithm
  lalouette                 &            6 \\
  malheureuse               &            6 \\
  capuleto                  &            6 \\
- tragédie                  &            5 \\
- grandes                   &            5 \\
- quelquesuns               &            5 \\
- pouvait                   &            5 \\
- put                       &            5 \\
- quà                       &            5 \\
- devait                    &            5 \\
- auprès                    &            5 \\
- jardin                    &            5 \\
- famille                   &            5 \\
- celuici                   &            5 \\
- ensuite                   &            5 \\
- appris                    &            5 \\
- lavoir                    &            5 \\
- nombre                    &            5 \\
- récit                     &            5 \\
- livres                    &            5 \\
- promptement               &            5 \\
- titre                     &            5 \\
- situation                 &            5 \\
- vraie                     &            5 \\
- souffle                   &            5 \\
- moments                   &            5 \\
- état                      &            5 \\
- sentiment                 &            5 \\
- possède                   &            5 \\
- langage                   &            5 \\
- lexpression               &            5 \\
- bouche                    &            5 \\
- pièces                    &            5 \\
- midi                      &            5 \\
- personnages               &            5 \\
- couleur                   &            5 \\
- jouer                     &            5 \\
- ellemême                  &            5 \\
- montre                    &            5 \\
- regards                   &            5 \\
- occasion                  &            5 \\
- che                       &            5 \\
- sen                       &            5 \\
- manque                    &            5 \\
- nétait                    &            5 \\
- reposer                   &            5 \\
- doucement                 &            5 \\
- love                      &            5 \\
- combien                   &            5 \\
- goût                      &            5 \\
- ditil                     &            5 \\
- commence                  &            5 \\
  paris                     &            5 \\
+ oncle                     &            5 \\
  apothicaire               &            5 \\
  masques                   &            5 \\
+ ennemis                   &            5 \\
  déplorable                &            5 \\
  terrible                  &            5 \\
  enfants                   &            5 \\
+ cours                     &            5 \\
  place                     &            5 \\
+ not                       &            5 \\
+ no                        &            5 \\
  then                      &            5 \\
  we                        &            5 \\
  your                      &            5 \\
@@ -729,11 +614,13 @@ Results Exact Counter Algorithm
  français                  &            5 \\
  plaisanterie              &            5 \\
  colère                    &            5 \\
+ liberté                   &            5 \\
  pardon                    &            5 \\
  prend                     &            5 \\
  connaître                 &            5 \\
  faudra                    &            5 \\
  nestce                    &            5 \\
+ nes                       &            5 \\
  remue                     &            5 \\
  met                       &            5 \\
  cruel                     &            5 \\
@@ -743,12 +630,19 @@ Results Exact Counter Algorithm
  séparer                   &            5 \\
  tomber                    &            5 \\
  bas                       &            5 \\
+ rues                      &            5 \\
+ cour                      &            5 \\
  apprendre                 &            5 \\
+ passer                    &            5 \\
  domestiques               &            5 \\
  oreilles                  &            5 \\
+ fenêtre                   &            5 \\
  lorient                   &            5 \\
+ aussitôt                  &            5 \\
  retire                    &            5 \\
  bons                      &            5 \\
+ beaucoup                  &            5 \\
+ amis                      &            5 \\
  viennent                  &            5 \\
  longues                   &            5 \\
  réponse                   &            5 \\
@@ -756,6 +650,7 @@ Results Exact Counter Algorithm
  légère                    &            5 \\
  tristesse                 &            5 \\
  juste                     &            5 \\
+ désespoir                 &            5 \\
  penser                    &            5 \\
  oublier                   &            5 \\
  précieux                  &            5 \\
@@ -767,16 +662,23 @@ Results Exact Counter Algorithm
  làdessus                  &            5 \\
  faite                     &            5 \\
  désespéré                 &            5 \\
+ laisse                    &            5 \\
  lire                      &            5 \\
  figure                    &            5 \\
  iii                       &            5 \\
+ linstant                  &            5 \\
  have                      &            5 \\
  veille                    &            5 \\
+ bout                      &            5 \\
+ dès                       &            5 \\
  nez                       &            5 \\
+ pourtant                  &            5 \\
  fini                      &            5 \\
  davantage                 &            5 \\
  ditesvous                 &            5 \\
  traits                    &            5 \\
+ danse                     &            5 \\
+ flambeau                  &            5 \\
  ailes                     &            5 \\
  commentateurs             &            5 \\
  chats                     &            5 \\
@@ -784,18 +686,25 @@ Results Exact Counter Algorithm
  lune                      &            5 \\
  petit                     &            5 \\
  doigts                    &            5 \\
+ quelquefois               &            5 \\
  chevaux                   &            5 \\
  she                       &            5 \\
+ nulle                     &            5 \\
  when                      &            5 \\
  soudain                   &            5 \\
+ contraire                 &            5 \\
+ terme                     &            5 \\
  course                    &            5 \\
  voile                     &            5 \\
  loreille                  &            5 \\
+ passé                     &            5 \\
  attention                 &            5 \\
  tranquille                &            5 \\
  patience                  &            5 \\
  julietteoui               &            5 \\
+ change                    &            5 \\
  nourriceje                &            5 \\
+ prête                     &            5 \\
  loccasion                 &            5 \\
  élevé                     &            5 \\
  honnête                   &            5 \\
@@ -803,11 +712,13 @@ Results Exact Counter Algorithm
  blessure                  &            5 \\
  aucune                    &            5 \\
  couvert                   &            5 \\
+ paroles                   &            5 \\
  haut                      &            5 \\
  perdre                    &            5 \\
  repos                     &            5 \\
  arrive                    &            5 \\
  demeure                   &            5 \\
+ apparence                 &            5 \\
  tiens                     &            5 \\
  puisque                   &            5 \\
  mercutiocest              &            5 \\
@@ -815,6 +726,7 @@ Results Exact Counter Algorithm
  us                        &            5 \\
  wit                       &            5 \\
  loie                      &            5 \\
+ ensemble                  &            5 \\
  suivre                    &            5 \\
  cacher                    &            5 \\
  pourrais                  &            5 \\
@@ -826,69 +738,19 @@ Results Exact Counter Algorithm
  fi                        &            5 \\
  eh                        &            5 \\
  prix                      &            5 \\
+ lâme                      &            5 \\
  froide                    &            5 \\
+ voulu                     &            5 \\
  lexil                     &            5 \\
  pleure                    &            5 \\
+ meurt                     &            5 \\
  sortez                    &            5 \\
  prochain                  &            5 \\
  crainte                   &            5 \\
  laissemoi                 &            5 \\
- familles                  &            4 \\
- capitaine                 &            4 \\
- perpétuel                 &            4 \\
- beaux                     &            4 \\
- venait                    &            4 \\
- manières                  &            4 \\
- toucher                   &            4 \\
- politesse                 &            4 \\
- arriver                   &            4 \\
- lonardo                   &            4 \\
- entrée                    &            4 \\
- soin                      &            4 \\
- vieille                   &            4 \\
- distance                  &            4 \\
- voyant                    &            4 \\
- épouser                   &            4 \\
- avaler                    &            4 \\
- poudre                    &            4 \\
- retirer                   &            4 \\
- restes                    &            4 \\
- lauteur                   &            4 \\
- travail                   &            4 \\
- auquel                    &            4 \\
- doute                     &            4 \\
- anglais                   &            4 \\
- suivi                     &            4 \\
- permis                    &            4 \\
- choix                     &            4 \\
- résolution                &            4 \\
- discours                  &            4 \\
- fidélité                  &            4 \\
- éditions                  &            4 \\
- abondance                 &            4 \\
- réflexions                &            4 \\
- peint                     &            4 \\
- vrai                      &            4 \\
- partout                   &            4 \\
- chacun                    &            4 \\
- connu                     &            4 \\
- chargée                   &            4 \\
- poëtes                    &            4 \\
- coups                     &            4 \\
- cesse                     &            4 \\
- amante                    &            4 \\
- simples                   &            4 \\
- bel                       &            4 \\
- blanche                   &            4 \\
- vent                      &            4 \\
- fatiguée                  &            4 \\
- paraissait                &            4 \\
- there                     &            4 \\
- haleine                   &            4 \\
- brillante                 &            4 \\
- brillants                 &            4 \\
  jean                      &            4 \\
  ordre                     &            4 \\
+ pièce                     &            4 \\
  souillé                   &            4 \\
  naissance                 &            4 \\
  carry                     &            4 \\
@@ -897,9 +759,13 @@ Results Exact Counter Algorithm
  légères                   &            4 \\
  collier                   &            4 \\
  plaisanteries             &            4 \\
+ autant                    &            4 \\
  découvrir                 &            4 \\
+ goût                      &            4 \\
+ doù                       &            4 \\
  mets                      &            4 \\
  courir                    &            4 \\
+ sorte                     &            4 \\
  mest                      &            4 \\
  they                      &            4 \\
  têtes                     &            4 \\
@@ -909,6 +775,7 @@ Results Exact Counter Algorithm
  mords                     &            4 \\
  meilleur                  &            4 \\
  épées                     &            4 \\
+ ensuite                   &            4 \\
  robe                      &            4 \\
  laissezmoi                &            4 \\
  laisserai                 &            4 \\
@@ -921,14 +788,19 @@ Results Exact Counter Algorithm
  pleurs                    &            4 \\
  rosée                     &            4 \\
  soupirs                   &            4 \\
+ commence                  &            4 \\
  tirer                     &            4 \\
  rentre                    &            4 \\
  saurais                   &            4 \\
+ davoir                    &            4 \\
  beautés                   &            4 \\
  obtenir                   &            4 \\
  roméole                   &            4 \\
+ love                      &            4 \\
  jaime                     &            4 \\
+ regards                   &            4 \\
  lépreuve                  &            4 \\
+ dabord                    &            4 \\
  laffection                &            4 \\
  chagrins                  &            4 \\
  saints                    &            4 \\
@@ -937,18 +809,23 @@ Results Exact Counter Algorithm
  pourrai                   &            4 \\
  dames                     &            4 \\
  peines                    &            4 \\
+ aimable                   &            4 \\
  marche                    &            4 \\
  spectacle                 &            4 \\
+ ellemême                  &            4 \\
  noms                      &            4 \\
  pierres                   &            4 \\
  garçon                    &            4 \\
+ livres                    &            4 \\
  pouvezvous                &            4 \\
  souper                    &            4 \\
  jaurais                   &            4 \\
  pensées                   &            4 \\
  brillant                  &            4 \\
+ semblable                 &            4 \\
  agneau                    &            4 \\
  reviens                   &            4 \\
+ combien                   &            4 \\
  prononce                  &            4 \\
  fasse                     &            4 \\
  sûr                       &            4 \\
@@ -968,6 +845,7 @@ Results Exact Counter Algorithm
  danser                    &            4 \\
  léger                     &            4 \\
  donnez                    &            4 \\
+ was                       &            4 \\
  so                        &            4 \\
  duns                      &            4 \\
  thee                      &            4 \\
@@ -988,20 +866,26 @@ Results Exact Counter Algorithm
  joyeux                    &            4 \\
  v                         &            4 \\
  salle                     &            4 \\
+ jouer                     &            4 \\
  dernier                   &            4 \\
  tour                      &            4 \\
  manière                   &            4 \\
  instruments               &            4 \\
  lumières                  &            4 \\
  ressemble                 &            4 \\
+ auprès                    &            4 \\
  cessé                     &            4 \\
  caché                     &            4 \\
  crois                     &            4 \\
  conduite                  &            4 \\
  prenez                    &            4 \\
  peuvent                   &            4 \\
+ tandis                    &            4 \\
+ doucement                 &            4 \\
+ reposer                   &            4 \\
  marié                     &            4 \\
  nuptial                   &            4 \\
+ jardin                    &            4 \\
  retourne                  &            4 \\
  roi                       &            4 \\
  ballade                   &            4 \\
@@ -1009,28 +893,36 @@ Results Exact Counter Algorithm
  jalouse                   &            4 \\
  retour                    &            4 \\
  étendue                   &            4 \\
+ pièces                    &            4 \\
  ty                        &            4 \\
  intelligence              &            4 \\
  tai                       &            4 \\
+ possède                   &            4 \\
  revenir                   &            4 \\
  trouverai                 &            4 \\
  cérémonie                 &            4 \\
  bonnes                    &            4 \\
  roméoque                  &            4 \\
+ manque                    &            4 \\
  séloigne                  &            4 \\
  amie                      &            4 \\
  neuf                      &            4 \\
  chemin                    &            4 \\
  bonjour                   &            4 \\
  couche                    &            4 \\
+ jeunesse                  &            4 \\
  blessé                    &            4 \\
+ promptement               &            4 \\
  nas                       &            4 \\
  changé                    &            4 \\
  mas                       &            4 \\
  secourir                  &            4 \\
  assassiné                 &            4 \\
+ état                      &            4 \\
+ première                  &            4 \\
  seconde                   &            4 \\
  very                      &            4 \\
+ nétait                    &            4 \\
  courtesy                  &            4 \\
  most                      &            4 \\
  jest                      &            4 \\
@@ -1044,10 +936,12 @@ Results Exact Counter Algorithm
  triste                    &            4 \\
  mettez                    &            4 \\
  mienne                    &            4 \\
+ simple                    &            4 \\
  fureur                    &            4 \\
  tenir                     &            4 \\
  compagnie                 &            4 \\
  crie                      &            4 \\
+ moments                   &            4 \\
  voie                      &            4 \\
  démon                     &            4 \\
  enfer                     &            4 \\
@@ -1060,103 +954,26 @@ Results Exact Counter Algorithm
  pendre                    &            4 \\
  disposer                  &            4 \\
  bienaimée                 &            4 \\
+ quelquesuns               &            4 \\
+ montre                    &            4 \\
  capuletoui                &            4 \\
  breuvage                  &            4 \\
+ famille                   &            4 \\
  donnerai                  &            4 \\
  lettres                   &            4 \\
  apporte                   &            4 \\
  peter                     &            4 \\
  contentement              &            4 \\
  ground                    &            4 \\
- réconcilier               &            3 \\
- lhistorien                &            3 \\
- sy                        &            3 \\
- rendit                    &            3 \\
- coin                      &            3 \\
- sétant                    &            3 \\
- venue                     &            3 \\
- faisait                   &            3 \\
- aimer                     &            3 \\
- rendu                     &            3 \\
- sêtre                     &            3 \\
- franciscain               &            3 \\
- confesseur                &            3 \\
- trouvait                  &            3 \\
- portes                    &            3 \\
- efforts                   &            3 \\
- combat                    &            3 \\
- défendre                  &            3 \\
- contrainte                &            3 \\
- portée                    &            3 \\
- placée                    &            3 \\
- réveillée                 &            3 \\
- darriver                  &            3 \\
- 1                         &            3 \\
- histoire                  &            3 \\
- rapporte                  &            3 \\
- guide                     &            3 \\
- probablement              &            3 \\
- lord                      &            3 \\
- reine                     &            3 \\
- maladie                   &            3 \\
- longue                    &            3 \\
- enfin                     &            3 \\
- laurait                   &            3 \\
- complète                  &            3 \\
- darthur                   &            3 \\
- réveil                    &            3 \\
- circonstance              &            3 \\
- circonstances             &            3 \\
- croire                    &            3 \\
- tels                      &            3 \\
- ajoute                    &            3 \\
- pareille                  &            3 \\
- exemple                   &            3 \\
- moine                     &            3 \\
- réellement                &            3 \\
- lest                      &            3 \\
- souverain                 &            3 \\
- remplit                   &            3 \\
- italiens                  &            3 \\
- recherche                 &            3 \\
- surtout                   &            3 \\
- douloureuse               &            3 \\
- frappé                    &            3 \\
- joies                     &            3 \\
- conserver                 &            3 \\
- tache                     &            3 \\
- lépouse                   &            3 \\
- peindre                   &            3 \\
- maîtres                   &            3 \\
- seuls                     &            3 \\
- laure                     &            3 \\
- étrange                   &            3 \\
- charmante                 &            3 \\
- appellent                 &            3 \\
- yet                       &            3 \\
- art                       &            3 \\
- sucé                      &            3 \\
- miel                      &            3 \\
- rude                      &            3 \\
- jette                     &            3 \\
- indiqué                   &            3 \\
- his                       &            3 \\
- tenait                    &            3 \\
- charge                    &            3 \\
- obligé                    &            3 \\
- partisans                 &            3 \\
- affaires                  &            3 \\
- valets                    &            3 \\
- grossière                 &            3 \\
- gracieux                  &            3 \\
- plume                     &            3 \\
- serviteurs                &            3 \\
+ personnages               &            3 \\
  valet                     &            3 \\
+ plusieurs                 &            3 \\
  cinquième                 &            3 \\
  nouveaux                  &            3 \\
  funestes                  &            3 \\
  faveur                    &            3 \\
  grégoire                  &            3 \\
+ avaler                    &            3 \\
  gregory                   &            3 \\
  word                      &            3 \\
  coals                     &            3 \\
@@ -1164,6 +981,7 @@ Results Exact Counter Algorithm
  répond                    &            3 \\
  jeux                      &            3 \\
  durant                    &            3 \\
+ lesprit                   &            3 \\
  mérite                    &            3 \\
  samsonje                  &            3 \\
  tient                     &            3 \\
@@ -1175,6 +993,7 @@ Results Exact Counter Algorithm
  samsonoui                 &            3 \\
  take                      &            3 \\
  roule                     &            3 \\
+ sen                       &            3 \\
  poisson                   &            3 \\
  tire                      &            3 \\
  commencer                 &            3 \\
@@ -1197,9 +1016,12 @@ Results Exact Counter Algorithm
  ranimé                    &            3 \\
  battre                    &            3 \\
  bouillant                 &            3 \\
+ coups                     &            3 \\
  dor                       &            3 \\
  miens                     &            3 \\
+ suivi                     &            3 \\
  sienne                    &            3 \\
+ quà                       &            3 \\
  secret                    &            3 \\
  bouton                    &            3 \\
  ver                       &            3 \\
@@ -1211,6 +1033,7 @@ Results Exact Counter Algorithm
  benv                      &            3 \\
  apparences                &            3 \\
  plomb                     &            3 \\
+ brillante                 &            3 \\
  santé                     &            3 \\
  poids                     &            3 \\
  ressens                   &            3 \\
@@ -1235,8 +1058,10 @@ Results Exact Counter Algorithm
  années                    &            3 \\
  dheureuses                &            3 \\
  mères                     &            3 \\
+ choix                     &            3 \\
  convives                  &            3 \\
  verrai                    &            3 \\
+ nombre                    &            3 \\
  parure                    &            3 \\
  écrits                    &            3 \\
  papier                    &            3 \\
@@ -1244,6 +1069,7 @@ Results Exact Counter Algorithm
  remède                    &            3 \\
  roméonon                  &            3 \\
  bonsoir                   &            3 \\
+ appris                    &            3 \\
  tenez                     &            3 \\
  jolie                     &            3 \\
  rend                      &            3 \\
@@ -1251,6 +1077,7 @@ Results Exact Counter Algorithm
  dû                        &            3 \\
  montrerai                 &            3 \\
  dévotion                  &            3 \\
+ amante                    &            3 \\
  appartement               &            3 \\
  oiseau                    &            3 \\
  mappelle                  &            3 \\
@@ -1264,6 +1091,7 @@ Results Exact Counter Algorithm
  rappelle                  &            3 \\
  javais                    &            3 \\
  tremble                   &            3 \\
+ ditil                     &            3 \\
  laisses                   &            3 \\
  arrière                   &            3 \\
  jules»                    &            3 \\
@@ -1271,10 +1099,13 @@ Results Exact Counter Algorithm
  mempêcher                 &            3 \\
  jaie                      &            3 \\
  capuletet                 &            3 \\
+ sujet                     &            3 \\
  juliettecest              &            3 \\
+ auquel                    &            3 \\
  pensé                     &            3 \\
  souviens                  &            3 \\
  nourriceoh                &            3 \\
+ vraie                     &            3 \\
  charmant                  &            3 \\
  trouverez                 &            3 \\
  donnera                   &            3 \\
@@ -1282,10 +1113,12 @@ Results Exact Counter Algorithm
  capuletnous               &            3 \\
  nuits                     &            3 \\
  flambeaux                 &            3 \\
+ également                 &            3 \\
  chasse                    &            3 \\
  partis                    &            3 \\
  tellement                 &            3 \\
  roméoil                   &            3 \\
+ abondance                 &            3 \\
  pique                     &            3 \\
  léperon                   &            3 \\
  jambes                    &            3 \\
@@ -1294,11 +1127,13 @@ Results Exact Counter Algorithm
  done                      &            3 \\
  version                   &            3 \\
  employé                   &            3 \\
+ occasion                  &            3 \\
  cen                       &            3 \\
  enfoncé                   &            3 \\
  faits                     &            3 \\
  clair                     &            3 \\
  genoux                    &            3 \\
+ haleine                   &            3 \\
  rêve                      &            3 \\
  tantôt                    &            3 \\
  char                      &            3 \\
@@ -1310,18 +1145,23 @@ Results Exact Counter Algorithm
  faisaient                 &            3 \\
  them                      &            3 \\
  mercutiotu                &            3 \\
+ vent                      &            3 \\
+ midi                      &            3 \\
  quau                      &            3 \\
  morceau                   &            3 \\
  diras                     &            3 \\
  bienvenus                 &            3 \\
+ laquelle                  &            3 \\
  cercle                    &            3 \\
  capuletil                 &            3 \\
  capuletvous               &            3 \\
+ blanche                   &            3 \\
  lhonneur                  &            3 \\
  souffrirez                &            3 \\
  coq                       &            3 \\
  forcée                    &            3 \\
  juliettesi                &            3 \\
+ toucher                   &            3 \\
  doivent                   &            3 \\
  prière                    &            3 \\
  nourricemadame            &            3 \\
@@ -1331,7 +1171,9 @@ Results Exact Counter Algorithm
  juliettequel              &            3 \\
  voulait                   &            3 \\
  juliettemon               &            3 \\
+ connu                     &            3 \\
  daimer                    &            3 \\
+ passion                   &            3 \\
  aime                      &            3 \\
  croit                     &            3 \\
  dérobe                    &            3 \\
@@ -1341,11 +1183,18 @@ Results Exact Counter Algorithm
  couru                     &            3 \\
  héritier                  &            3 \\
  adam                      &            3 \\
+ brillants                 &            3 \\
  portent                   &            3 \\
+ éditions                  &            3 \\
+ titre                     &            3 \\
+ there                     &            3 \\
  souhaite                  &            3 \\
  were                      &            3 \\
  cætera                    &            3 \\
  servante                  &            3 \\
+ couleur                   &            3 \\
+ soin                      &            3 \\
+ cesse                     &            3 \\
  entière                   &            3 \\
  juliettequi               &            3 \\
  lieux                     &            3 \\
@@ -1357,16 +1206,19 @@ Results Exact Counter Algorithm
  roméosi                   &            3 \\
  devenu                    &            3 \\
  serments                  &            3 \\
+ retirer                   &            3 \\
  roméoo                    &            3 \\
  jenverrai                 &            3 \\
  présence                  &            3 \\
  prêt                      &            3 \\
+ distance                  &            3 \\
  fil                       &            3 \\
  route                     &            3 \\
  brûlant                   &            3 \\
  méprisable                &            3 \\
  source                    &            3 \\
  séjour                    &            3 \\
+ lhomme                    &            3 \\
  forth                     &            3 \\
  vraisemblable             &            3 \\
  membres                   &            3 \\
@@ -1379,14 +1231,17 @@ Results Exact Counter Algorithm
  nestil                    &            3 \\
  deviendra                 &            3 \\
  bones                     &            3 \\
+ manières                  &            3 \\
  salut                     &            3 \\
  slip                      &            3 \\
  mercutioune               &            3 \\
  man                       &            3 \\
  may                       &            3 \\
  hast                      &            3 \\
+ thy                       &            3 \\
  wits                      &            3 \\
  ill                       &            3 \\
+ politesse                 &            3 \\
  sauvage                   &            3 \\
  navoir                    &            3 \\
  oie                       &            3 \\
@@ -1394,8 +1249,10 @@ Results Exact Counter Algorithm
  nourricepierre            &            3 \\
  éventail                  &            3 \\
  entretenir                &            3 \\
+ vieille                   &            3 \\
  ladies                    &            3 \\
  vilain                    &            3 \\
+ chargée                   &            3 \\
  paradis                   &            3 \\
  proteste                  &            3 \\
  confesse                  &            3 \\
@@ -1409,7 +1266,9 @@ Results Exact Counter Algorithm
  pierreo                   &            3 \\
  renvoie                   &            3 \\
  mauvaises                 &            3 \\
+ fatiguée                  &            3 \\
  dhaleine                  &            3 \\
+ récit                     &            3 \\
  sotte                     &            3 \\
  juliettenon               &            3 \\
  julietteoù                &            3 \\
@@ -1417,6 +1276,7 @@ Results Exact Counter Algorithm
  permission                &            3 \\
  daller                    &            3 \\
  voler                     &            3 \\
+ poudre                    &            3 \\
  laurenceroméo             &            3 \\
  nastu                     &            3 \\
  portait                   &            3 \\
@@ -1425,6 +1285,7 @@ Results Exact Counter Algorithm
  malédiction               &            3 \\
  grave                     &            3 \\
  jeter                     &            3 \\
+ celuici                   &            3 \\
  rejoindre                 &            3 \\
  fuis                      &            3 \\
  sestil                    &            3 \\
@@ -1433,11 +1294,14 @@ Results Exact Counter Algorithm
  jeusse                    &            3 \\
  offense                   &            3 \\
  saurai                    &            3 \\
+ forte                     &            3 \\
  hâte                      &            3 \\
  palais                    &            3 \\
  noir                      &            3 \\
+ bouche                    &            3 \\
  break                     &            3 \\
  briser                    &            3 \\
+ souffle                   &            3 \\
  larrêt                    &            3 \\
  laurenceo                 &            3 \\
  fuir                      &            3 \\
@@ -1455,22 +1319,28 @@ Results Exact Counter Algorithm
  certaine                  &            3 \\
  perte                     &            3 \\
  vivant                    &            3 \\
+ lavoir                    &            3 \\
+ épouser                   &            3 \\
  barque                    &            3 \\
+ résolution                &            3 \\
  fière                     &            3 \\
  fassiez                   &            3 \\
  prévenir                  &            3 \\
  dépouser                  &            3 \\
  confesser                 &            3 \\
  maudit                    &            3 \\
+ lavait                    &            3 \\
  nose                      &            3 \\
  linceul                   &            3 \\
  laurenceeh                &            3 \\
  repose                    &            3 \\
  puisje                    &            3 \\
+ restes                    &            3 \\
  lamentable                &            3 \\
  noces                     &            3 \\
  mus                       &            3 \\
  dagger                    &            3 \\
+ put                       &            3 \\
  poste                     &            3 \\
  remettre                  &            3 \\
  contagion                 &            3 \\
@@ -1480,223 +1350,18 @@ Results Exact Counter Algorithm
  brûle                     &            3 \\
  soldats                   &            3 \\
  soldatvoici               &            3 \\
- montecchi                 &            2 \\
- capelletti                &            2 \\
- inimitié                  &            2 \\
- alberto                   &            2 \\
- scala                     &            2 \\
- lorsquils                 &            2 \\
- «les                      &            2 \\
- cappelletto               &            2 \\
- chef                      &            2 \\
- donna                     &            2 \\
- âgé                       &            2 \\
- aimables                  &            2 \\
- hardiesse                 &            2 \\
- ceuxci                    &            2 \\
- regarder                  &            2 \\
- «la                       &            2 \\
- vint                      &            2 \\
- leût                      &            2 \\
- senti                     &            2 \\
- répondit                  &            2 \\
- bénédictions              &            2 \\
- souriant                  &            2 \\
- sappelait                 &            2 \\
- glace                     &            2 \\
- donnaient                 &            2 \\
- fenêtres                  &            2 \\
- ouvrit                    &            2 \\
- fallait                   &            2 \\
- pût                       &            2 \\
- philosophe                &            2 \\
- admirable                 &            2 \\
- lart                      &            2 \\
- désirs                    &            2 \\
- confession                &            2 \\
- saintfrançois             &            2 \\
- confessionnal             &            2 \\
- bénédiction               &            2 \\
- soins                     &            2 \\
- passèrent                 &            2 \\
- fêtes                     &            2 \\
- pâques                    &            2 \\
- troupe                    &            2 \\
- animée                    &            2 \\
- arrêter                   &            2 \\
- recours                   &            2 \\
- couvent                   &            2 \\
- annoncé                   &            2 \\
- partit                    &            2 \\
- violent                   &            2 \\
- daprès                    &            2 \\
- sétait                    &            2 \\
- di                        &            2 \\
- ier                       &            2 \\
- p                         &            2 \\
- 1594                      &            2 \\
- racontée                  &            2 \\
- assure                    &            2 \\
- placé                     &            2 \\
- puits                     &            2 \\
- endroit                   &            2 \\
- montré                    &            2 \\
- lendroit                  &            2 \\
- entendu                   &            2 \\
- dannées                   &            2 \\
- retiré                    &            2 \\
- représentée               &            2 \\
- 1595                      &            2 \\
- hundsdon                  &            2 \\
- louvrage                  &            2 \\
- lannée                    &            2 \\
- léditeur                  &            2 \\
- revoir                    &            2 \\
- navait                    &            2 \\
- considérable              &            2 \\
- tourmenté                 &            2 \\
- mener                     &            2 \\
- entreprise                &            2 \\
- désiré                    &            2 \\
- publié                    &            2 \\
- guère                     &            2 \\
- six                       &            2 \\
- traduite                  &            2 \\
- arthur                    &            2 \\
- certainement              &            2 \\
- tue                       &            2 \\
- réveiller                 &            2 \\
- conclu                    &            2 \\
- connaissait               &            2 \\
- italienne                 &            2 \\
- donnent                   &            2 \\
- traduction                &            2 \\
- quant                     &            2 \\
- motifs                    &            2 \\
- écarté                    &            2 \\
- suivie                    &            2 \\
- rapprocher                &            2 \\
- dailleurs                 &            2 \\
- macbeth                   &            2 \\
- froid                     &            2 \\
- actions                   &            2 \\
- adoptée                   &            2 \\
- laconisme                 &            2 \\
- derniers                  &            2 \\
- 2                         &            2 \\
- contenant                 &            2 \\
- rare                      &            2 \\
- fâcheuse                  &            2 \\
- issue                     &            2 \\
- malone                    &            2 \\
- caractères                &            2 \\
- génie                     &            2 \\
- contraste                 &            2 \\
- frappant                  &            2 \\
- excelle                   &            2 \\
- humaine                   &            2 \\
- vif                       &            2 \\
- tendresse                 &            2 \\
- abandonné                 &            2 \\
- factice                   &            2 \\
- spirituellement           &            2 \\
- pur                       &            2 \\
- vies                      &            2 \\
- entier                    &            2 \\
- corruption                &            2 \\
- éclate                    &            2 \\
- lentrée                   &            2 \\
- simplement                &            2 \\
- profondément              &            2 \\
- personnage                &            2 \\
- défaut                    &            2 \\
- imiter                    &            2 \\
- général                   &            2 \\
- subtilités                &            2 \\
- quoique                   &            2 \\
- brillantes                &            2 \\
- gracieuses                &            2 \\
- style                     &            2 \\
- sonnets                   &            2 \\
- sentir                    &            2 \\
- extrême                   &            2 \\
- destinée                  &            2 \\
- johnson                   &            2 \\
- concetti                  &            2 \\
- limagination              &            2 \\
- solides                   &            2 \\
- graves                    &            2 \\
- sévères                   &            2 \\
- menacée                   &            2 \\
- trait                     &            2 \\
- images                    &            2 \\
- poésie                    &            2 \\
- pareils                   &            2 \\
- différence                &            2 \\
- immense                   &            2 \\
- religieuses               &            2 \\
- passions                  &            2 \\
- revanche                  &            2 \\
- présente                  &            2 \\
- émotions                  &            2 \\
- vraies                    &            2 \\
- singulières               &            2 \\
- charme                    &            2 \\
- pure                      &            2 \\
- image                     &            2 \\
- peinte                    &            2 \\
- léclat                    &            2 \\
- come                      &            2 \\
- per                       &            2 \\
- consume                   &            2 \\
- poco                      &            2 \\
- suo                       &            2 \\
- parea                     &            2 \\
- dormir                    &            2 \\
- neige                     &            2 \\
- gracieuse                 &            2 \\
- insensés                  &            2 \\
- contemple                 &            2 \\
- has                       &            2 \\
- had                       &            2 \\
- upon                      &            2 \\
- lincarnat                 &            2 \\
- brille                    &            2 \\
- comparaison               &            2 \\
- nord                      &            2 \\
- invention                 &            2 \\
- premiers                  &            2 \\
- actes                     &            2 \\
- caractère                 &            2 \\
- propre                    &            2 \\
- he                        &            2 \\
- courteous                 &            2 \\
- even                      &            2 \\
- among                     &            2 \\
- such                      &            2 \\
- courtisan                 &            2 \\
- hardi                     &            2 \\
- ridicules                 &            2 \\
- rôle                      &            2 \\
- dryden                    &            2 \\
- léloignement              &            2 \\
- desprit                   &            2 \\
- suffisamment              &            2 \\
- expliquer                 &            2 \\
- sage                      &            2 \\
- sortis                    &            2 \\
- seigneurs                 &            2 \\
- jusquau                   &            2 \\
- règne                     &            2 \\
- jacques                   &            2 \\
  vieillard                 &            2 \\
  frere                     &            2 \\
+ franciscain               &            2 \\
  abraham                   &            2 \\
  choeur                    &            2 \\
+ familles                  &            2 \\
  guet                      &            2 \\
+ serviteurs                &            2 \\
  lantique                  &            2 \\
  race                      &            2 \\
  occuper                   &            2 \\
+ efforts                   &            2 \\
  manquer                   &            2 \\
  publique                  &            2 \\
  choler                    &            2 \\
@@ -1705,10 +1370,14 @@ Results Exact Counter Algorithm
  proverbiale               &            2 \\
  réplique                  &            2 \\
  rapportât                 &            2 \\
+ lexpression               &            2 \\
+ obligé                    &            2 \\
+ grandes                   &            2 \\
  indispensables            &            2 \\
  quelconque                &            2 \\
  éviter                    &            2 \\
  adoucir                   &            2 \\
+ travail                   &            2 \\
  rebutant                  &            2 \\
  convenablement            &            2 \\
  grotesque                 &            2 \\
@@ -1721,7 +1390,9 @@ Results Exact Counter Algorithm
  grégoirecest              &            2 \\
  faibles                   &            2 \\
  wall                      &            2 \\
+ vrai                      &            2 \\
  grégoirela                &            2 \\
+ maîtres                   &            2 \\
  montrer                   &            2 \\
  tyran                     &            2 \\
  battu                     &            2 \\
@@ -1751,10 +1422,12 @@ Results Exact Counter Algorithm
  benvolioje                &            2 \\
  remets                    &            2 \\
  maider                    &            2 \\
+ partisans                 &            2 \\
  gros                      &            2 \\
  bâtons                    &            2 \\
  pertuisanes               &            2 \\
  capuletquel               &            2 \\
+ combat                    &            2 \\
  béquille                  &            2 \\
  lame                      &            2 \\
  capuletne                 &            2 \\
@@ -1785,6 +1458,7 @@ Results Exact Counter Algorithm
  poussé                    &            2 \\
  sélève                    &            2 \\
  marché                    &            2 \\
+ sentiments                &            2 \\
  solitude                  &            2 \\
  augmenter                 &            2 \\
  rideaux                   &            2 \\
@@ -1795,6 +1469,7 @@ Results Exact Counter Algorithm
  noire                     &            2 \\
  savezvous                 &            2 \\
  lapprendre                &            2 \\
+ fidélité                  &            2 \\
  sonder                    &            2 \\
  veuillez                  &            2 \\
  désire                    &            2 \\
@@ -1803,6 +1478,7 @@ Results Exact Counter Algorithm
  rom                       &            2 \\
  her                       &            2 \\
  tourner                   &            2 \\
+ pouvait                   &            2 \\
  rigueur                   &            2 \\
  dur                       &            2 \\
  bandeau                   &            2 \\
@@ -1810,6 +1486,7 @@ Results Exact Counter Algorithm
  querelleur                &            2 \\
  amoureuse                 &            2 \\
  difforme                  &            2 \\
+ plume                     &            2 \\
  fumée                     &            2 \\
  glacé                     &            2 \\
  éveillé                   &            2 \\
@@ -1837,9 +1514,11 @@ Results Exact Counter Algorithm
  donnant                   &            2 \\
  roméoce                   &            2 \\
  rappeler                  &            2 \\
+ frappé                    &            2 \\
  semblables                &            2 \\
  parlez                    &            2 \\
  capuleten                 &            2 \\
+ croire                    &            2 \\
  faiteslui                 &            2 \\
  consentement              &            2 \\
  invité                    &            2 \\
@@ -1868,6 +1547,7 @@ Results Exact Counter Algorithm
  quinzaine                 &            2 \\
  teen                      &            2 \\
  four                      &            2 \\
+ conserver                 &            2 \\
  employer                  &            2 \\
  compte                    &            2 \\
  règle                     &            2 \\
@@ -1881,6 +1561,8 @@ Results Exact Counter Algorithm
  colombier                 &            2 \\
  mémoire                   &            2 \\
  fâcher                    &            2 \\
+ tenait                    &            2 \\
+ partout                   &            2 \\
  drôle                     &            2 \\
  «comment                  &            2 \\
  tomberas                  &            2 \\
@@ -1894,6 +1576,8 @@ Results Exact Counter Algorithm
  justement                 &            2 \\
  causer                    &            2 \\
  dirais                    &            2 \\
+ sucé                      &            2 \\
+ enfin                     &            2 \\
  adresse                   &            2 \\
  nourricecest              &            2 \\
  cire                      &            2 \\
@@ -1910,10 +1594,12 @@ Results Exact Counter Algorithm
  excuse                    &            2 \\
  arrivait                  &            2 \\
  vînt                      &            2 \\
+ paraissait                &            2 \\
  précédé                   &            2 \\
  déguisé                   &            2 \\
  naurons                   &            2 \\
  portant                   &            2 \\
+ entrée                    &            2 \\
  plaira                    &            2 \\
  roméodonnezmoi            &            2 \\
  remuer                    &            2 \\
@@ -1925,9 +1611,11 @@ Results Exact Counter Algorithm
  mercutioet                &            2 \\
  délicat                   &            2 \\
  roméolamour               &            2 \\
+ rude                      &            2 \\
  rudement                  &            2 \\
  entrons                   &            2 \\
  entrés                    &            2 \\
+ chacun                    &            2 \\
  joncs                     &            2 \\
  convient                  &            2 \\
  tapis                     &            2 \\
@@ -1936,6 +1624,7 @@ Results Exact Counter Algorithm
  fair                      &            2 \\
  constables                &            2 \\
  if                        &            2 \\
+ art                       &            2 \\
  mire                      &            2 \\
  intraduisible             &            2 \\
  grise                     &            2 \\
@@ -1946,13 +1635,16 @@ Results Exact Counter Algorithm
  avertir                   &            2 \\
  explication               &            2 \\
  chanson                   &            2 \\
+ charge                    &            2 \\
  mercutiobon               &            2 \\
  sauf                      &            2 \\
  respect                   &            2 \\
  jusquaux                  &            2 \\
  trouvera                  &            2 \\
  mercutioque               &            2 \\
+ reine                     &            2 \\
  fée                       &            2 \\
+ placée                    &            2 \\
  fine                      &            2 \\
  moitié                    &            2 \\
  doigt                     &            2 \\
@@ -1968,6 +1660,7 @@ Results Exact Counter Algorithm
  frayeur                   &            2 \\
  mêle                      &            2 \\
  sales                     &            2 \\
+ grands                    &            2 \\
  sagefemme                 &            2 \\
  exactement                &            2 \\
  produit                   &            2 \\
@@ -1990,6 +1683,7 @@ Results Exact Counter Algorithm
  serrer                    &            2 \\
  portais                   &            2 \\
  pouvais                   &            2 \\
+ valets                    &            2 \\
  asseyezvous               &            2 \\
  porté                     &            2 \\
  capuletpar                &            2 \\
@@ -2005,6 +1699,7 @@ Results Exact Counter Algorithm
  capuletquestce            &            2 \\
  moquer                    &            2 \\
  tybaltcest                &            2 \\
+ gracieux                  &            2 \\
  sied                      &            2 \\
  airs                      &            2 \\
  capuletallez              &            2 \\
@@ -2066,11 +1761,14 @@ Results Exact Counter Algorithm
  maid                      &            2 \\
  mercutioce                &            2 \\
  loffenser                 &            2 \\
+ étrange                   &            2 \\
  ly                        &            2 \\
  obligeante                &            2 \\
  arbres                    &            2 \\
  ténèbres                  &            2 \\
  humorous                  &            2 \\
+ his                       &            2 \\
+ grossière                 &            2 \\
  puisquil                  &            2 \\
  rit                       &            2 \\
  puisquelle                &            2 \\
@@ -2086,6 +1784,7 @@ Results Exact Counter Algorithm
  secrets                   &            2 \\
  tapprendre                &            2 \\
  cent                      &            2 \\
+ charmante                 &            2 \\
  juliettecomment           &            2 \\
  disle                     &            2 \\
  murs                      &            2 \\
@@ -2166,6 +1865,7 @@ Results Exact Counter Algorithm
  chargé                    &            2 \\
  gémissements              &            2 \\
  arrêt                     &            2 \\
+ permis                    &            2 \\
  faillir                   &            2 \\
  laurenceoh                &            2 \\
  savait                    &            2 \\
@@ -2212,6 +1912,7 @@ Results Exact Counter Algorithm
  révérence                 &            2 \\
  mercutioassurément        &            2 \\
  boiteuse                  &            2 \\
+ pareille                  &            2 \\
  coureur                   &            2 \\
  faisais                   &            2 \\
  long                      &            2 \\
@@ -2233,6 +1934,7 @@ Results Exact Counter Algorithm
  refrain                   &            2 \\
  plaît                     &            2 \\
  minute                    &            2 \\
+ lest                      &            2 \\
  polisson                  &            2 \\
  user                      &            2 \\
  garderai                  &            2 \\
@@ -2270,10 +1972,13 @@ Results Exact Counter Algorithm
  amen                      &            2 \\
  pourront                  &            2 \\
  nommer                    &            2 \\
+ miel                      &            2 \\
  vénérable                 &            2 \\
+ confesseur                &            2 \\
  remerciements             &            2 \\
  roméoah                   &            2 \\
  valeur                    &            2 \\
+ seuls                     &            2 \\
  église                    &            2 \\
  time                      &            2 \\
  entrant                   &            2 \\
@@ -2302,13 +2007,16 @@ Results Exact Counter Algorithm
  étendu                    &            2 \\
  tumulte                   &            2 \\
  malheureuses              &            2 \\
+ circonstances             &            2 \\
  fatale                    &            2 \\
  violence                  &            2 \\
  sourd                     &            2 \\
+ venait                    &            2 \\
  courent                   &            2 \\
  consent                   &            2 \\
  lami                      &            2 \\
  terminé                   &            2 \\
+ laurait                   &            2 \\
  haines                    &            2 \\
  repentir                  &            2 \\
  quitte                    &            2 \\
@@ -2319,6 +2027,7 @@ Results Exact Counter Algorithm
  couchant                  &            2 \\
  mystères                  &            2 \\
  vêtements                 &            2 \\
+ tache                     &            2 \\
  craintif                  &            2 \\
  plumes                    &            2 \\
  corbeau                   &            2 \\
@@ -2328,6 +2037,7 @@ Results Exact Counter Algorithm
  ennuyeux                  &            2 \\
  quastu                    &            2 \\
  léchelle                  &            2 \\
+ jette                     &            2 \\
  perdues                   &            2 \\
  lhorrible                 &            2 \\
  hurlements                &            2 \\
@@ -2344,10 +2054,12 @@ Results Exact Counter Algorithm
  transporté                &            2 \\
  damnable                  &            2 \\
  infâme                    &            2 \\
+ histoire                  &            2 \\
  trahison                  &            2 \\
  habite                    &            2 \\
  maux                      &            2 \\
  trône                     &            2 \\
+ souverain                 &            2 \\
  maltraiter                &            2 \\
  déchiré                   &            2 \\
  quappartient              &            2 \\
@@ -2368,9 +2080,12 @@ Results Exact Counter Algorithm
  faux                      &            2 \\
  mouche                    &            2 \\
  charogne                  &            2 \\
+ moine                     &            2 \\
  arme                      &            2 \\
+ défendre                  &            2 \\
  aille                     &            2 \\
  dyeux                     &            2 \\
+ situation                 &            2 \\
  meurtrier                 &            2 \\
  théâtre                   &            2 \\
  message                   &            2 \\
@@ -2391,13 +2106,16 @@ Results Exact Counter Algorithm
  autour                    &            2 \\
  obstinée                  &            2 \\
  prendsy                   &            2 \\
+ arriver                   &            2 \\
  favorable                 &            2 \\
  appelé                    &            2 \\
+ joies                     &            2 \\
  hommages                  &            2 \\
  woe                       &            2 \\
  capuletje                 &            2 \\
  accablement               &            2 \\
  gouverner                 &            2 \\
+ doute                     &            2 \\
  meurtre                   &            2 \\
  paraître                  &            2 \\
  chante                    &            2 \\
@@ -2406,6 +2124,7 @@ Results Exact Counter Algorithm
  surprenne                 &            2 \\
  distu                     &            2 \\
  arrache                   &            2 \\
+ appellent                 &            2 \\
  séclaircit                &            2 \\
  roméoadieu                &            2 \\
  échapper                  &            2 \\
@@ -2416,6 +2135,7 @@ Results Exact Counter Algorithm
  capuletle                 &            2 \\
  nul                       &            2 \\
  respire                   &            2 \\
+ portée                    &            2 \\
  venger                    &            2 \\
  ira                       &            2 \\
  satisfaite                &            2 \\
@@ -2430,6 +2150,8 @@ Results Exact Counter Algorithm
  désobéissante             &            2 \\
  crime                     &            2 \\
  aide                      &            2 \\
+ beaux                     &            2 \\
+ aimer                     &            2 \\
  périr                     &            2 \\
  mappartient               &            2 \\
  déposé                    &            2 \\
@@ -2445,10 +2167,12 @@ Results Exact Counter Algorithm
  messe                     &            2 \\
  troubler                  &            2 \\
  ressource                 &            2 \\
+ longue                    &            2 \\
  commandemoi               &            2 \\
  infectes                  &            2 \\
  crânes                    &            2 \\
  creusé                    &            2 \\
+ lépouse                   &            2 \\
  bienaimé                  &            2 \\
  coucher                   &            2 \\
  chaleur                   &            2 \\
@@ -2457,7 +2181,9 @@ Results Exact Counter Algorithm
  suivant                   &            2 \\
  parée                     &            2 \\
  antique                   &            2 \\
+ réveillée                 &            2 \\
  instruit                  &            2 \\
+ réveil                    &            2 \\
  préservera                &            2 \\
  mauvais                   &            2 \\
  verras                    &            2 \\
@@ -2470,6 +2196,7 @@ Results Exact Counter Algorithm
  capuletallons             &            2 \\
  capuletnon                &            2 \\
  sûre                      &            2 \\
+ affaires                  &            2 \\
  effet                     &            2 \\
  seraisje                  &            2 \\
  suffoquée                 &            2 \\
@@ -2490,17 +2217,20 @@ Results Exact Counter Algorithm
  trépas                    &            2 \\
  éternels                  &            2 \\
  détestable                &            2 \\
+ voyant                    &            2 \\
  musicienma                &            2 \\
  serrezles                 &            2 \\
  complainte                &            2 \\
  pierreeh                  &            2 \\
  give                      &            2 \\
+ 1                         &            2 \\
  serving                   &            2 \\
  re                        &            2 \\
  fa                        &            2 \\
  iron                      &            2 \\
  ut                        &            2 \\
  musicienje                &            2 \\
+ douloureuse               &            2 \\
  largent                   &            2 \\
  pierrejoli                &            2 \\
  paye                      &            2 \\
@@ -2512,8 +2242,11 @@ Results Exact Counter Algorithm
  meurtres                  &            2 \\
  cordial                   &            2 \\
  fermé                     &            2 \\
+ portes                    &            2 \\
  laurencequi               &            2 \\
+ circonstance              &            2 \\
  communauté                &            2 \\
+ darriver                  &            2 \\
  larrivée                  &            2 \\
  éloignetoi                &            2 \\
  cyprès                    &            2 \\
@@ -2523,6 +2256,7 @@ Results Exact Counter Algorithm
  épier                     &            2 \\
  poussant                  &            2 \\
  joug                      &            2 \\
+ guide                     &            2 \\
  bêche                     &            2 \\
  desseins                  &            2 \\
  accident                  &            2 \\
@@ -2532,538 +2266,6 @@ Results Exact Counter Algorithm
  vieillesse                &            2 \\
  punis                     &            2 \\
  statue                    &            2 \\
- notice                    &            1 \\
- vivaient                  &            1 \\
- combats                   &            1 \\
- sanglants                 &            1 \\
- inutilement               &            1 \\
- travaillé                 &            1 \\
- étaitil                   &            1 \\
- parvenu                   &            1 \\
- contenir                  &            1 \\
- rencontraient             &            1 \\
- cédaient                  &            1 \\
- âgés                      &            1 \\
- saluaient                 &            1 \\
- rendaient                 &            1 \\
- salut»                    &            1 \\
- 1303                      &            1 \\
- bartolommeo               &            1 \\
- élu                       &            1 \\
- antonio                   &            1 \\
- faction                   &            1 \\
- carnaval                  &            1 \\
- invita                    &            1 \\
- noblesse                  &            1 \\
- montecchio                &            1 \\
- masqué                    &            1 \\
- ôté                       &            1 \\
- sassit                    &            1 \\
- sétonna                   &            1 \\
- agréables                 &            1 \\
- «ny                       &            1 \\
- firent                    &            1 \\
- dattention                &            1 \\
- âgé»                      &            1 \\
- rencontrèrent             &            1 \\
- frappés                   &            1 \\
- dadmiration               &            1 \\
- cessèrent                 &            1 \\
- terminée                  &            1 \\
- appelée                   &            1 \\
- chapeau»                  &            1 \\
- dal                       &            1 \\
- cappello                  &            1 \\
- trouvant                  &            1 \\
- introduit                 &            1 \\
- tours                     &            1 \\
- danseuse                  &            1 \\
- quitta                    &            1 \\
- dansait                   &            1 \\
- «bénie                    &            1 \\
- venue»                    &            1 \\
- serrant                   &            1 \\
- «quelles                  &            1 \\
- recevezvous               &            1 \\
- madame»                   &            1 \\
- reprit                    &            1 \\
- «ne                       &            1 \\
- étonnez                   &            1 \\
- bénis                     &            1 \\
- glacer                    &            1 \\
- réchauffer»               &            1 \\
- louche                    &            1 \\
- lagrément                 &            1 \\
- froides                   &            1 \\
- «je                       &            1 \\
- grandement                &            1 \\
- service                   &            1 \\
- soit»                     &            1 \\
- finissait                 &            1 \\
- «hélas                    &            1 \\
- moimême»                  &            1 \\
- reconnut                  &            1 \\
- «son                      &            1 \\
- éternuement               &            1 \\
- signe»                    &            1 \\
- saluèrent                 &            1 \\
- «trèspoliment             &            1 \\
- cortesissimamente»        &            1 \\
- entretenus                &            1 \\
- convinrent                &            1 \\
- mariassent                &            1 \\
- lentremise                &            1 \\
- «théologien               &            1 \\
- distillateur              &            1 \\
- savant                    &            1 \\
- magie»                    &            1 \\
- lalla                     &            1 \\
- songeant                  &            1 \\
- crédit                    &            1 \\
- acquerrait                &            1 \\
- nonseulement              &            1 \\
- parvenait                 &            1 \\
- prêta                     &            1 \\
- lépoque                   &            1 \\
- quadragésime              &            1 \\
- dobligation               &            1 \\
- citadelle                 &            1 \\
- duquel                    &            1 \\
- reçurent                  &            1 \\
- nuptiale                  &            1 \\
- douvrir                   &            1 \\
- très                      &            1 \\
- adroite                   &            1 \\
- nombreuse                 &            1 \\
- rencontra                 &            1 \\
- attaqua                   &            1 \\
- tébaldo                   &            1 \\
- germain                   &            1 \\
- sattacha                  &            1 \\
- forçant                   &            1 \\
- reçut                     &            1 \\
- dépée                     &            1 \\
- gorge                     &            1 \\
- tomba                     &            1 \\
- sépulture                 &            1 \\
- len                       &            1 \\
- déguisée                  &            1 \\
- chargeait                 &            1 \\
- dinstruire                &            1 \\
- indirectement             &            1 \\
- muni                      &            1 \\
- baigna                    &            1 \\
- avala                     &            1 \\
- mourut                    &            1 \\
- saisie                    &            1 \\
- «sans                     &            1 \\
- demeura                   &            1 \\
- roméo1»                   &            1 \\
- istorie                   &            1 \\
- verona                    &            1 \\
- del                       &            1 \\
- sig                       &            1 \\
- 589                       &            1 \\
- suiv                      &            1 \\
- édit                      &            1 \\
- sélevant                  &            1 \\
- servait                   &            1 \\
- orphelins                 &            1 \\
- bâtissait                 &            1 \\
- gerardo                   &            1 \\
- boldiero                  &            1 \\
- mené                      &            1 \\
- capucins                  &            1 \\
- auparavant                &            1 \\
- bréval                    &            1 \\
- voyages                   &            1 \\
- 1762                      &            1 \\
- bâtiment                  &            1 \\
- dorphelins                &            1 \\
- renfermé                  &            1 \\
- nexistait                 &            1 \\
- composé                   &            1 \\
- chambellan                &            1 \\
- élisabeth                 &            1 \\
- imprimée                  &            1 \\
- 1597                      &            1 \\
- vingtdeux                 &            1 \\
- interrompu                &            1 \\
- vingtième                 &            1 \\
- 1560                      &            1 \\
- préface                   &            1 \\
- amena                     &            1 \\
- nécessité                 &            1 \\
- prit                      &            1 \\
- procès                    &            1 \\
- «civils                   &            1 \\
- criminels»                &            1 \\
- permirent                 &            1 \\
- lédition                  &            1 \\
- connaissance              &            1 \\
- trèspopulaire             &            1 \\
- composée                  &            1 \\
- publiée                   &            1 \\
- venise                    &            1 \\
- 1535                      &            1 \\
- giulietta                 &            1 \\
- réimprimée                &            1 \\
- imitée                    &            1 \\
- langues                   &            1 \\
- fournit                   &            1 \\
- 15622                     &            1 \\
- puisé                     &            1 \\
- limitation                &            1 \\
- singulier                 &            1 \\
- fassent                   &            1 \\
- quaprès                   &            1 \\
- dadieux                   &            1 \\
- reproché                  &            1 \\
- conformé                  &            1 \\
- fournissait               &            1 \\
- trèspathétique            &            1 \\
- préférer                  &            1 \\
- romancier                 &            1 \\
- important                 &            1 \\
- scrupuleusement           &            1 \\
- avaitil                   &            1 \\
- renseignements            &            1 \\
- contemporain              &            1 \\
- communiquer               &            1 \\
- lexactitude               &            1 \\
- récits                    &            1 \\
- reçus                     &            1 \\
- dhésiter                  &            1 \\
- précéder                  &            1 \\
- longs                     &            1 \\
- jettent                   &            1 \\
- laction»                  &            1 \\
- angoisses                 &            1 \\
- réflexion                 &            1 \\
- dobjets                   &            1 \\
- distraire                 &            1 \\
- lidée                     &            1 \\
- conduit                   &            1 \\
- désespérées               &            1 \\
- adieux                    &            1 \\
- pleuré                    &            1 \\
- pleurât                   &            1 \\
- garrick                   &            1 \\
- refait                    &            1 \\
- supposition               &            1 \\
- touchante                 &            1 \\
- inévitable                &            1 \\
- agités                    &            1 \\
- tragique                  &            1 \\
- subtiles                  &            1 \\
- inventions                &            1 \\
- pratiques                 &            1 \\
- réimprimé                 &            1 \\
- dautant                   &            1 \\
- remarquable               &            1 \\
- livré                     &            1 \\
- exprime                   &            1 \\
- humains                   &            1 \\
- présentent                &            1 \\
- préméditation             &            1 \\
- naïfs                     &            1 \\
- impétueux                 &            1 \\
- mêlés                     &            1 \\
- dinstincts                &            1 \\
- vulgaires                 &            1 \\
- délans                    &            1 \\
- sublimes                  &            1 \\
- primitif                  &            1 \\
- spontané                  &            1 \\
- irréfléchi                &            1 \\
- physique                  &            1 \\
- morale                    &            1 \\
- grossièreté               &            1 \\
- délicatesses              &            1 \\
- sunissent                 &            1 \\
- lemportement              &            1 \\
- subtil                    &            1 \\
- arrangé                   &            1 \\
- imaginations              &            1 \\
- pieusement                &            1 \\
- exaltées                  &            1 \\
- licencieux                &            1 \\
- blasées                   &            1 \\
- perverties                &            1 \\
- involontaire              &            1 \\
- divers                    &            1 \\
- othello                   &            1 \\
- jalousie                  &            1 \\
- lambition                 &            1 \\
- drames                    &            1 \\
- dédié                     &            1 \\
- lhumanité                 &            1 \\
- drame                     &            1 \\
- retranche                 &            1 \\
- représente                &            1 \\
- hardiment                 &            1 \\
- énergique                 &            1 \\
- passez                    &            1 \\
- compris                   &            1 \\
- développements            &            1 \\
- dornements                &            1 \\
- complaît                  &            1 \\
- placent                   &            1 \\
- naturellement             &            1 \\
- abonde                    &            1 \\
- dirait                    &            1 \\
- luxe                      &            1 \\
- facilité                  &            1 \\
- verbeuse                  &            1 \\
- littérature               &            1 \\
- caractérisent             &            1 \\
- peuples                   &            1 \\
- lu                        &            1 \\
- traductions               &            1 \\
- innombrables              &            1 \\
- tissu                     &            1 \\
- continuelles              &            1 \\
- comparaisons              &            1 \\
- évidemment                &            1 \\
- imitation                 &            1 \\
- dette                     &            1 \\
- payée                     &            1 \\
- locale                    &            1 \\
- plaintif                  &            1 \\
- lexagération              &            1 \\
- particulièrement          &            1 \\
- plaintes                  &            1 \\
- simplicité                &            1 \\
- ravissante                &            1 \\
- arrivent                  &            1 \\
- renonce                   &            1 \\
- velléités                 &            1 \\
- dimitation                &            1 \\
- savantes                  &            1 \\
- «il                       &            1 \\
- laissé                    &            1 \\
- misère»                   &            1 \\
- retrouvent                &            1 \\
- sunissant                 &            1 \\
- avide                     &            1 \\
- conjugale                 &            1 \\
- remplir                   &            1 \\
- devoirs                   &            1 \\
- moral                     &            1 \\
- adonné                    &            1 \\
- trompait                  &            1 \\
- lorsquen                  &            1 \\
- prodiguant                &            1 \\
- croyait                   &            1 \\
- litalie                   &            1 \\
- nimitait                  &            1 \\
- méritassent               &            1 \\
- singulière                &            1 \\
- lintelligence             &            1 \\
- naturels                  &            1 \\
- vrais                     &            1 \\
- daffectation              &            1 \\
- bizarrerie                &            1 \\
- mêmes                     &            1 \\
- xive                      &            1 \\
- siècle                    &            1 \\
- introduisent              &            1 \\
- subtilité                 &            1 \\
- délévation                &            1 \\
- altèrent                  &            1 \\
- transforment              &            1 \\
- croyances                 &            1 \\
- morales                   &            1 \\
- goûts                     &            1 \\
- littéraires               &            1 \\
- instincts                 &            1 \\
- humain                    &            1 \\
- auxquels                  &            1 \\
- physionomie               &            1 \\
- natives                   &            1 \\
- naturelle                 &            1 \\
- raffiné                   &            1 \\
- affectée                  &            1 \\
- parfaitement              &            1 \\
- mystiques                 &            1 \\
- trèscontenues             &            1 \\
- citer                     &            1 \\
- exercés                   &            1 \\
- fiamma                    &            1 \\
- forza                     &            1 \\
- è                         &            1 \\
- spenta                    &            1 \\
- medesma                   &            1 \\
- andò                      &            1 \\
- pace                      &            1 \\
- lanima                    &            1 \\
- contenta                  &            1 \\
- guisa                     &            1 \\
- soave                     &            1 \\
- e                         &            1 \\
- chiaro                    &            1 \\
- lume                      &            1 \\
- cui                       &            1 \\
- nutrimento                &            1 \\
- manca                     &            1 \\
- tenendo                   &            1 \\
- al                        &            1 \\
- usato                     &            1 \\
- costume                   &            1 \\
- pallida                   &            1 \\
- nò                        &            1 \\
- più                       &            1 \\
- neve                      &            1 \\
- bianca                    &            1 \\
- senza                     &            1 \\
- vento                     &            1 \\
- colle                     &            1 \\
- fiocchi                   &            1 \\
- posar                     &            1 \\
- persona                   &            1 \\
- stanca                    &            1 \\
- quasi                     &            1 \\
- dolce                     &            1 \\
- suoi                      &            1 \\
- begli                     &            1 \\
- occhi                     &            1 \\
- sendo                     &            1 \\
- lo                        &            1 \\
- spirto                    &            1 \\
- già                       &            1 \\
- lei                       &            1 \\
- diviso                    &            1 \\
- era                       &            1 \\
- morir                     &            1 \\
- chiaman                   &            1 \\
- gli                       &            1 \\
- schiocchi                 &            1 \\
- bella                     &            1 \\
- nel                       &            1 \\
- viso3                     &            1 \\
- 3                         &            1 \\
- rime                      &            1 \\
- petrarca                  &            1 \\
- trionfo                   &            1 \\
- «comme                    &            1 \\
- éteint                    &            1 \\
- violemment                &            1 \\
- sereine                   &            1 \\
- alla                      &            1 \\
- claire                    &            1 \\
- laliment                  &            1 \\
- accoutumée                &            1 \\
- flocons                   &            1 \\
- colline                   &            1 \\
- semblait                  &            1 \\
- séparé                    &            1 \\
- semblaient                &            1 \\
- visage»                   &            1 \\
- wife                      &            1 \\
- death                     &            1 \\
- suckd                     &            1 \\
- honey                     &            1 \\
- breath                    &            1 \\
- power                     &            1 \\
- beauty                    &            1 \\
- conquerd                  &            1 \\
- beautys                   &            1 \\
- ensign                    &            1 \\
- crimson                   &            1 \\
- lips                      &            1 \\
- cheeks                    &            1 \\
- deaths                    &            1 \\
- pale                      &            1 \\
- flag                      &            1 \\
- advanced                  &            1 \\
- «o                        &            1 \\
- conquête                  &            1 \\
- planté                    &            1 \\
- drapeau»                  &            1 \\
- dinsister                 &            1 \\
- sent                      &            1 \\
- suave                     &            1 \\
- heurtée                   &            1 \\
- rosalinde                 &            1 \\
- conservée                 &            1 \\
- dintérêt                  &            1 \\
- ressortir                 &            1 \\
- soudaineté                &            1 \\
- climat                    &            1 \\
- courtier                  &            1 \\
- eche                      &            1 \\
- where                     &            1 \\
- highly                    &            1 \\
- price                     &            1 \\
- speech                    &            1 \\
- pleasant                  &            1 \\
- devise                    &            1 \\
- lyon                      &            1 \\
- would                     &            1 \\
- lambs                     &            1 \\
- bold                      &            1 \\
- bashful                   &            1 \\
- maydes                    &            1 \\
- behold                    &            1 \\
- «un                       &            1 \\
- trouvât                   &            1 \\
- trèshaute                 &            1 \\
- estime                    &            1 \\
- courtois                  &            1 \\
- devisait                  &            1 \\
- plaisamment               &            1 \\
- lion                      &            1 \\
- agneaux                   &            1 \\
- timides»                  &            1 \\
- type                      &            1 \\
- amusant                   &            1 \\
- manqué                    &            1 \\
- attaquer                  &            1 \\
- molière                   &            1 \\
- entrevoir                 &            1 \\
- coûté                     &            1 \\
- justesse                  &            1 \\
- tradition                 &            1 \\
- disait                    &            1 \\
- «quil                     &            1 \\
- tuât»                     &            1 \\
- conservé                  &            1 \\
- angleterre                &            1 \\
- zélés                     &            1 \\
- traite                    &            1 \\
- durement                  &            1 \\
- irrévérentes              &            1 \\
- «saillies                 &            1 \\
- portée»                   &            1 \\
- genre                     &            1 \\
- prodigué                  &            1 \\
- prouvé                    &            1 \\
- linjonction               &            1 \\
- sonnet                    &            1 \\
- «mon                      &            1 \\
- simplement»               &            1 \\
- lêtre                     &            1 \\
- offre                     &            1 \\
- ouvrage                   &            1 \\
- réservées                 &            1 \\
- haute                     &            1 \\
- classe                    &            1 \\
- imitent                   &            1 \\
- échappent                 &            1 \\
- rimés                     &            1 \\
- hommage                   &            1 \\
- habitudes                 &            1 \\
- italiennes                &            1 \\
- jouée                     &            1 \\
- 1596                      &            1 \\
- joui                      &            1 \\
- illimitée                 &            1 \\
- protection                &            1 \\
- accordaient               &            1 \\
- acteurs                   &            1 \\
- parlement                 &            1 \\
- apporta                   &            1 \\
- restriction               &            1 \\
  escalus                   &            1 \\
  chefs                     &            1 \\
  ennemies                  &            1 \\
@@ -3106,6 +2308,7 @@ Results Exact Counter Algorithm
  neck                      &            1 \\
  othe                      &            1 \\
  charbon                   &            1 \\
+ anglais                   &            1 \\
  injures                   &            1 \\
  jouant                    &            1 \\
  charbonniers              &            1 \\
@@ -3117,6 +2320,8 @@ Results Exact Counter Algorithm
  calembours                &            1 \\
  quolibets                 &            1 \\
  compose                   &            1 \\
+ premiers                  &            1 \\
+ actes                     &            1 \\
  conversation              &            1 \\
  grossières                &            1 \\
  ingrat                    &            1 \\
@@ -3153,9 +2358,11 @@ Results Exact Counter Algorithm
  weaker                    &            1 \\
  vessels                   &            1 \\
  vases                     &            1 \\
+ solides                   &            1 \\
  lécriture                 &            1 \\
  thrust                    &            1 \\
  jetées                    &            1 \\
+ coin                      &            1 \\
  vaisseaux                 &            1 \\
  fragiles                  &            1 \\
  mettrai                   &            1 \\
@@ -3212,6 +2419,7 @@ Results Exact Counter Algorithm
  grégoiredis               &            1 \\
  maître8                   &            1 \\
  8                         &            1 \\
+ rapporte                  &            1 \\
  aperçoit                  &            1 \\
  abrahamvous               &            1 \\
  mentez                    &            1 \\
@@ -3256,6 +2464,7 @@ Results Exact Counter Algorithm
  troublé                   &            1 \\
  tranquillité              &            1 \\
  anciens                   &            1 \\
+ graves                    &            1 \\
  ornements                 &            1 \\
  rongées                   &            1 \\
  réprimer                  &            1 \\
@@ -3323,6 +2532,7 @@ Results Exact Counter Algorithm
  égaye                     &            1 \\
  obscurs                   &            1 \\
  laurore                   &            1 \\
+ fenêtres                  &            1 \\
  interdisant               &            1 \\
  éclat                     &            1 \\
  artificielle              &            1 \\
@@ -3351,6 +2561,7 @@ Results Exact Counter Algorithm
  provient                  &            1 \\
  empressés                 &            1 \\
  guérir                    &            1 \\
+ léloignement              &            1 \\
  benvoliotenez             &            1 \\
  refuse                    &            1 \\
  obstinément               &            1 \\
@@ -3391,6 +2602,7 @@ Results Exact Counter Algorithm
  sérieuse                  &            1 \\
  chaos                     &            1 \\
  séduisantes               &            1 \\
+ sentir                    &            1 \\
  faitil                    &            1 \\
  benvolionon               &            1 \\
  roméotendre               &            1 \\
@@ -3403,8 +2615,10 @@ Results Exact Counter Algorithm
  pressant                  &            1 \\
  tien                      &            1 \\
  montres                   &            1 \\
+ ajoute                    &            1 \\
  excès                     &            1 \\
  quélève                   &            1 \\
+ éclate                    &            1 \\
  réprimé                   &            1 \\
  nourrissent               &            1 \\
  bile                      &            1 \\
@@ -3428,6 +2642,7 @@ Results Exact Counter Algorithm
  coupci                    &            1 \\
  manquez                   &            1 \\
  latteindre                &            1 \\
+ animée                    &            1 \\
  diane                     &            1 \\
  solidement                &            1 \\
  armée                     &            1 \\
@@ -3446,6 +2661,7 @@ Results Exact Counter Algorithm
  benvolioatelle            &            1 \\
  parcimonie                &            1 \\
  produira                  &            1 \\
+ immense                   &            1 \\
  dégât                     &            1 \\
  sévérité                  &            1 \\
  prive                     &            1 \\
@@ -3561,9 +2777,11 @@ Results Exact Counter Algorithm
  privé                     &            1 \\
  daliments                 &            1 \\
  fustigé                   &            1 \\
+ tourmenté                 &            1 \\
  domestiquedieu            &            1 \\
  bonsoirje                 &            1 \\
  domestiquepeutêtre        &            1 \\
+ caractères                &            1 \\
  domestiquecest            &            1 \\
  roméoarrêtez              &            1 \\
  «le                       &            1 \\
@@ -3574,6 +2792,7 @@ Results Exact Counter Algorithm
  veuve                     &            1 \\
  vitruvio                  &            1 \\
  placentio                 &            1 \\
+ aimables                  &            1 \\
  nièces                    &            1 \\
  valentin                  &            1 \\
  nièce                     &            1 \\
@@ -3646,12 +2865,14 @@ Results Exact Counter Algorithm
  capuletune                &            1 \\
  pardessus14               &            1 \\
  13                        &            1 \\
+ yet                       &            1 \\
  spoken                    &            1 \\
  quolibet                  &            1 \\
  jourdain                  &            1 \\
  14                        &            1 \\
  fortnight                 &            1 \\
  unité                     &            1 \\
+ even                      &            1 \\
  pair                      &            1 \\
  nourricepardessus         &            1 \\
  anssuzanne                &            1 \\
@@ -3662,6 +2883,7 @@ Results Exact Counter Algorithm
  tremblement               &            1 \\
  sevrée                    &            1 \\
  loublierai                &            1 \\
+ lannée                    &            1 \\
  frotté                    &            1 \\
  dabsinthe                 &            1 \\
  assise                    &            1 \\
@@ -3670,14 +2892,17 @@ Results Exact Counter Algorithm
  labsinthe                 &            1 \\
  leut                      &            1 \\
  trouvée                   &            1 \\
+ fallait                   &            1 \\
  trotter                   &            1 \\
  tempslà                   &            1 \\
  baguette                  &            1 \\
  courait                   &            1 \\
  roulait                   &            1 \\
+ sétait                    &            1 \\
  cassé                     &            1 \\
  veuille                   &            1 \\
  releva                    &            1 \\
+ desprit                   &            1 \\
  vivrais                   &            1 \\
  «nestce                   &            1 \\
  morveuse                  &            1 \\
@@ -3744,6 +2969,7 @@ Results Exact Counter Algorithm
  servi                     &            1 \\
  suivons                   &            1 \\
  nourriceallez             &            1 \\
+ six                       &            1 \\
  porteurs                  &            1 \\
  dirons                    &            1 \\
  entrerons                 &            1 \\
@@ -3764,6 +2990,7 @@ Results Exact Counter Algorithm
  arc                       &            1 \\
  tartare                   &            1 \\
  latte                     &            1 \\
+ peinte                    &            1 \\
  effrayer                  &            1 \\
  hasard                    &            1 \\
  corneilles                &            1 \\
@@ -3776,6 +3003,7 @@ Results Exact Counter Algorithm
  gambades                  &            1 \\
  sombre17                  &            1 \\
  17                        &            1 \\
+ troupe                    &            1 \\
  précédée                  &            1 \\
  entrait                   &            1 \\
  lassemblée                &            1 \\
@@ -3802,6 +3030,7 @@ Results Exact Counter Algorithm
  lessor                    &            1 \\
  enchaîné                  &            1 \\
  bond                      &            1 \\
+ indiqué                   &            1 \\
  possible                  &            1 \\
  succombant                &            1 \\
  écraserez                 &            1 \\
@@ -3819,6 +3048,7 @@ Results Exact Counter Algorithm
  difformités               &            1 \\
  refrogné                  &            1 \\
  rougira                   &            1 \\
+ recours                   &            1 \\
  étourdis                  &            1 \\
  légers                    &            1 \\
  effleurent                &            1 \\
@@ -3826,6 +3056,7 @@ Results Exact Counter Algorithm
  chandelle                 &            1 \\
  regarderai                &            1 \\
  grandmères                &            1 \\
+ «la                       &            1 \\
  vas20»                    &            1 \\
  19                        &            1 \\
  couvrait                  &            1 \\
@@ -3837,19 +3068,23 @@ Results Exact Counter Algorithm
  trouvent                  &            1 \\
  détat                     &            1 \\
  dexpliquer                &            1 \\
+ suffisamment              &            1 \\
  lallusion                 &            1 \\
  contenue                  &            1 \\
  adoptant                  &            1 \\
+ traduction                &            1 \\
  malfaiteur                &            1 \\
  alarmer                   &            1 \\
  cherchait                 &            1 \\
  insignifiants             &            1 \\
+ ceuxci                    &            1 \\
  dones                     &            1 \\
  prise                     &            1 \\
  quaucune                  &            1 \\
  quont                     &            1 \\
  données                   &            1 \\
  substitué                 &            1 \\
+ revanche                  &            1 \\
  tirerons                  &            1 \\
  mare                      &            1 \\
  brûlons                   &            1 \\
@@ -3876,6 +3111,7 @@ Results Exact Counter Algorithm
  22                        &            1 \\
  mentir                    &            1 \\
  lorsquendormis            &            1 \\
+ vraies                    &            1 \\
  visité                    &            1 \\
  sagefemme23               &            1 \\
  lagate                    &            1 \\
@@ -3905,6 +3141,7 @@ Results Exact Counter Algorithm
  moucheron                 &            1 \\
  vêtu                      &            1 \\
  rond                      &            1 \\
+ retiré                    &            1 \\
  aiguille                  &            1 \\
  chariot                   &            1 \\
  travaillée                &            1 \\
@@ -3919,6 +3156,7 @@ Results Exact Counter Algorithm
  empesté                   &            1 \\
  mangeant                  &            1 \\
  confitures24              &            1 \\
+ courtisan                 &            1 \\
  flaire                    &            1 \\
  solliciter                &            1 \\
  queue                     &            1 \\
@@ -3981,6 +3219,7 @@ Results Exact Counter Algorithm
  vaines                    &            1 \\
  chimères                  &            1 \\
  caressant                 &            1 \\
+ nord                      &            1 \\
  sirrite                   &            1 \\
  bouffée                   &            1 \\
  verse                     &            1 \\
@@ -3994,6 +3233,7 @@ Results Exact Counter Algorithm
  amener                    &            1 \\
  méprisée                  &            1 \\
  gouverne                  &            1 \\
+ seigneurs                 &            1 \\
  benvoliobattez            &            1 \\
  tambours                  &            1 \\
  garnie                    &            1 \\
@@ -4006,6 +3246,7 @@ Results Exact Counter Algorithm
  26                        &            1 \\
  tis                       &            1 \\
  malpropre                 &            1 \\
+ fâcheuse                  &            1 \\
  domestiqueemporte         &            1 \\
  pliants                   &            1 \\
  dérange                   &            1 \\
@@ -4054,6 +3295,7 @@ Results Exact Counter Algorithm
  voudra                    &            1 \\
  vingtcinq                 &            1 \\
  allâmes                   &            1 \\
+ âgé                       &            1 \\
  mineur                    &            1 \\
  enrichie                  &            1 \\
  domestiqueje              &            1 \\
@@ -4127,6 +3369,7 @@ Results Exact Counter Algorithm
  impression                &            1 \\
  juliettebon               &            1 \\
  injure                    &            1 \\
+ montré                    &            1 \\
  convenance                &            1 \\
  voyageur                  &            1 \\
  nontils                   &            1 \\
@@ -4147,6 +3390,7 @@ Results Exact Counter Algorithm
  méthode29                 &            1 \\
  29                        &            1 \\
  book                      &            1 \\
+ sage                      &            1 \\
  vertueuse                 &            1 \\
  nourri                    &            1 \\
  causiez                   &            1 \\
@@ -4182,11 +3426,13 @@ Results Exact Counter Algorithm
  nourricetout              &            1 \\
  choeurune                 &            1 \\
  languit                   &            1 \\
+ désirs                    &            1 \\
  soupirent                 &            1 \\
  héritage                  &            1 \\
  gémissait                 &            1 \\
  magie                     &            1 \\
  jeté                      &            1 \\
+ charme                    &            1 \\
  plaigne                   &            1 \\
  cruels                    &            1 \\
  hameçons                  &            1 \\
@@ -4194,8 +3440,10 @@ Results Exact Counter Algorithm
  exprimer                  &            1 \\
  jurer                     &            1 \\
  fournira                  &            1 \\
+ rapprocher                &            1 \\
  tempérera                 &            1 \\
  détresse                  &            1 \\
+ extrême                   &            1 \\
  roméopuisje               &            1 \\
  centre                    &            1 \\
  escalade                  &            1 \\
@@ -4208,6 +3456,7 @@ Results Exact Counter Algorithm
  soupir                    &            1 \\
  disnous                   &            1 \\
  satisfaitcrienous         &            1 \\
+ tendresse                 &            1 \\
  sobriquet                 &            1 \\
  cupidon30                 &            1 \\
  tira                      &            1 \\
@@ -4216,7 +3465,9 @@ Results Exact Counter Algorithm
  mentend                   &            1 \\
  magotlà                   &            1 \\
  lévoquerje                &            1 \\
+ lincarnat                 &            1 \\
  sensuit32                 &            1 \\
+ propre                    &            1 \\
  30                        &            1 \\
  bell                      &            1 \\
  fameux                    &            1 \\
@@ -4254,6 +3505,7 @@ Results Exact Counter Algorithm
  tentend                   &            1 \\
  fâcheras                  &            1 \\
  dévoquer                  &            1 \\
+ leût                      &            1 \\
  conjuré                   &            1 \\
  rentrer                   &            1 \\
  labîme                    &            1 \\
@@ -4271,9 +3523,11 @@ Results Exact Counter Algorithm
  gagner                    &            1 \\
  alcôve                    &            1 \\
  camp                      &            1 \\
+ froid                     &            1 \\
  dormireh                  &            1 \\
  partonsnous               &            1 \\
  34                        &            1 \\
+ he                        &            1 \\
  sit                       &            1 \\
  under                     &            1 \\
  medlar                    &            1 \\
@@ -4288,6 +3542,7 @@ Results Exact Counter Algorithm
  open                      &            1 \\
  propin                    &            1 \\
  pear                      &            1 \\
+ derniers                  &            1 \\
  parvenus                  &            1 \\
  indécence                 &            1 \\
  osé                       &            1 \\
@@ -4305,7 +3560,9 @@ Results Exact Counter Algorithm
  inutile                   &            1 \\
  cicatrices                &            1 \\
  fenêtremais               &            1 \\
+ brille                    &            1 \\
  soleillèvetoi             &            1 \\
+ tue                       &            1 \\
  revêtent                  &            1 \\
  vestales                  &            1 \\
  livide                    &            1 \\
@@ -4313,10 +3570,13 @@ Results Exact Counter Algorithm
  rejettela                 &            1 \\
  moielle                   &            1 \\
  quimporte                 &            1 \\
+ langage                   &            1 \\
  répondreje                &            1 \\
+ brillantes                &            1 \\
  appelées                  &            1 \\
  conjurent                 &            1 \\
  sphère                    &            1 \\
+ léclat                    &            1 \\
  lampe                     &            1 \\
  verseraient               &            1 \\
  régions                   &            1 \\
@@ -4327,6 +3587,7 @@ Results Exact Counter Algorithm
  nuitvoyez                 &            1 \\
  appuie                    &            1 \\
  gant                      &            1 \\
+ placé                     &            1 \\
  juliettehélas             &            1 \\
  parleoh                   &            1 \\
  ange                      &            1 \\
@@ -4365,6 +3626,7 @@ Results Exact Counter Algorithm
  chérie35                  &            1 \\
  35                        &            1 \\
  époque                    &            1 \\
+ donnaient                 &            1 \\
  habituellement            &            1 \\
  aspiré                    &            1 \\
  prononcées                &            1 \\
@@ -4387,6 +3649,8 @@ Results Exact Counter Algorithm
  voient                    &            1 \\
  tueront                   &            1 \\
  dangereux                 &            1 \\
+ inimitié                  &            1 \\
+ entier                    &            1 \\
  vissent                   &            1 \\
  laisseles                 &            1 \\
  yeuxje                    &            1 \\
@@ -4411,9 +3675,11 @@ Results Exact Counter Algorithm
  feras                     &            1 \\
  entieren                  &            1 \\
  trouveras                 &            1 \\
+ lart                      &            1 \\
  déguiser                  &            1 \\
  réservée                  &            1 \\
  lavoue                    &            1 \\
+ entendu                   &            1 \\
  pusse                     &            1 \\
  apercevoir                &            1 \\
  expressions               &            1 \\
@@ -4435,6 +3701,7 @@ Results Exact Counter Algorithm
  roméopar                  &            1 \\
  jureraije                 &            1 \\
  juliettene                &            1 \\
+ gracieuse                 &            1 \\
  idolâtre                  &            1 \\
  croirai                   &            1 \\
  engagement                &            1 \\
@@ -4443,6 +3710,7 @@ Results Exact Counter Algorithm
  léclair                   &            1 \\
  éclaire                   &            1 \\
  développé                 &            1 \\
+ remplit                   &            1 \\
  laisserastu               &            1 \\
  satisfait                 &            1 \\
  roméoléchange             &            1 \\
@@ -4467,6 +3735,7 @@ Results Exact Counter Algorithm
  faismoi                   &            1 \\
  tenvoyer                  &            1 \\
  suivrai                   &            1 \\
+ jusquau                   &            1 \\
  lunivers                  &            1 \\
  lheuremais                &            1 \\
  juliettedans              &            1 \\
@@ -4579,6 +3848,7 @@ Results Exact Counter Algorithm
  fiery                     &            1 \\
  anciennes                 &            1 \\
  adoptées                  &            1 \\
+ malone                    &            1 \\
  steevens                  &            1 \\
  préféré                   &            1 \\
  modernes                  &            1 \\
@@ -4587,8 +3857,12 @@ Results Exact Counter Algorithm
  pareilles                 &            1 \\
  irrégularités             &            1 \\
  rares                     &            1 \\
+ présente                  &            1 \\
  limage                    &            1 \\
+ complète                  &            1 \\
+ suivie                    &            1 \\
  conséquences              &            1 \\
+ représentée               &            1 \\
  poursuit                  &            1 \\
  laurencebenedicitequelle  &            1 \\
  matinale                  &            1 \\
@@ -4599,8 +3873,10 @@ Results Exact Counter Algorithm
  sentinelle                &            1 \\
  quhabitent                &            1 \\
  doré                      &            1 \\
+ règne                     &            1 \\
  exempts                   &            1 \\
  massure                   &            1 \\
+ maladie                   &            1 \\
  devinaije                 &            1 \\
  seraitil                  &            1 \\
  entré                     &            1 \\
@@ -4613,12 +3889,15 @@ Results Exact Counter Algorithm
  redemander                &            1 \\
  guérison                  &            1 \\
  laurenceparle             &            1 \\
+ simplement                &            1 \\
  détour                    &            1 \\
+ confession                &            1 \\
  absolution                &            1 \\
  roméosache                &            1 \\
  clairement                &            1 \\
  lobjet                    &            1 \\
  chères                    &            1 \\
+ conclu                    &            1 \\
  conclure                  &            1 \\
  vus                       &            1 \\
  parlés                    &            1 \\
@@ -4666,10 +3945,12 @@ Results Exact Counter Algorithm
  cartel                    &            1 \\
  écrire                    &            1 \\
  benvoliomais              &            1 \\
+ lauteur                   &            1 \\
  mercutiohélas             &            1 \\
  noirs                     &            1 \\
  traversée                 &            1 \\
  percé                     &            1 \\
+ trait                     &            1 \\
  benvolioquel              &            1 \\
  mercutioautre             &            1 \\
  chats37                   &            1 \\
@@ -4692,6 +3973,7 @@ Results Exact Counter Algorithm
  mercutiola                &            1 \\
  peste                     &            1 \\
  fats                      &            1 \\
+ ridicules                 &            1 \\
  prétentieux               &            1 \\
  grasseyement              &            1 \\
  prononciation             &            1 \\
@@ -4719,6 +4001,8 @@ Results Exact Counter Algorithm
  sec                       &            1 \\
  coulaient                 &            1 \\
  veine                     &            1 \\
+ pétrarque                 &            1 \\
+ laure                     &            1 \\
  cuisine                   &            1 \\
  quoiquelle                &            1 \\
  habile                    &            1 \\
@@ -4746,6 +4030,7 @@ Results Exact Counter Algorithm
  42                        &            1 \\
  business                  &            1 \\
  great                     &            1 \\
+ such                      &            1 \\
  mine                      &            1 \\
  strain                    &            1 \\
  mercutiothats             &            1 \\
@@ -4759,6 +4044,7 @@ Results Exact Counter Algorithm
  mercutiothou              &            1 \\
  kindly                    &            1 \\
  hit                       &            1 \\
+ courteous                 &            1 \\
  exposition                &            1 \\
  pink                      &            1 \\
  roméopink                 &            1 \\
@@ -4818,6 +4104,7 @@ Results Exact Counter Algorithm
  traduisant                &            1 \\
  contenter                 &            1 \\
  puérile                   &            1 \\
+ recherche                 &            1 \\
  sel                       &            1 \\
  rendant                   &            1 \\
  impossibles               &            1 \\
@@ -4855,6 +4142,7 @@ Results Exact Counter Algorithm
  conviendras               &            1 \\
  cellelà                   &            1 \\
  mercutiobenvolio          &            1 \\
+ rendu                     &            1 \\
  roméodonne                &            1 \\
  cinqestce                 &            1 \\
  mordant                   &            1 \\
@@ -4883,6 +4171,7 @@ Results Exact Counter Algorithm
  hole                      &            1 \\
  voilàtil                  &            1 \\
  coupes                    &            1 \\
+ lhistoire                 &            1 \\
  létendre                  &            1 \\
  traité                    &            1 \\
  matière                   &            1 \\
@@ -4908,6 +4197,7 @@ Results Exact Counter Algorithm
  tell                      &            1 \\
  hand                      &            1 \\
  dial                      &            1 \\
+ upon                      &            1 \\
  noon                      &            1 \\
  semployait                &            1 \\
  goodeven                  &            1 \\
@@ -4966,6 +4256,7 @@ Results Exact Counter Algorithm
  nourriceen                &            1 \\
  polissonseigneur          &            1 \\
  envoyée                   &            1 \\
+ mener                     &            1 \\
  fous                      &            1 \\
  procédé                   &            1 \\
  conséquent                &            1 \\
@@ -4979,6 +4270,7 @@ Results Exact Counter Algorithm
  gentilhomme48             &            1 \\
  48                        &            1 \\
  françaises                &            1 \\
+ bel                       &            1 \\
  roméodislui               &            1 \\
  prétexte                  &            1 \\
  confessera                &            1 \\
@@ -4988,6 +4280,7 @@ Results Exact Counter Algorithm
  roméoallez                &            1 \\
  laccepterez               &            1 \\
  nourricecette             &            1 \\
+ sy                        &            1 \\
  labbaye                   &            1 \\
  rejoindra                 &            1 \\
  portera                   &            1 \\
@@ -4995,6 +4288,7 @@ Results Exact Counter Algorithm
  mystérieux                &            1 \\
  mélèveront                &            1 \\
  degré                     &            1 \\
+ soins                     &            1 \\
  bénisseun                 &            1 \\
  discret                   &            1 \\
  ouï                       &            1 \\
@@ -5011,6 +4305,7 @@ Results Exact Counter Algorithm
  49                        &            1 \\
  emblème                   &            1 \\
  lr                        &            1 \\
+ sappelait                 &            1 \\
  prononcer                 &            1 \\
  moqueur                   &            1 \\
  versification             &            1 \\
@@ -5023,6 +4318,7 @@ Results Exact Counter Algorithm
  nauratelle                &            1 \\
  celaoh                    &            1 \\
  messagère                 &            1 \\
+ lorsquils                 &            1 \\
  ombres                    &            1 \\
  collines                  &            1 \\
  traîné                    &            1 \\
@@ -5083,6 +4379,7 @@ Results Exact Counter Algorithm
  sortexcellente            &            1 \\
  vi                        &            1 \\
  laurenceveuille           &            1 \\
+ souriant                  &            1 \\
  envoyer                   &            1 \\
  reprocher                 &            1 \\
  roméoamen                 &            1 \\
@@ -5117,10 +4414,12 @@ Results Exact Counter Algorithm
  remerciera                &            1 \\
  comblée                   &            1 \\
  talent                    &            1 \\
+ peindre                   &            1 \\
  parfume                   &            1 \\
  environne                 &            1 \\
  harmonie                  &            1 \\
  déploie                   &            1 \\
+ images                    &            1 \\
  recevons                  &            1 \\
  entrevue                  &            1 \\
  riches                    &            1 \\
@@ -5142,6 +4441,7 @@ Results Exact Counter Algorithm
  warm                      &            1 \\
  people                    &            1 \\
  unruly                    &            1 \\
+ p                         &            1 \\
  smith                     &            1 \\
  commonwealth              &            1 \\
  england                   &            1 \\
@@ -5150,9 +4450,11 @@ Results Exact Counter Algorithm
  table                     &            1 \\
  «dieu                     &            1 \\
  toi»                      &            1 \\
+ senti                     &            1 \\
  tirent                    &            1 \\
  cabaretier                &            1 \\
  lorsquil                  &            1 \\
+ réellement                &            1 \\
  benvoliomoi               &            1 \\
  genslà                    &            1 \\
  italie                    &            1 \\
@@ -5173,6 +4475,8 @@ Results Exact Counter Algorithm
  éveillait                 &            1 \\
  dormait                   &            1 \\
  habit                     &            1 \\
+ fêtes                     &            1 \\
+ pâques                    &            1 \\
  ruban                     &            1 \\
  nouait                    &            1 \\
  neufs                     &            1 \\
@@ -5186,6 +4490,7 @@ Results Exact Counter Algorithm
  51                        &            1 \\
  life                      &            1 \\
  benvoliopar               &            1 \\
+ chef                      &            1 \\
  mercutiopar               &            1 \\
  talon                     &            1 \\
  moque                     &            1 \\
@@ -5203,11 +4508,13 @@ Results Exact Counter Algorithm
  benvolionous              &            1 \\
  parlons                   &            1 \\
  fréquenté                 &            1 \\
+ écarté                    &            1 \\
  raisonnez                 &            1 \\
  tranquillement            &            1 \\
  griefs                    &            1 \\
  fixent                    &            1 \\
  mercutioles               &            1 \\
+ regarder                  &            1 \\
  regardent                 &            1 \\
  tybalteh                  &            1 \\
  pendu                     &            1 \\
@@ -5225,6 +4532,7 @@ Results Exact Counter Algorithm
  outrages                  &            1 \\
  offensé                   &            1 \\
  connaisses                &            1 \\
+ motifs                    &            1 \\
  sangfroid                 &            1 \\
  déshonorante              &            1 \\
  soumissiona               &            1 \\
@@ -5233,6 +4541,7 @@ Results Exact Counter Algorithm
  preneur                   &            1 \\
  rats                      &            1 \\
  tybaltque                 &            1 \\
+ vies                      &            1 \\
  userez                    &            1 \\
  égard                     &            1 \\
  étui                      &            1 \\
@@ -5256,6 +4565,7 @@ Results Exact Counter Algorithm
  roméoprends               &            1 \\
  mercutionon               &            1 \\
  profonde                  &            1 \\
+ puits                     &            1 \\
  suffira                   &            1 \\
  tombé52                   &            1 \\
  sérieux                   &            1 \\
@@ -5372,6 +4682,7 @@ Results Exact Counter Algorithm
  pertes                    &            1 \\
  prières                   &            1 \\
  racheter                  &            1 \\
+ pareils                   &            1 \\
  délits                    &            1 \\
  verra                     &            1 \\
  suiteemportez             &            1 \\
@@ -5403,10 +4714,12 @@ Results Exact Counter Algorithm
  obscur                    &            1 \\
  révolte                   &            1 \\
  effarouché                &            1 \\
+ hardi                     &            1 \\
  chaste                    &            1 \\
  devoirviens               &            1 \\
  arriveras                 &            1 \\
  éclatant                  &            1 \\
+ neige                     &            1 \\
  tombée                    &            1 \\
  reprendsle                &            1 \\
  partagele                 &            1 \\
@@ -5474,6 +4787,7 @@ Results Exact Counter Algorithm
  quallaistu                &            1 \\
  fis                       &            1 \\
  berceau                   &            1 \\
+ contenant                 &            1 \\
  portatil                  &            1 \\
  couverture                &            1 \\
  sincérité                 &            1 \\
@@ -5565,6 +4879,7 @@ Results Exact Counter Algorithm
  indulgent                 &            1 \\
  prenant                   &            1 \\
  repoussé                  &            1 \\
+ rare                      &            1 \\
  reconnaître               &            1 \\
  jouira                    &            1 \\
  condition                 &            1 \\
@@ -5574,10 +4889,12 @@ Results Exact Counter Algorithm
  blanches                  &            1 \\
  merveilles                &            1 \\
  immortels                 &            1 \\
+ pure                      &            1 \\
  virginale                 &            1 \\
  modestie                  &            1 \\
  entretient                &            1 \\
  perpétuelle               &            1 \\
+ donnent                   &            1 \\
  linsecte                  &            1 \\
  librement                 &            1 \\
  vole                      &            1 \\
@@ -5604,10 +4921,12 @@ Results Exact Counter Algorithm
  baume                     &            1 \\
  ladversité                &            1 \\
  consolera                 &            1 \\
+ quoique                   &            1 \\
  roméoencore               &            1 \\
  nait                      &            1 \\
  créer                     &            1 \\
  déplacer                  &            1 \\
+ insensés                  &            1 \\
  doreilles                 &            1 \\
  roméocomment              &            1 \\
  auraientils               &            1 \\
@@ -5665,6 +4984,7 @@ Results Exact Counter Algorithm
  parentdismoi              &            1 \\
  ravage                    &            1 \\
  lodieuse                  &            1 \\
+ actions                   &            1 \\
  désordonnées              &            1 \\
  indiquent                 &            1 \\
  bête                      &            1 \\
@@ -5697,6 +5017,7 @@ Results Exact Counter Algorithm
  devenue                   &            1 \\
  prononcé                  &            1 \\
  amas                      &            1 \\
+ bénédictions              &            1 \\
  sempresse                 &            1 \\
  perverse                  &            1 \\
  boudes                    &            1 \\
@@ -5705,6 +5026,7 @@ Results Exact Counter Algorithm
  souvienstoi               &            1 \\
  puissions                 &            1 \\
  dannoncer                 &            1 \\
+ réconcilier               &            1 \\
  dobtenir                  &            1 \\
  répandu                   &            1 \\
  lamentations              &            1 \\
@@ -5723,6 +5045,7 @@ Results Exact Counter Algorithm
  perdez                    &            1 \\
  don                       &            1 \\
  laurencepartez            &            1 \\
+ destinée                  &            1 \\
  postée                    &            1 \\
  instruira                 &            1 \\
  arrivera                  &            1 \\
@@ -5806,6 +5129,7 @@ Results Exact Counter Algorithm
  désagréable               &            1 \\
  prétend                   &            1 \\
  observer                  &            1 \\
+ gracieuses                &            1 \\
  séparations               &            1 \\
  sépare60                  &            1 \\
  disent                    &            1 \\
@@ -5821,11 +5145,14 @@ Results Exact Counter Algorithm
  descend                   &            1 \\
  juliettete                &            1 \\
  chacune                   &            1 \\
+ dannées                   &            1 \\
+ revoir                    &            1 \\
  croistu                   &            1 \\
  revoyions                 &            1 \\
  serviront                 &            1 \\
  entretiens                &            1 \\
  présage                   &            1 \\
+ assure                    &            1 \\
  paraissez                 &            1 \\
  yeuxle                    &            1 \\
  dévorant                  &            1 \\
@@ -5845,6 +5172,7 @@ Results Exact Counter Algorithm
  revivre                   &            1 \\
  finisen                   &            1 \\
  daffection                &            1 \\
+ défaut                    &            1 \\
  juliettelaissezmoi        &            1 \\
  sensible                  &            1 \\
  capuletde                 &            1 \\
@@ -5892,6 +5220,7 @@ Results Exact Counter Algorithm
  ouragan                   &            1 \\
  flux                      &            1 \\
  reflux                    &            1 \\
+ perpétuel                 &            1 \\
  flotte                    &            1 \\
  ondes                     &            1 \\
  salées                    &            1 \\
@@ -5902,6 +5231,7 @@ Results Exact Counter Algorithm
  chavirer                  &            1 \\
  tempêteoù                 &            1 \\
  sommesnous                &            1 \\
+ annoncé                   &            1 \\
  linsensée                 &            1 \\
  capuletattendez           &            1 \\
  ménagé                    &            1 \\
@@ -5934,6 +5264,7 @@ Results Exact Counter Algorithm
  débiter                   &            1 \\
  maximes                   &            1 \\
  tasse                     &            1 \\
+ vif                       &            1 \\
  capuletpaix               &            1 \\
  deviendrai                &            1 \\
  dormant                   &            1 \\
@@ -5957,6 +5288,7 @@ Results Exact Counter Algorithm
  avisezy                   &            1 \\
  mendier                   &            1 \\
  comptez                   &            1 \\
+ réflexions                &            1 \\
  julietteny                &            1 \\
  pénètre                   &            1 \\
  profondeurs               &            1 \\
@@ -5978,6 +5310,7 @@ Results Exact Counter Algorithm
  aigle                     &            1 \\
  perçant                   &            1 \\
  madvienne                 &            1 \\
+ dailleurs                 &            1 \\
  vaudrait                  &            1 \\
  profiter                  &            1 \\
  julietteparlestu          &            1 \\
@@ -5995,6 +5328,7 @@ Results Exact Counter Algorithm
  déprécier                 &            1 \\
  milliers                  &            1 \\
  exalté                    &            1 \\
+ comparaison               &            1 \\
  conseillère               &            1 \\
  expédient                 &            1 \\
  moffrir                   &            1 \\
@@ -6013,6 +5347,7 @@ Results Exact Counter Algorithm
  entretenue                &            1 \\
  danger                    &            1 \\
  dempire                   &            1 \\
+ arrêter                   &            1 \\
  déluge                    &            1 \\
  souvenir                  &            1 \\
  concevez                  &            1 \\
@@ -6074,6 +5409,7 @@ Results Exact Counter Algorithm
  arbitre                   &            1 \\
  réunies                   &            1 \\
  nauront                   &            1 \\
+ issue                     &            1 \\
  lent                      &            1 \\
  tarde                     &            1 \\
  jentrevois                &            1 \\
@@ -6133,11 +5469,13 @@ Results Exact Counter Algorithm
  découvert                 &            1 \\
  reposent                  &            1 \\
  descendants               &            1 \\
+ entreprise                &            1 \\
  épierons                  &            1 \\
  nuitlà                    &            1 \\
  temmènera                 &            1 \\
  lexpédient                &            1 \\
  lignominie                &            1 \\
+ menacée                   &            1 \\
  dinconstance              &            1 \\
  lexécution                &            1 \\
  abattre                   &            1 \\
@@ -6192,6 +5530,7 @@ Results Exact Counter Algorithm
  coucherai                 &            1 \\
  ménagèreholà              &            1 \\
  chapeauils                &            1 \\
+ sortis                    &            1 \\
  demainmon                 &            1 \\
  rentrée                   &            1 \\
  devoir                    &            1 \\
@@ -6208,6 +5547,7 @@ Results Exact Counter Algorithm
  capuletbonne              &            1 \\
  julietteadieudieu         &            1 \\
  frisson                   &            1 \\
+ glace                     &            1 \\
  rassurernourrice          &            1 \\
  feraitelle                &            1 \\
  funèbreviens              &            1 \\
@@ -6222,6 +5562,7 @@ Results Exact Counter Algorithm
  penséemais                &            1 \\
  déposée                   &            1 \\
  jallais                   &            1 \\
+ réveiller                 &            1 \\
  délivrer                  &            1 \\
  effrayante                &            1 \\
  salutaire                 &            1 \\
@@ -6265,12 +5606,14 @@ Results Exact Counter Algorithm
  attribuait                &            1 \\
  mandragore                &            1 \\
  propriétés                &            1 \\
+ singulières               &            1 \\
  pousser                   &            1 \\
  larrachait                &            1 \\
  entendaient               &            1 \\
  prétendait                &            1 \\
  croissait                 &            1 \\
  fosse                     &            1 \\
+ corruption                &            1 \\
  regardaiton               &            1 \\
  douée                     &            1 \\
  clefs                     &            1 \\
@@ -6332,6 +5675,8 @@ Results Exact Counter Algorithm
  prochaine                 &            1 \\
  gagé                      &            1 \\
  sommeilleriez             &            1 \\
+ guère                     &            1 \\
+ profondément              &            1 \\
  léveillemadame            &            1 \\
  lit65                     &            1 \\
  lèveriez                  &            1 \\
@@ -6345,6 +5690,7 @@ Results Exact Counter Algorithm
  65                        &            1 \\
  paraîtrait                &            1 \\
  allât                     &            1 \\
+ navait                    &            1 \\
  diligence                 &            1 \\
  faiton                    &            1 \\
  nourricevoyez             &            1 \\
@@ -6358,6 +5704,7 @@ Results Exact Counter Algorithm
  arrêté                    &            1 \\
  muscles                   &            1 \\
  roides                    &            1 \\
+ abandonné                 &            1 \\
  gelée                     &            1 \\
  intempestive              &            1 \\
  prairie                   &            1 \\
@@ -6374,6 +5721,7 @@ Results Exact Counter Algorithm
  deflowered                &            1 \\
  him                       &            1 \\
  parisnaije                &            1 \\
+ désiré                    &            1 \\
  moffrît                   &            1 \\
  travaux                   &            1 \\
  pèlerinage                &            1 \\
@@ -6386,6 +5734,7 @@ Results Exact Counter Algorithm
  haï                       &            1 \\
  martyrisé                 &            1 \\
  désolation                &            1 \\
+ venue                     &            1 \\
  solennelle                &            1 \\
  ensevelies                &            1 \\
  laurencepaix              &            1 \\
@@ -6463,6 +5812,7 @@ Results Exact Counter Algorithm
  creatures                 &            1 \\
  pate                      &            1 \\
  crotchets                 &            1 \\
+ 2                         &            1 \\
  pray                      &            1 \\
  drybeat                   &            1 \\
  dialogue                  &            1 \\
@@ -6490,6 +5840,7 @@ Results Exact Counter Algorithm
  violon                    &            1 \\
  valent                    &            1 \\
  aussiet                   &            1 \\
+ jacques                   &            1 \\
  pierreah                  &            1 \\
  joubliais                 &            1 \\
  chanteureh                &            1 \\
@@ -6511,6 +5862,7 @@ Results Exact Counter Algorithm
  siége                     &            1 \\
  légèrement                &            1 \\
  inaccoutumée              &            1 \\
+ trouvait                  &            1 \\
  faculté                   &            1 \\
  communiquaient            &            1 \\
  empereur                  &            1 \\
@@ -6551,6 +5903,7 @@ Results Exact Counter Algorithm
  environs                  &            1 \\
  déchirés                  &            1 \\
  épluchant                 &            1 \\
+ simples                   &            1 \\
  aspect                    &            1 \\
  maigreur                  &            1 \\
  dévorante                 &            1 \\
@@ -6607,6 +5960,7 @@ Results Exact Counter Algorithm
  dénué                     &            1 \\
  famine                    &            1 \\
  souffrance                &            1 \\
+ peint                     &            1 \\
  traîne                    &            1 \\
  haillons                  &            1 \\
  test                      &            1 \\
@@ -6683,6 +6037,7 @@ Results Exact Counter Algorithm
  sème                      &            1 \\
  enceinte                  &            1 \\
  parfaite                  &            1 \\
+ image                     &            1 \\
  êtres                     &            1 \\
  habites                   &            1 \\
  thonorai                  &            1 \\
@@ -6701,6 +6056,7 @@ Results Exact Counter Algorithm
  puisses                   &            1 \\
  minterrompre              &            1 \\
  descends                  &            1 \\
+ surtout                   &            1 \\
  ôter                      &            1 \\
  vatensi                   &            1 \\
  inquiétude                &            1 \\
@@ -6727,6 +6083,7 @@ Results Exact Counter Algorithm
  ventre                    &            1 \\
  assouvi                   &            1 \\
  repas                     &            1 \\
+ pût                       &            1 \\
  forcer                    &            1 \\
  mâchoires                 &            1 \\
  pourries                  &            1 \\
@@ -6765,6 +6122,7 @@ Results Exact Counter Algorithm
  couchemoi                 &            1 \\
  roméosur                  &            1 \\
  feraiil                   &            1 \\
+ contemple                 &            1 \\
  traitsle                  &            1 \\
  pârisque                  &            1 \\
  cheminions                &            1 \\
@@ -6823,6 +6181,7 @@ Results Exact Counter Algorithm
  balthasarcelui            &            1 \\
  connaît                   &            1 \\
  laurenceque               &            1 \\
+ bénédiction               &            1 \\
  vousditesmoi              &            1 \\
  balthasaroui              &            1 \\
  balthasarroméo            &            1 \\
@@ -6839,6 +6198,7 @@ Results Exact Counter Algorithm
  battait                   &            1 \\
  savancehélas              &            1 \\
  souille                   &            1 \\
+ lentrée                   &            1 \\
  caveau                    &            1 \\
  signifient                &            1 \\
  teintes                   &            1 \\
@@ -6857,6 +6217,7 @@ Results Exact Counter Algorithm
  aussisuivezmoi            &            1 \\
  placerai                  &            1 \\
  saintes                   &            1 \\
+ religieuses               &            1 \\
  arrêtez                   &            1 \\
  questions                 &            1 \\
  allerquestce              &            1 \\
@@ -6876,6 +6237,7 @@ Results Exact Counter Algorithm
  saisit                    &            1 \\
  rouiller                  &            1 \\
  pagevoilà                 &            1 \\
+ lendroit                  &            1 \\
  soldatla                  &            1 \\
  ensanglantée              &            1 \\
  rencontriez               &            1 \\
@@ -6888,6 +6250,7 @@ Results Exact Counter Algorithm
  avertissez                &            1 \\
  voyons                    &            1 \\
  accumulés                 &            1 \\
+ expliquer                 &            1 \\
  lieu71                    &            1 \\
  déplorables               &            1 \\
  71                        &            1 \\
@@ -6897,6 +6260,7 @@ Results Exact Counter Algorithm
  all                       &            1 \\
  piteous                   &            1 \\
  cannot                    &            1 \\
+ endroit                   &            1 \\
  fondement                 &            1 \\
  rentrent                  &            1 \\
  lavons                    &            1 \\
@@ -6939,6 +6303,7 @@ Results Exact Counter Algorithm
  gardesquon                &            1 \\
  amène                     &            1 \\
  soupçonne                 &            1 \\
+ considérable              &            1 \\
  daction                   &            1 \\
  déposent                  &            1 \\
  soupçonné                 &            1 \\
@@ -6952,6 +6317,7 @@ Results Exact Counter Algorithm
  mariés                    &            1 \\
  dépérissait               &            1 \\
  vouliez                   &            1 \\
+ vint                      &            1 \\
  égarés                    &            1 \\
  pressa                    &            1 \\
  garantir                  &            1 \\
@@ -6961,6 +6327,7 @@ Results Exact Counter Algorithm
  proposé                   &            1 \\
  produire                  &            1 \\
  jécrivis                  &            1 \\
+ devait                    &            1 \\
  expirer                   &            1 \\
  marquée                   &            1 \\
  cachée                    &            1 \\
@@ -6974,15 +6341,18 @@ Results Exact Counter Algorithm
  instruite                 &            1 \\
  sacrifiée                 &            1 \\
  lois                      &            1 \\
+ sévères                   &            1 \\
  princenous                &            1 \\
  tavons                    &            1 \\
  quatil                    &            1 \\
  portai                    &            1 \\
+ partit                    &            1 \\
  mordonna                  &            1 \\
  menaça                    &            1 \\
  laissais                  &            1 \\
  princedonnemoi            &            1 \\
  pagemaraud                &            1 \\
+ faisait                   &            1 \\
  pageil                    &            1 \\
  ordonné                   &            1 \\
  obéi                      &            1 \\
@@ -6997,6 +6367,7 @@ Results Exact Counter Algorithm
  douaire                   &            1 \\
  montaiguet                &            1 \\
  élever                    &            1 \\
+ pur                       &            1 \\
  connue                    &            1 \\
  napprochera               &            1 \\
  capuletroméo              &            1 \\
@@ -7013,5 +6384,5 @@ Results Exact Counter Algorithm
 \hline
 \end{tabular}
 
-Execution time: 0.0016168629990716 seconds
-Number of Words Counted: 21370
+Execution time: 0.0013417619993560947 seconds
+Number of Words Counted: 19149
