@@ -207,7 +207,8 @@ def evaluate_fixed_prob_counter_memory_usage(words_list):
     
 
 def evaluate_lossy_count(words_list, n_range):
-    exact_counter_results_sorted = sorted(exact_counter_basic(words_list).items(), key=lambda x: x[1], reverse=True)
+    exact_counter_results = exact_counter_basic(words_list)
+    exact_counter_results_sorted = sorted(exact_counter_results.items(), key=lambda x: x[1], reverse=True)
     k = 100
 
     # My Lossy Count    
@@ -225,9 +226,11 @@ def evaluate_lossy_count(words_list, n_range):
     # Verification
     assert lc.buckets == lc_to_verify.count
 
-    headers = ['Frequent Word', 'Bucket Value', 'Expected Word', 'Exact Count',
+    headers = ['Freq. Word', 'Bucket Value', 'Freq. Word Exact Count',
                 'Abs. Err.',
                 'Rel. Err.',
+                'Expected Word',
+                'Exact Count',
     ]
     results = {}
     # Try different values of n
@@ -235,13 +238,15 @@ def evaluate_lossy_count(words_list, n_range):
         frequent_words = lc.get_n_most_frequent_items(n)
         expected_frequent_words = dict(sorted(lc_to_verify.count.items(), key=lambda x: x[1], reverse=True)[:n])
         assert frequent_words == expected_frequent_words
-        results[n] = [(word, count, exact_counter_results_sorted[idx][0], exact_counter_results_sorted[idx][1],
-                       np.abs(count - exact_counter_results_sorted[idx][1]),
-                       np.abs(count - exact_counter_results_sorted[idx][1]) / exact_counter_results_sorted[idx][1])
+        results[n] = [(word, count, exact_counter_results[word],
+                       np.abs(count - exact_counter_results[word]),
+                       np.abs(count - exact_counter_results[word]) / exact_counter_results[word],
+                       exact_counter_results_sorted[idx][0],
+                       exact_counter_results_sorted[idx][1])
         for idx, (word, count) in enumerate(frequent_words.items())]
 
-    absolute_error_top_words = [result[4] for result in results[n]]
-    relative_error_top_words = [result[5] for result in results[n]]
+    absolute_error_top_words = [result[3] for result in results[n]]
+    relative_error_top_words = [result[4] for result in results[n]]
     mean_absolute_error_top_words = np.mean(absolute_error_top_words)
     max_absolute_error_top_words = np.max(absolute_error_top_words)
     min_absolute_error_top_words = np.min(absolute_error_top_words)
