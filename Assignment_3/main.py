@@ -182,16 +182,30 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
          min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]))
     for word, average_count in total_counts.items()]
 
-    mean_abs_error_all_words = np.mean([abs(count * inverse_prob - exact_counter_results[word]) for word, counts in word_counts.items() for count in counts])
-    mean_rel_error_all_words = np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for word, counts in word_counts.items() for count in counts])
-    
+    abs_error_all_words = [abs(count * inverse_prob - exact_counter_results[word]) for word, counts in word_counts.items() for count in counts]
+    rel_error_all_words = [abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for word, counts in word_counts.items() for count in counts]
+
+    mean_abs_error_all_words = np.mean(abs_error_all_words)
+    mean_rel_error_all_words = np.mean(rel_error_all_words)
     mean_of_mean_abs_error = np.mean([result[7] for result in results])
     mean_of_mean_rel_error = np.mean([result[10] for result in results])
+
+    max_abs_error_all_words = np.max(abs_error_all_words)
+    min_abs_error_all_words = np.min(abs_error_all_words)
+    max_rel_error_all_words = np.max(rel_error_all_words)
+    min_rel_error_all_words = np.min(rel_error_all_words)
 
     assert round(mean_abs_error_all_words, 4) == round(mean_of_mean_abs_error, 4)
     assert round(mean_rel_error_all_words, 4) == round(mean_of_mean_rel_error, 4)
 
-    addit_data = f'Mean Absolute Error All Words: {mean_abs_error_all_words}\nMean Relative Error All Words: {mean_rel_error_all_words}'
+    addit_data = (
+        f'Mean Absolute Error All Words: {mean_abs_error_all_words}\n'
+        f'Max Absolute Error All Words: {max_abs_error_all_words}\n'
+        f'Min Absolute Error All Words: {min_abs_error_all_words}\n'
+        f'Mean Relative Error All Words: {mean_rel_error_all_words}\n'
+        f'Max Relative Error All Words: {max_rel_error_all_words}\n'
+        f'Min Relative Error All Words: {min_rel_error_all_words}'
+    )
 
     return headers, results, exec_time, addit_data
 
