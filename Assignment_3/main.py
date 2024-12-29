@@ -173,13 +173,13 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
     results = [
         (word, word_occurences[word], average_count, average_count * inverse_prob, exact_counter_results[word], 
          abs(average_count * inverse_prob - exact_counter_results[word]),
-         abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word],
+         round(abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word], 4),
          np.mean([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          max([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          min([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
-         np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]),
-         max([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]),
-         min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]))
+         round(np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
+         round(max([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
+         round(min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4))
     for word, average_count in total_counts.items()]
 
     abs_error_all_words = [abs(count * inverse_prob - exact_counter_results[word]) for word, counts in word_counts.items() for count in counts]
@@ -253,8 +253,8 @@ def evaluate_lossy_count(words_list, n_range):
         expected_frequent_words = dict(sorted(lc_to_verify.count.items(), key=lambda x: x[1], reverse=True)[:n])
         assert frequent_words == expected_frequent_words
         results[n] = [(word, count, exact_counter_results[word],
-                       np.abs(count - exact_counter_results[word]),
-                       np.abs(count - exact_counter_results[word]) / exact_counter_results[word],
+                       abs(count - exact_counter_results[word]),
+                       abs(count - exact_counter_results[word]) / exact_counter_results[word],
                        exact_counter_results_sorted[idx][0],
                        exact_counter_results_sorted[idx][1])
         for idx, (word, count) in enumerate(frequent_words.items())]
@@ -267,6 +267,10 @@ def evaluate_lossy_count(words_list, n_range):
     mean_relative_error_top_words = np.mean(relative_error_top_words)
     max_relative_error_top_words = np.max(relative_error_top_words)
     min_relative_error_top_words = np.min(relative_error_top_words)
+
+    # Round relative error only for table
+    for n in n_range:
+        results[n] = [(result[0], result[1], result[2], result[3], round(result[4], 4), result[5], result[6]) for result in results[n]]
 
     addit_data = (
         f"Mean Absolute Error Top {n} Words: {mean_absolute_error_top_words}\n"
@@ -285,7 +289,7 @@ def evaluate_lossy_count_memory_usage(words_list):
     lc = LossyCounting(k)
     lc_to_verify = MugegenLossyCounting(1/k) # Lossy Count to Verify
     headers = ['Word', 'isNewWord', 'Word Count', 'Delta', 'Memory Usage', 'Current Buckets']
-    results = []
+    results = [('', '', '', 0, asizeof.asizeof(lc.buckets), {})]
     for word in words_list:
         is_new_word = word not in lc.buckets
         lc.process_item(word)
