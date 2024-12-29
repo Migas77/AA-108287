@@ -76,11 +76,12 @@ def main_command(language, algorithm):
         headers, results = evaluate_lossy_count_memory_usage(words_list)
         memory_usage = [result[4] for result in results]
 
-    filepath = f'results/{algorithm}/{language}_{algorithm}_memory_results.txt'
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(f'{algorithm} memory usage\n')
-        f.write(tabulate(results, headers=headers, tablefmt='grid'))
-        print(f'The memory usage results can be found in {filepath}')
+    for table_type in ['grid', 'latex']:
+        filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_memory_results.txt'
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(f'{algorithm} memory usage\n')
+            f.write(tabulate(results, headers=headers, tablefmt=table_type))
+            print(f'The memory usage results can be found in {filepath}')
 
     words = list(range(len(memory_usage)))
     plt.scatter(words, memory_usage)
