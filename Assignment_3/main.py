@@ -172,10 +172,10 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
 
 
     results = [
-        (word, word_occurences[word], average_count, average_count * inverse_prob, exact_counter_results[word], 
-         abs(average_count * inverse_prob - exact_counter_results[word]),
+        (word, word_occurences[word], round(average_count, 2), round(average_count * inverse_prob, 2), exact_counter_results[word], 
+         round(abs(average_count * inverse_prob - exact_counter_results[word]), 2),
          100 * round(abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word], 4),
-         np.mean([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
+         round(np.mean([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]), 2),
          max([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          min([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          100 * round(np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
