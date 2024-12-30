@@ -3740,7 +3740,7 @@ Results Fixed Probability Counter Algorithm: 1/2 (n_iters=10000)
 \hline
 \end{tabular}
 
-Execution time: 0.0013013434787000847 seconds
+Execution time: 0.001256917037500716 seconds
 Expected Total Word Count: 14456
 Mean Number of processed Words: 7227.9089
 Mean Estimated Total Word Count: 14455.8178
