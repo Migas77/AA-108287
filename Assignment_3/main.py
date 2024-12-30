@@ -23,7 +23,7 @@ def main_command(language, algorithm):
     }
 
     words_list = read_text_to_word_list(*book_args_by_language[language])
-    n_iters = 10
+    n_iters = 10000
 
     # To evaluate algorithms results and execution time
     if algorithm == 'exact_counter':
@@ -136,11 +136,13 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
     total_counts = Counter()
     word_occurences = Counter()
     exec_times = []
+    total_word_counts = []
 
     for i in range(n_iters):
         start_time = time.perf_counter()
         results = fixed_probability_counter(words_list, 0.5)
         exec_time = time.perf_counter() - start_time
+        total_word_counts.append(sum(results.values()))
         total_counts.update(results)
         word_occurences.update(results.keys())
         exec_times.append(exec_time)
@@ -159,58 +161,45 @@ def evaluate_fixed_prob_counter(words_list, n_iters):
     headers = [
         'Word', '# Occurrences', 'Mean Count', 'Mean Estimated Count (MEC)', 'Expected Count',
         'MEC Abs. Err.',
-        'MEC Rel. Err.',
+        'MEC Rel. Err.(%)',
         'Mean Abs. Err.',
         'Max Abs. Err.',
         'Min Abs. Err.',
-        'Mean Rel. Err.',
-        'Max Rel. Err.',
-        'Min Rel. Err.',
+        'Mean Rel. Err.(%)',
+        'Max Rel. Err.(%)',
+        'Min Rel. Err.(%)',
     ]
-
-    for word, count in total_counts.items():
-        print(count, exact_counter_results[word], inverse_prob)
-        print(abs(count * inverse_prob - exact_counter_results[word])) # Mean Absolute Error
-        print([count2*inverse_prob for count2 in word_counts[word] if count2 != 0]) # List of counts
-        print(np.mean([abs(count2 * inverse_prob - exact_counter_results[word]) for count2 in word_counts[word] if count2 != 0])) # Mean of absolute errors
-        break
 
 
     results = [
         (word, word_occurences[word], average_count, average_count * inverse_prob, exact_counter_results[word], 
          abs(average_count * inverse_prob - exact_counter_results[word]),
-         round(abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word], 4),
+         100 * round(abs(average_count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word], 4),
          np.mean([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          max([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
          min([abs(count * inverse_prob - exact_counter_results[word]) for count in word_counts[word]]),
-         round(np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
-         round(max([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
-         round(min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4))
+         100 * round(np.mean([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
+         100 * round(max([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4),
+         100 * round(min([abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for count in word_counts[word]]), 4))
     for word, average_count in total_counts.items()]
 
     abs_error_all_words = [abs(count * inverse_prob - exact_counter_results[word]) for word, counts in word_counts.items() for count in counts]
     rel_error_all_words = [abs(count * inverse_prob - exact_counter_results[word]) / exact_counter_results[word] for word, counts in word_counts.items() for count in counts]
 
-    mean_abs_error_all_words = np.mean(abs_error_all_words)
-    mean_rel_error_all_words = np.mean(rel_error_all_words)
-    mean_of_mean_abs_error = np.mean([result[7] for result in results])
-    mean_of_mean_rel_error = np.mean([result[10] for result in results])
-
     max_abs_error_all_words = np.max(abs_error_all_words)
     min_abs_error_all_words = np.min(abs_error_all_words)
-    max_rel_error_all_words = np.max(rel_error_all_words)
-    min_rel_error_all_words = np.min(rel_error_all_words)
-
-    assert round(mean_abs_error_all_words, 4) == round(mean_of_mean_abs_error, 4)
-    assert round(mean_rel_error_all_words, 4) == round(mean_of_mean_rel_error, 4)
+    max_rel_error_all_words = 100 * np.max(rel_error_all_words)
+    min_rel_error_all_words = 100 * np.min(rel_error_all_words)
 
     addit_data = (
-        f'Mean Absolute Error All Words: {mean_abs_error_all_words}\n'
+        f'Expected Total Word Count: {len(words_list)}\n'
+        f'Mean Number of processed Words: {sum(total_word_counts)/n_iters}\n'
+        f'Mean Estimated Total Word Count: {sum([twc * inverse_prob for twc in total_word_counts])/n_iters}\n'
+        f'Mean Relative Error Estimated Total Word Count: {100 * np.mean([abs(twc * inverse_prob - len(words_list)) / len(words_list) for twc in total_word_counts])}%\n'
         f'Max Absolute Error All Words: {max_abs_error_all_words}\n'
         f'Min Absolute Error All Words: {min_abs_error_all_words}\n'
-        f'Mean Relative Error All Words: {mean_rel_error_all_words}\n'
-        f'Max Relative Error All Words: {max_rel_error_all_words}\n'
-        f'Min Relative Error All Words: {min_rel_error_all_words}'
+        f'Max Relative Error All Words: {max_rel_error_all_words}%\n'
+        f'Min Relative Error All Words: {min_rel_error_all_words}%'
     )
 
     return headers, results, exec_time, addit_data
