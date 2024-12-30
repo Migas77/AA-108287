@@ -43,7 +43,8 @@ def main_command(language, algorithm):
                 filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_{"sorted" if is_sorted else "raw"}_results.txt'
                 with open(filepath, 'w', encoding='utf-8') as f:
                     if is_sorted:
-                        output_results = sorted(results, key=lambda x: x[1], reverse=True)
+                        idx = 1 if algorithm == 'exact_counter' else 3
+                        output_results = sorted(results, key=lambda x: x[idx], reverse=True)
                     else:
                         output_results = results
                     f.write(f'Results {algorithm_name}\n')
