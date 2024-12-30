@@ -237,7 +237,7 @@ def evaluate_lossy_count(words_list, n_range):
 
     headers = ['Freq. Word', 'Bucket Value', 'Freq. Word Exact Count',
                 'Abs. Err.',
-                'Rel. Err.',
+                'Rel. Err.(%)',
                 'Expected Word',
                 'Exact Count',
     ]
@@ -254,27 +254,29 @@ def evaluate_lossy_count(words_list, n_range):
                        exact_counter_results_sorted[idx][1])
         for idx, (word, count) in enumerate(frequent_words.items())]
 
-    absolute_error_top_words = [result[3] for result in results[n]]
-    relative_error_top_words = [result[4] for result in results[n]]
-    mean_absolute_error_top_words = np.mean(absolute_error_top_words)
-    max_absolute_error_top_words = np.max(absolute_error_top_words)
-    min_absolute_error_top_words = np.min(absolute_error_top_words)
-    mean_relative_error_top_words = np.mean(relative_error_top_words)
-    max_relative_error_top_words = np.max(relative_error_top_words)
-    min_relative_error_top_words = np.min(relative_error_top_words)
+    addit_data = ''
+    for n in n_range:
+        absolute_error_top_words = [result[3] for result in results[n]]
+        relative_error_top_words = [result[4] for result in results[n]]
+        mean_absolute_error_top_words = np.mean(absolute_error_top_words)
+        max_absolute_error_top_words = np.max(absolute_error_top_words)
+        min_absolute_error_top_words = np.min(absolute_error_top_words)
+        mean_relative_error_top_words = 100 * np.mean(relative_error_top_words)
+        max_relative_error_top_words = 100 * np.max(relative_error_top_words)
+        min_relative_error_top_words = 100 * np.min(relative_error_top_words)
+
+        addit_data += (
+            f"Mean Absolute Error Top {n} Words: {mean_absolute_error_top_words}\n"
+            f"Max Absolute Error Top {n} Words: {max_absolute_error_top_words}\n"
+            f"Min Absolute Error Top {n} Words: {min_absolute_error_top_words}\n"
+            f"Mean Relative Error Top {n} Words: {mean_relative_error_top_words}%\n"
+            f"Max Relative Error Top {n} Words: {max_relative_error_top_words}%\n"
+            f"Min Relative Error Top {n} Words: {min_relative_error_top_words}%\n\n"
+        )
 
     # Round relative error only for table
     for n in n_range:
-        results[n] = [(result[0], result[1], result[2], result[3], round(result[4], 4), result[5], result[6]) for result in results[n]]
-
-    addit_data = (
-        f"Mean Absolute Error Top {n} Words: {mean_absolute_error_top_words}\n"
-        f"Max Absolute Error Top {n} Words: {max_absolute_error_top_words}\n"
-        f"Min Absolute Error Top {n} Words: {min_absolute_error_top_words}\n"
-        f"Mean Relative Error Top {n} Words: {mean_relative_error_top_words}\n"
-        f"Max Relative Error Top {n} Words: {max_relative_error_top_words}\n"
-        f"Min Relative Error Top {n} Words: {min_relative_error_top_words}"
-    )
+        results[n] = [(result[0], result[1], result[2], result[3], 100 * round(result[4], 4), result[5], result[6]) for result in results[n]]
 
     return headers, results, exec_time, addit_data
 
