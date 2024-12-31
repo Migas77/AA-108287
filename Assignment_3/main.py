@@ -24,6 +24,7 @@ def main_command(language, algorithm):
 
     words_list = read_text_to_word_list(*book_args_by_language[language])
     n_iters = 10000
+    k = 100
 
     # To evaluate algorithms results and execution time
     if algorithm == 'exact_counter':
@@ -34,8 +35,8 @@ def main_command(language, algorithm):
         algorithm_name = f'Fixed Probability Counter Algorithm: 1/2 (n_iters={n_iters})'
     elif algorithm == 'lossy_count':
         n_range = range(5, 31, 5)
-        headers, results, exec_time, addit_data = evaluate_lossy_count(words_list, n_range)
-        algorithm_name = 'Lossy Counting Algorithm'
+        headers, results, exec_time, addit_data = evaluate_lossy_count(words_list, n_range, k)
+        algorithm_name = f'Lossy Counting Algorithm (k={k})'
 
     if algorithm != 'lossy_count':
         for table_type in ['grid', 'latex']:
@@ -68,13 +69,13 @@ def main_command(language, algorithm):
 
     # To evaluate algorithms memmory usage
     if algorithm == 'exact_counter':
-        headers, results = evaluate_exact_counter_memory_usage(words_list)
+        headers, results, addit_data = evaluate_exact_counter_memory_usage(words_list)
         memory_usage = [result[2] for result in results]
     elif algorithm == 'fixed_prob_counter':
-        headers, results = evaluate_fixed_prob_counter_memory_usage(words_list)
+        headers, results, addit_data = evaluate_fixed_prob_counter_memory_usage(words_list)
         memory_usage = [result[2] for result in results]
     elif algorithm == 'lossy_count':
-        headers, results = evaluate_lossy_count_memory_usage(words_list)
+        headers, results, addit_data = evaluate_lossy_count_memory_usage(words_list, k)
         memory_usage = [result[4] for result in results]
 
     for table_type in ['grid', 'latex']:
@@ -82,6 +83,7 @@ def main_command(language, algorithm):
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(f'{algorithm} memory usage\n')
             f.write(tabulate(results, headers=headers, tablefmt=table_type))
+            f.write(f'\n\n{addit_data}')
             print(f'The memory usage results can be found in {filepath}')
 
     words = list(range(len(memory_usage)))
@@ -125,7 +127,7 @@ def evaluate_exact_counter_memory_usage(words_list):
     headers = ['Current Word', 'Current Word Count', 'Memory Usage', '# Distinct Words']
     results = memory_usage
 
-    return headers, results
+    return headers, results, ''
 
 
 def evaluate_fixed_prob_counter(words_list, n_iters):
@@ -212,14 +214,13 @@ def evaluate_fixed_prob_counter_memory_usage(words_list):
     headers = ['Current Word', 'Current Word Count', 'Memory Usage', '# Distinct Words']
     results = memory_usage
 
-    return headers, results
+    return headers, results, ''
 
     
 
-def evaluate_lossy_count(words_list, n_range):
+def evaluate_lossy_count(words_list, n_range, k):
     exact_counter_results = exact_counter_basic(words_list)
     exact_counter_results_sorted = sorted(exact_counter_results.items(), key=lambda x: x[1], reverse=True)
-    k = 100
 
     # My Lossy Count    
     start_time = time.perf_counter()
@@ -255,7 +256,18 @@ def evaluate_lossy_count(words_list, n_range):
                        exact_counter_results_sorted[idx][1])
         for idx, (word, count) in enumerate(frequent_words.items())]
 
-    addit_data = ''
+    theoretical_max_overestimation_error = lc.n / k
+    actual_max_overestimation_error = max([(word, count, abs(count - exact_counter_results[word])) for word, count in lc.buckets.items()], key=lambda x: x[2])
+    assert theoretical_max_overestimation_error >= actual_max_overestimation_error[2]
+    addit_data = (
+        f'Theoretical Max Overestimation Error n / k = εn: {theoretical_max_overestimation_error}\n'
+        f'Final Delta: {lc.delta}\n'
+        f'Actual Max Overestimation Error: {actual_max_overestimation_error[2]}; '
+            f'Word: {actual_max_overestimation_error[0]}; Estimated Count: {actual_max_overestimation_error[1]}; '
+            f'Expected Count: {exact_counter_results[actual_max_overestimation_error[0]]}\n'
+        f'Theoretical Max Overestimation Error >= Actual Max Overestimation Error: {theoretical_max_overestimation_error >= actual_max_overestimation_error[2]}\n'
+        '\n'
+    )
     for n in n_range:
         absolute_error_top_words = [result[3] for result in results[n]]
         relative_error_top_words = [result[4] for result in results[n]]
@@ -281,21 +293,26 @@ def evaluate_lossy_count(words_list, n_range):
 
     return headers, results, exec_time, addit_data
 
-def evaluate_lossy_count_memory_usage(words_list):
-    k = 100
+def evaluate_lossy_count_memory_usage(words_list, k):
 
     lc = LossyCounting(k)
     lc_to_verify = MugegenLossyCounting(1/k) # Lossy Count to Verify
-    headers = ['Word', 'isNewWord', 'Word Count', 'Delta', 'Memory Usage', 'Current Buckets']
-    results = [('', '', '', 0, asizeof.asizeof(lc.buckets), {})]
+    headers = ['Word', 'isNewWord', 'Word Count', 'Delta', 'Memory Usage', '#Buckets']
+    results = [('', '', '', 0, asizeof.asizeof(lc.buckets), 0)]
     for word in words_list:
         is_new_word = word not in lc.buckets
         lc.process_item(word)
         lc_to_verify.addCount(word)
         assert lc.buckets == lc_to_verify.count
-        results.append((word, is_new_word, lc.buckets[word], lc.delta, asizeof.asizeof(lc.buckets), lc.buckets.copy()))
+        results.append((word, is_new_word, lc.buckets[word], lc.delta, asizeof.asizeof(lc.buckets), len(lc.buckets)))
 
-    return headers, results
+    assert lc.n == lc_to_verify.N == len(words_list)
+    addit_data = (
+        f'k: {k}\n'
+        f'Max Number of Buckets: {max(results, key=lambda x: x[5])[5]}\n'
+    )
+
+    return headers, results, addit_data
 
 
 
