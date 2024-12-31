@@ -1,0 +1,204 @@
+Lossy Counting Algorithm (k=2000)
+
+Execution time: 0.00535490599941113 seconds
+
+Top 5 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &              0 & a               &           177 \\
+ si           &            159 &                      159 &           0 &              0 & si              &           159 \\
+ plus         &            154 &                      154 &           0 &              0 & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &              0 & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &              0 & bien            &           129 \\
+\hline
+\end{tabular}
+
+Top 10 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &           0    & a               &           177 \\
+ si           &            159 &                      159 &           0 &           0    & si              &           159 \\
+ plus         &            154 &                      154 &           0 &           0    & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &           0    & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &           0    & bien            &           129 \\
+ cette        &            123 &                      123 &           0 &           0    & cette           &           123 \\
+ mort         &            106 &                      106 &           0 &           0    & mort            &           106 \\
+ cest         &            103 &                      103 &           0 &           0    & cest            &           103 \\
+ frère        &             99 &                       97 &           2 &           2.06 & frère           &            97 \\
+ comme        &             96 &                       96 &           0 &           0    & comme           &            96 \\
+\hline
+\end{tabular}
+
+Top 15 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &           0    & a               &           177 \\
+ si           &            159 &                      159 &           0 &           0    & si              &           159 \\
+ plus         &            154 &                      154 &           0 &           0    & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &           0    & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &           0    & bien            &           129 \\
+ cette        &            123 &                      123 &           0 &           0    & cette           &           123 \\
+ mort         &            106 &                      106 &           0 &           0    & mort            &           106 \\
+ cest         &            103 &                      103 &           0 &           0    & cest            &           103 \\
+ frère        &             99 &                       97 &           2 &           2.06 & frère           &            97 \\
+ comme        &             96 &                       96 &           0 &           0    & comme           &            96 \\
+ tout         &             89 &                       89 &           0 &           0    & tout            &            89 \\
+ nuit         &             76 &                       76 &           0 &           0    & nuit            &            76 \\
+ note         &             75 &                       75 &           0 &           0    & note            &            75 \\
+ juliette     &             73 &                       73 &           0 &           0    & juliette        &            73 \\
+ où           &             73 &                       73 &           0 &           0    & où              &            73 \\
+\hline
+\end{tabular}
+
+Top 20 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &           0    & a               &           177 \\
+ si           &            159 &                      159 &           0 &           0    & si              &           159 \\
+ plus         &            154 &                      154 &           0 &           0    & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &           0    & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &           0    & bien            &           129 \\
+ cette        &            123 &                      123 &           0 &           0    & cette           &           123 \\
+ mort         &            106 &                      106 &           0 &           0    & mort            &           106 \\
+ cest         &            103 &                      103 &           0 &           0    & cest            &           103 \\
+ frère        &             99 &                       97 &           2 &           2.06 & frère           &            97 \\
+ comme        &             96 &                       96 &           0 &           0    & comme           &            96 \\
+ tout         &             89 &                       89 &           0 &           0    & tout            &            89 \\
+ nuit         &             76 &                       76 &           0 &           0    & nuit            &            76 \\
+ note         &             75 &                       75 &           0 &           0    & note            &            75 \\
+ juliette     &             73 &                       73 &           0 &           0    & juliette        &            73 \\
+ où           &             73 &                       73 &           0 &           0    & où              &            73 \\
+ dun          &             72 &                       72 &           0 &           0    & dun             &            72 \\
+ signora      &             67 &                       67 &           0 &           0    & signora         &            67 \\
+ encore       &             66 &                       66 &           0 &           0    & encore          &            66 \\
+ capulet      &             65 &                       65 &           0 &           0    & capulet         &            65 \\
+ faire        &             64 &                       64 &           0 &           0    & faire           &            64 \\
+\hline
+\end{tabular}
+
+Top 25 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &           0    & a               &           177 \\
+ si           &            159 &                      159 &           0 &           0    & si              &           159 \\
+ plus         &            154 &                      154 &           0 &           0    & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &           0    & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &           0    & bien            &           129 \\
+ cette        &            123 &                      123 &           0 &           0    & cette           &           123 \\
+ mort         &            106 &                      106 &           0 &           0    & mort            &           106 \\
+ cest         &            103 &                      103 &           0 &           0    & cest            &           103 \\
+ frère        &             99 &                       97 &           2 &           2.06 & frère           &            97 \\
+ comme        &             96 &                       96 &           0 &           0    & comme           &            96 \\
+ tout         &             89 &                       89 &           0 &           0    & tout            &            89 \\
+ nuit         &             76 &                       76 &           0 &           0    & nuit            &            76 \\
+ note         &             75 &                       75 &           0 &           0    & note            &            75 \\
+ juliette     &             73 &                       73 &           0 &           0    & juliette        &            73 \\
+ où           &             73 &                       73 &           0 &           0    & où              &            73 \\
+ dun          &             72 &                       72 &           0 &           0    & dun             &            72 \\
+ signora      &             67 &                       67 &           0 &           0    & signora         &            67 \\
+ encore       &             66 &                       66 &           0 &           0    & encore          &            66 \\
+ capulet      &             65 &                       65 &           0 &           0    & capulet         &            65 \\
+ faire        &             64 &                       64 &           0 &           0    & faire           &            64 \\
+ donc         &             64 &                       64 &           0 &           0    & donc            &            64 \\
+ tybalt       &             61 &                       61 &           0 &           0    & tybalt          &            61 \\
+ ici          &             61 &                       61 &           0 &           0    & ici             &            61 \\
+ aussi        &             59 &                       59 &           0 &           0    & aussi           &            59 \\
+ deux         &             58 &                       58 &           0 &           0    & deux            &            58 \\
+\hline
+\end{tabular}
+
+Top 30 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ a            &            177 &                      177 &           0 &           0    & a               &           177 \\
+ si           &            159 &                      159 &           0 &           0    & si              &           159 \\
+ plus         &            154 &                      154 &           0 &           0    & plus            &           154 \\
+ roméo        &            140 &                      140 &           0 &           0    & roméo           &           140 \\
+ bien         &            129 &                      129 &           0 &           0    & bien            &           129 \\
+ cette        &            123 &                      123 &           0 &           0    & cette           &           123 \\
+ mort         &            106 &                      106 &           0 &           0    & mort            &           106 \\
+ cest         &            103 &                      103 &           0 &           0    & cest            &           103 \\
+ frère        &             99 &                       97 &           2 &           2.06 & frère           &            97 \\
+ comme        &             96 &                       96 &           0 &           0    & comme           &            96 \\
+ tout         &             89 &                       89 &           0 &           0    & tout            &            89 \\
+ nuit         &             76 &                       76 &           0 &           0    & nuit            &            76 \\
+ note         &             75 &                       75 &           0 &           0    & note            &            75 \\
+ juliette     &             73 &                       73 &           0 &           0    & juliette        &            73 \\
+ où           &             73 &                       73 &           0 &           0    & où              &            73 \\
+ dun          &             72 &                       72 &           0 &           0    & dun             &            72 \\
+ signora      &             67 &                       67 &           0 &           0    & signora         &            67 \\
+ encore       &             66 &                       66 &           0 &           0    & encore          &            66 \\
+ capulet      &             65 &                       65 &           0 &           0    & capulet         &            65 \\
+ faire        &             64 &                       64 &           0 &           0    & faire           &            64 \\
+ donc         &             64 &                       64 &           0 &           0    & donc            &            64 \\
+ tybalt       &             61 &                       61 &           0 &           0    & tybalt          &            61 \\
+ ici          &             61 &                       61 &           0 &           0    & ici             &            61 \\
+ aussi        &             59 &                       59 &           0 &           0    & aussi           &            59 \\
+ deux         &             58 &                       58 &           0 &           0    & deux            &            58 \\
+ jour         &             58 &                       58 &           0 &           0    & jour            &            58 \\
+ dune         &             57 &                       57 &           0 &           0    & dune            &            57 \\
+ quil         &             57 &                       57 &           0 &           0    & quil            &            57 \\
+ homme        &             55 &                       55 &           0 &           0    & homme           &            55 \\
+ the          &             54 &                       54 &           0 &           0    & the             &            54 \\
+\hline
+\end{tabular}
+
+Theoretical Max Overestimation Error n / k = εn: 9.5745
+Final Delta: 9
+Actual Max Overestimation Error: 9; Word: lanterne; Estimated Count: 10; Expected Count: 1
+Theoretical Max Overestimation Error >= Actual Max Overestimation Error: True
+
+Mean Absolute Error Top 5 Words: 0.0
+Max Absolute Error Top 5 Words: 0
+Min Absolute Error Top 5 Words: 0
+Mean Relative Error Top 5 Words: 0.0%
+Max Relative Error Top 5 Words: 0.0%
+Min Relative Error Top 5 Words: 0.0%
+
+Mean Absolute Error Top 10 Words: 0.2
+Max Absolute Error Top 10 Words: 2
+Min Absolute Error Top 10 Words: 0
+Mean Relative Error Top 10 Words: 0.2061855670103093%
+Max Relative Error Top 10 Words: 2.0618556701030926%
+Min Relative Error Top 10 Words: 0.0%
+
+Mean Absolute Error Top 15 Words: 0.13333333333333333
+Max Absolute Error Top 15 Words: 2
+Min Absolute Error Top 15 Words: 0
+Mean Relative Error Top 15 Words: 0.1374570446735395%
+Max Relative Error Top 15 Words: 2.0618556701030926%
+Min Relative Error Top 15 Words: 0.0%
+
+Mean Absolute Error Top 20 Words: 0.1
+Max Absolute Error Top 20 Words: 2
+Min Absolute Error Top 20 Words: 0
+Mean Relative Error Top 20 Words: 0.10309278350515465%
+Max Relative Error Top 20 Words: 2.0618556701030926%
+Min Relative Error Top 20 Words: 0.0%
+
+Mean Absolute Error Top 25 Words: 0.08
+Max Absolute Error Top 25 Words: 2
+Min Absolute Error Top 25 Words: 0
+Mean Relative Error Top 25 Words: 0.08247422680412371%
+Max Relative Error Top 25 Words: 2.0618556701030926%
+Min Relative Error Top 25 Words: 0.0%
+
+Mean Absolute Error Top 30 Words: 0.06666666666666667
+Max Absolute Error Top 30 Words: 2
+Min Absolute Error Top 30 Words: 0
+Mean Relative Error Top 30 Words: 0.06872852233676975%
+Max Relative Error Top 30 Words: 2.0618556701030926%
+Min Relative Error Top 30 Words: 0.0%
+
