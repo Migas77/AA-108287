@@ -1,0 +1,204 @@
+Lossy Counting Algorithm (k=3000)
+
+Execution time: 0.00312752700119745 seconds
+
+Top 5 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+\hline
+\end{tabular}
+
+Top 10 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+ mercutio     &             77 &                       77 &           0 &              0 & mercutio        &            77 \\
+ benvolio     &             68 &                       68 &           0 &              0 & benvolio        &            68 \\
+ nacht        &             68 &                       68 &           0 &              0 & nacht           &            68 \\
+ gräfin       &             66 &                       66 &           0 &              0 & gräfin          &            66 \\
+ ja           &             60 &                       60 &           0 &              0 & ja              &            60 \\
+\hline
+\end{tabular}
+
+Top 15 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+ mercutio     &             77 &                       77 &           0 &              0 & mercutio        &            77 \\
+ benvolio     &             68 &                       68 &           0 &              0 & benvolio        &            68 \\
+ nacht        &             68 &                       68 &           0 &              0 & nacht           &            68 \\
+ gräfin       &             66 &                       66 &           0 &              0 & gräfin          &            66 \\
+ ja           &             60 &                       60 &           0 &              0 & ja              &            60 \\
+ ab           &             60 &                       60 &           0 &              0 & ab              &            60 \\
+ wohl         &             58 &                       58 &           0 &              0 & wohl            &            58 \\
+ kommt        &             58 &                       58 &           0 &              0 & kommt           &            58 \\
+ tybalt       &             55 &                       55 &           0 &              0 & tybalt          &            55 \\
+ liebe        &             53 &                       53 &           0 &              0 & liebe           &            53 \\
+\hline
+\end{tabular}
+
+Top 20 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+ mercutio     &             77 &                       77 &           0 &              0 & mercutio        &            77 \\
+ benvolio     &             68 &                       68 &           0 &              0 & benvolio        &            68 \\
+ nacht        &             68 &                       68 &           0 &              0 & nacht           &            68 \\
+ gräfin       &             66 &                       66 &           0 &              0 & gräfin          &            66 \\
+ ja           &             60 &                       60 &           0 &              0 & ja              &            60 \\
+ ab           &             60 &                       60 &           0 &              0 & ab              &            60 \\
+ wohl         &             58 &                       58 &           0 &              0 & wohl            &            58 \\
+ kommt        &             58 &                       58 &           0 &              0 & kommt           &            58 \\
+ tybalt       &             55 &                       55 &           0 &              0 & tybalt          &            55 \\
+ liebe        &             53 &                       53 &           0 &              0 & liebe           &            53 \\
+ herr         &             51 &                       51 &           0 &              0 & herr            &            51 \\
+ schon        &             48 &                       48 &           0 &              0 & schon           &            48 \\
+ lorenzo      &             47 &                       47 &           0 &              0 & lorenzo         &            47 \\
+ tod          &             42 &                       42 &           0 &              0 & tod             &            42 \\
+ paris        &             37 &                       37 &           0 &              0 & paris           &            37 \\
+\hline
+\end{tabular}
+
+Top 25 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+ mercutio     &             77 &                       77 &           0 &              0 & mercutio        &            77 \\
+ benvolio     &             68 &                       68 &           0 &              0 & benvolio        &            68 \\
+ nacht        &             68 &                       68 &           0 &              0 & nacht           &            68 \\
+ gräfin       &             66 &                       66 &           0 &              0 & gräfin          &            66 \\
+ ja           &             60 &                       60 &           0 &              0 & ja              &            60 \\
+ ab           &             60 &                       60 &           0 &              0 & ab              &            60 \\
+ wohl         &             58 &                       58 &           0 &              0 & wohl            &            58 \\
+ kommt        &             58 &                       58 &           0 &              0 & kommt           &            58 \\
+ tybalt       &             55 &                       55 &           0 &              0 & tybalt          &            55 \\
+ liebe        &             53 &                       53 &           0 &              0 & liebe           &            53 \\
+ herr         &             51 &                       51 &           0 &              0 & herr            &            51 \\
+ schon        &             48 &                       48 &           0 &              0 & schon           &            48 \\
+ lorenzo      &             47 &                       47 &           0 &              0 & lorenzo         &            47 \\
+ tod          &             42 &                       42 &           0 &              0 & tod             &            42 \\
+ paris        &             37 &                       37 &           0 &              0 & paris           &            37 \\
+ diener       &             37 &                       37 &           0 &              0 & diener          &            37 \\
+ nein         &             36 &                       36 &           0 &              0 & nein            &            36 \\
+ mehr         &             36 &                       36 &           0 &              0 & mehr            &            36 \\
+ wer          &             36 &                       36 &           0 &              0 & wer             &            36 \\
+ montague     &             34 &                       34 &           0 &              0 & montague        &            34 \\
+\hline
+\end{tabular}
+
+Top 30 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            254 &                      254 &           0 &              0 & romeo           &           254 \\
+ julia        &            139 &                      139 &           0 &              0 & julia           &           139 \\
+ capulet      &            128 &                      128 &           0 &              0 & capulet         &           128 \\
+ wärterin     &            103 &                      103 &           0 &              0 & wärterin        &           103 \\
+ o            &            102 &                      102 &           0 &              0 & o               &           102 \\
+ mercutio     &             77 &                       77 &           0 &              0 & mercutio        &            77 \\
+ benvolio     &             68 &                       68 &           0 &              0 & benvolio        &            68 \\
+ nacht        &             68 &                       68 &           0 &              0 & nacht           &            68 \\
+ gräfin       &             66 &                       66 &           0 &              0 & gräfin          &            66 \\
+ ja           &             60 &                       60 &           0 &              0 & ja              &            60 \\
+ ab           &             60 &                       60 &           0 &              0 & ab              &            60 \\
+ wohl         &             58 &                       58 &           0 &              0 & wohl            &            58 \\
+ kommt        &             58 &                       58 &           0 &              0 & kommt           &            58 \\
+ tybalt       &             55 &                       55 &           0 &              0 & tybalt          &            55 \\
+ liebe        &             53 &                       53 &           0 &              0 & liebe           &            53 \\
+ herr         &             51 &                       51 &           0 &              0 & herr            &            51 \\
+ schon        &             48 &                       48 &           0 &              0 & schon           &            48 \\
+ lorenzo      &             47 &                       47 &           0 &              0 & lorenzo         &            47 \\
+ tod          &             42 &                       42 &           0 &              0 & tod             &            42 \\
+ paris        &             37 &                       37 &           0 &              0 & paris           &            37 \\
+ diener       &             37 &                       37 &           0 &              0 & diener          &            37 \\
+ nein         &             36 &                       36 &           0 &              0 & nein            &            36 \\
+ mehr         &             36 &                       36 &           0 &              0 & mehr            &            36 \\
+ wer          &             36 &                       36 &           0 &              0 & wer             &            36 \\
+ montague     &             34 &                       34 &           0 &              0 & montague        &            34 \\
+ gut          &             33 &                       33 &           0 &              0 & gut             &            33 \\
+ tot          &             33 &                       33 &           0 &              0 & tot             &            33 \\
+ geht         &             29 &                       29 &           0 &              0 & geht            &            29 \\
+ sag          &             29 &                       29 &           0 &              0 & sag             &            29 \\
+ fräulein     &             29 &                       29 &           0 &              0 & fräulein        &            29 \\
+\hline
+\end{tabular}
+
+Theoretical Max Overestimation Error n / k = εn: 3.7576666666666667
+Final Delta: 3
+Actual Max Overestimation Error: 3; Word: lebenswärm; Estimated Count: 4; Expected Count: 1
+Theoretical Max Overestimation Error >= Actual Max Overestimation Error: True
+
+Mean Absolute Error Top 5 Words: 0.0
+Max Absolute Error Top 5 Words: 0
+Min Absolute Error Top 5 Words: 0
+Mean Relative Error Top 5 Words: 0.0%
+Max Relative Error Top 5 Words: 0.0%
+Min Relative Error Top 5 Words: 0.0%
+
+Mean Absolute Error Top 10 Words: 0.0
+Max Absolute Error Top 10 Words: 0
+Min Absolute Error Top 10 Words: 0
+Mean Relative Error Top 10 Words: 0.0%
+Max Relative Error Top 10 Words: 0.0%
+Min Relative Error Top 10 Words: 0.0%
+
+Mean Absolute Error Top 15 Words: 0.0
+Max Absolute Error Top 15 Words: 0
+Min Absolute Error Top 15 Words: 0
+Mean Relative Error Top 15 Words: 0.0%
+Max Relative Error Top 15 Words: 0.0%
+Min Relative Error Top 15 Words: 0.0%
+
+Mean Absolute Error Top 20 Words: 0.0
+Max Absolute Error Top 20 Words: 0
+Min Absolute Error Top 20 Words: 0
+Mean Relative Error Top 20 Words: 0.0%
+Max Relative Error Top 20 Words: 0.0%
+Min Relative Error Top 20 Words: 0.0%
+
+Mean Absolute Error Top 25 Words: 0.0
+Max Absolute Error Top 25 Words: 0
+Min Absolute Error Top 25 Words: 0
+Mean Relative Error Top 25 Words: 0.0%
+Max Relative Error Top 25 Words: 0.0%
+Min Relative Error Top 25 Words: 0.0%
+
+Mean Absolute Error Top 30 Words: 0.0
+Max Absolute Error Top 30 Words: 0
+Min Absolute Error Top 30 Words: 0
+Mean Relative Error Top 30 Words: 0.0%
+Max Relative Error Top 30 Words: 0.0%
+Min Relative Error Top 30 Words: 0.0%
+
