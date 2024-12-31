@@ -1,0 +1,204 @@
+Lossy Counting Algorithm (k=14456)
+
+Execution time: 0.0034989710002264474 seconds
+
+Top 5 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+\hline
+\end{tabular}
+
+Top 10 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+ capulet      &            141 &                      141 &           0 &              0 & capulet         &           141 \\
+ love         &            136 &                      136 &           0 &              0 & love            &           136 \\
+ thee         &            135 &                      135 &           0 &              0 & thee            &           135 \\
+ shall        &            110 &                      110 &           0 &              0 & shall           &           110 \\
+ lady         &            109 &                      109 &           0 &              0 & lady            &           109 \\
+\hline
+\end{tabular}
+
+Top 15 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+ capulet      &            141 &                      141 &           0 &              0 & capulet         &           141 \\
+ love         &            136 &                      136 &           0 &              0 & love            &           136 \\
+ thee         &            135 &                      135 &           0 &              0 & thee            &           135 \\
+ shall        &            110 &                      110 &           0 &              0 & shall           &           110 \\
+ lady         &            109 &                      109 &           0 &              0 & lady            &           109 \\
+ friar        &            104 &                      104 &           0 &              0 & friar           &           104 \\
+ come         &             94 &                       94 &           0 &              0 & come            &            94 \\
+ mercutio     &             83 &                       83 &           0 &              0 & mercutio        &            83 \\
+ good         &             80 &                       80 &           0 &              0 & good            &            80 \\
+ benvolio     &             79 &                       79 &           0 &              0 & benvolio        &            79 \\
+\hline
+\end{tabular}
+
+Top 20 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+ capulet      &            141 &                      141 &           0 &              0 & capulet         &           141 \\
+ love         &            136 &                      136 &           0 &              0 & love            &           136 \\
+ thee         &            135 &                      135 &           0 &              0 & thee            &           135 \\
+ shall        &            110 &                      110 &           0 &              0 & shall           &           110 \\
+ lady         &            109 &                      109 &           0 &              0 & lady            &           109 \\
+ friar        &            104 &                      104 &           0 &              0 & friar           &           104 \\
+ come         &             94 &                       94 &           0 &              0 & come            &            94 \\
+ mercutio     &             83 &                       83 &           0 &              0 & mercutio        &            83 \\
+ good         &             80 &                       80 &           0 &              0 & good            &            80 \\
+ benvolio     &             79 &                       79 &           0 &              0 & benvolio        &            79 \\
+ enter        &             75 &                       75 &           0 &              0 & enter           &            75 \\
+ go           &             75 &                       75 &           0 &              0 & go              &            75 \\
+ i’ll         &             71 &                       71 &           0 &              0 & i’ll            &            71 \\
+ tybalt       &             69 &                       69 &           0 &              0 & tybalt          &            69 \\
+ death        &             69 &                       69 &           0 &              0 & death           &            69 \\
+\hline
+\end{tabular}
+
+Top 25 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+ capulet      &            141 &                      141 &           0 &              0 & capulet         &           141 \\
+ love         &            136 &                      136 &           0 &              0 & love            &           136 \\
+ thee         &            135 &                      135 &           0 &              0 & thee            &           135 \\
+ shall        &            110 &                      110 &           0 &              0 & shall           &           110 \\
+ lady         &            109 &                      109 &           0 &              0 & lady            &           109 \\
+ friar        &            104 &                      104 &           0 &              0 & friar           &           104 \\
+ come         &             94 &                       94 &           0 &              0 & come            &            94 \\
+ mercutio     &             83 &                       83 &           0 &              0 & mercutio        &            83 \\
+ good         &             80 &                       80 &           0 &              0 & good            &            80 \\
+ benvolio     &             79 &                       79 &           0 &              0 & benvolio        &            79 \\
+ enter        &             75 &                       75 &           0 &              0 & enter           &            75 \\
+ go           &             75 &                       75 &           0 &              0 & go              &            75 \\
+ i’ll         &             71 &                       71 &           0 &              0 & i’ll            &            71 \\
+ tybalt       &             69 &                       69 &           0 &              0 & tybalt          &            69 \\
+ death        &             69 &                       69 &           0 &              0 & death           &            69 \\
+ night        &             68 &                       68 &           0 &              0 & night           &            68 \\
+ lawrence     &             67 &                       67 &           0 &              0 & lawrence        &            67 \\
+ man          &             65 &                       65 &           0 &              0 & man             &            65 \\
+ hath         &             64 &                       64 &           0 &              0 & hath            &            64 \\
+ one          &             60 &                       60 &           0 &              0 & one             &            60 \\
+\hline
+\end{tabular}
+
+Top 30 frequent words:
+\begin{tabular}{lrrrrlr}
+\hline
+ Freq. Word   &   Bucket Value &   Freq. Word Exact Count &   Abs. Err. &   Rel. Err.(\%) & Expected Word   &   Exact Count \\
+\hline
+ romeo        &            298 &                      298 &           0 &              0 & romeo           &           298 \\
+ thou         &            277 &                      277 &           0 &              0 & thou            &           277 \\
+ juliet       &            178 &                      178 &           0 &              0 & juliet          &           178 \\
+ thy          &            170 &                      170 &           0 &              0 & thy             &           170 \\
+ nurse        &            146 &                      146 &           0 &              0 & nurse           &           146 \\
+ capulet      &            141 &                      141 &           0 &              0 & capulet         &           141 \\
+ love         &            136 &                      136 &           0 &              0 & love            &           136 \\
+ thee         &            135 &                      135 &           0 &              0 & thee            &           135 \\
+ shall        &            110 &                      110 &           0 &              0 & shall           &           110 \\
+ lady         &            109 &                      109 &           0 &              0 & lady            &           109 \\
+ friar        &            104 &                      104 &           0 &              0 & friar           &           104 \\
+ come         &             94 &                       94 &           0 &              0 & come            &            94 \\
+ mercutio     &             83 &                       83 &           0 &              0 & mercutio        &            83 \\
+ good         &             80 &                       80 &           0 &              0 & good            &            80 \\
+ benvolio     &             79 &                       79 &           0 &              0 & benvolio        &            79 \\
+ enter        &             75 &                       75 &           0 &              0 & enter           &            75 \\
+ go           &             75 &                       75 &           0 &              0 & go              &            75 \\
+ i’ll         &             71 &                       71 &           0 &              0 & i’ll            &            71 \\
+ tybalt       &             69 &                       69 &           0 &              0 & tybalt          &            69 \\
+ death        &             69 &                       69 &           0 &              0 & death           &            69 \\
+ night        &             68 &                       68 &           0 &              0 & night           &            68 \\
+ lawrence     &             67 &                       67 &           0 &              0 & lawrence        &            67 \\
+ man          &             65 &                       65 &           0 &              0 & man             &            65 \\
+ hath         &             64 &                       64 &           0 &              0 & hath            &            64 \\
+ one          &             60 &                       60 &           0 &              0 & one             &            60 \\
+ paris        &             58 &                       58 &           0 &              0 & paris           &            58 \\
+ well         &             58 &                       58 &           0 &              0 & well            &            58 \\
+ sir          &             57 &                       57 &           0 &              0 & sir             &            57 \\
+ art          &             55 &                       55 &           0 &              0 & art             &            55 \\
+ would        &             54 &                       54 &           0 &              0 & would           &            54 \\
+\hline
+\end{tabular}
+
+Theoretical Max Overestimation Error n / k = εn: 1.0
+Final Delta: 1
+Actual Max Overestimation Error: 0; Word: tragedy; Estimated Count: 1; Expected Count: 1
+Theoretical Max Overestimation Error >= Actual Max Overestimation Error: True
+
+Mean Absolute Error Top 5 Words: 0.0
+Max Absolute Error Top 5 Words: 0
+Min Absolute Error Top 5 Words: 0
+Mean Relative Error Top 5 Words: 0.0%
+Max Relative Error Top 5 Words: 0.0%
+Min Relative Error Top 5 Words: 0.0%
+
+Mean Absolute Error Top 10 Words: 0.0
+Max Absolute Error Top 10 Words: 0
+Min Absolute Error Top 10 Words: 0
+Mean Relative Error Top 10 Words: 0.0%
+Max Relative Error Top 10 Words: 0.0%
+Min Relative Error Top 10 Words: 0.0%
+
+Mean Absolute Error Top 15 Words: 0.0
+Max Absolute Error Top 15 Words: 0
+Min Absolute Error Top 15 Words: 0
+Mean Relative Error Top 15 Words: 0.0%
+Max Relative Error Top 15 Words: 0.0%
+Min Relative Error Top 15 Words: 0.0%
+
+Mean Absolute Error Top 20 Words: 0.0
+Max Absolute Error Top 20 Words: 0
+Min Absolute Error Top 20 Words: 0
+Mean Relative Error Top 20 Words: 0.0%
+Max Relative Error Top 20 Words: 0.0%
+Min Relative Error Top 20 Words: 0.0%
+
+Mean Absolute Error Top 25 Words: 0.0
+Max Absolute Error Top 25 Words: 0
+Min Absolute Error Top 25 Words: 0
+Mean Relative Error Top 25 Words: 0.0%
+Max Relative Error Top 25 Words: 0.0%
+Min Relative Error Top 25 Words: 0.0%
+
+Mean Absolute Error Top 30 Words: 0.0
+Max Absolute Error Top 30 Words: 0
+Min Absolute Error Top 30 Words: 0
+Mean Relative Error Top 30 Words: 0.0%
+Max Relative Error Top 30 Words: 0.0%
+Min Relative Error Top 30 Words: 0.0%
+
