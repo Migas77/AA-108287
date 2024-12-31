@@ -1,0 +1,1 @@
+Placeholder folder for Fixed Probability Algorithm (p=1/2)

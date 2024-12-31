@@ -24,7 +24,7 @@ def main_command(language, algorithm):
 
     words_list = read_text_to_word_list(*book_args_by_language[language])
     n_iters = 10000
-    k = 100
+    k = 1000
 
     # To evaluate algorithms results and execution time
     if algorithm == 'exact_counter':
