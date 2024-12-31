@@ -81,7 +81,7 @@ def main_command(language, algorithm):
     for table_type in ['grid', 'latex']:
         filepath = f'results/{algorithm}/{language}_{algorithm}_{table_type}_memory_results.txt'
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(f'{algorithm} memory usage\n')
+            f.write(f'{algorithm} memory usage (k={k})\n')
             f.write(tabulate(results, headers=headers, tablefmt=table_type))
             f.write(f'\n\n{addit_data}')
             print(f'The memory usage results can be found in {filepath}')
