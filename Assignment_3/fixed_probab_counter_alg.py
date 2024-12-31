@@ -30,7 +30,7 @@ def fixed_probability_counter_with_memory(words_list, probability):
                 word_count_map[word] = 1
             else:
                 word_count_map[word] += 1
-            memory_usage.append((word, word_count_map[word], asizeof.asizeof(word_count_map), len(word_count_map)))
+        memory_usage.append((word, word_count_map[word] if word in word_count_map else 0, asizeof.asizeof(word_count_map), len(word_count_map)))
 
     return word_count_map, memory_usage
 
