@@ -82,24 +82,6 @@ if __name__ == '__main__':
     print(f"Maximum Deviation: {maximum_deviation} {np.max(np.abs(np.array(counters) - mean_counter_value))}")
     print(f"Variance: {variance} {np.var(counters)} {statistics.pvariance(counters)}\n\n")
 
-    
-    # ---------------------------------------------------
-    # Example of counting words in one of the books     |
-    # ---------------------------------------------------
-    book_paths_with_language = [
-        ('romeo_and_juliet_book/romeo_and_juliet_english.txt', 'english'),
-        ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french'),
-        ('romeo_and_juliet_book/romeo_and_juliet_german.txt', 'german')
-    ]
-
-    file_path, language = book_paths_with_language[0]
-    words_list = read_text_to_word_list(file_path, language)
-    word_count_map = fixed_probability_counter(words_list, prob)
-    print(sum(word_count_map.values()) * 2, len(words_list))
-    for word, count in word_count_map.items():
-        # print(f"{word}: {count}")
-        pass
-
     counter_distribution = Counter(counters)
     total_count = sum(counter_distribution.values())
     print(total_count)
@@ -110,4 +92,21 @@ if __name__ == '__main__':
     for value, count in sorted(counter_distribution.items()):
         print(f"Counter value: {value:2d} - {count:4d} times - {100*count/total_count:6.3f}%")
 
-    print(tabulate(counter_distribution.items(), headers=['Counter Value', 'Count'], tablefmt="latex"))
+    # print(tabulate(counter_distribution.items(), headers=['Counter Value', 'Count'], tablefmt="latex"))
+
+    
+    # ---------------------------------------------------
+    # Example of counting words in one of the books     |
+    # ---------------------------------------------------
+    book_args_by_language = {
+        'english': ('romeo_and_juliet_book/romeo_and_juliet_english.txt', 'english'),
+        'french': ('romeo_and_juliet_book/romeo_and_juliet_french.txt', 'french', 'quelque restriction.'),
+        'german': ('romeo_and_juliet_book/romeo_and_juliet_german.txt', 'german', 'http://gutenberg2000.de erreichbar.')
+    }
+
+    words_list = read_text_to_word_list(*book_args_by_language['english'])
+    word_count_map = fixed_probability_counter(words_list, prob)
+    print(sum(word_count_map.values()) * 2, len(words_list))
+    for word, count in word_count_map.items():
+        print(f"{word}: {count}")
+        pass
