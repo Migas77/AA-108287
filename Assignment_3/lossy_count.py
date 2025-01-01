@@ -10,9 +10,9 @@ class LossyCounting:
         Initialize the Lossy Counting algorithm.
 
         Args:
-            k (int): COMPLETE THIS LATER (inverse of epsilon).
+            k (int): inverse of epsilon.
         """
-        self.k = k              # COMPLETE THIS LATER
+        self.k = k              # inverse of epsilon
         self.delta = 0          # Current bucket boundary
         self.buckets = {}       # Buckets to store items and their counts
         self.n = 0              # Total number of processed items
