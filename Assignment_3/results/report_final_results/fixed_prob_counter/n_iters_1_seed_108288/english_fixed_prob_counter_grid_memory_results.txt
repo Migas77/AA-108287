@@ -1,4 +1,4 @@
-fixed_prob_counter memory usage (k=1000)
+fixed_prob_counter memory usage
 +---------------------+----------------------+----------------+--------------------+
 | Current Word        | Current Word Count   |   Memory Usage | # Distinct Words   |
 +=====================+======================+================+====================+
